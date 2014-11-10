@@ -10,7 +10,7 @@ CREATE TABLE board_elements(
     roulette_id INT REFERENCES roulettes NOT NULL,
     -- Name is a work in progress, it is the element that is shown on the board.
     -- In theory there can be roulettes with fruits instead of numbers
-    sygil TEXT
+    sigil TEXT
 );
 
 CREATE TABLE element_types(
