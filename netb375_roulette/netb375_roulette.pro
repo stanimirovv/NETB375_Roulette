@@ -15,8 +15,10 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    roulettegame.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    roulettegame.h
 
 FORMS    += mainwindow.ui
