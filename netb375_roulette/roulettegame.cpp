@@ -27,9 +27,7 @@ RouletteGame::RouletteGame(int m_player_id, int m_wallet_id, QString db_name, QS
         qDebug() << "Printing new_element:  " <<  new_element.name << "  " << new_element.sygil << "  ";
         board.push_back(new_element);
     }
-
     //get the intial round id
-
 }
 
 /* This function represents a bet which has been made from the player
@@ -46,7 +44,7 @@ void RouletteGame::BetMoney(int amount, QString sygil, QString attribute)
         // check if sygil and attribute match (which is sygil / name.
     }
     QSqlQuery query(db);
-    QString insert_bet =
+    //QString insert_bet =
 }
 
 /* This function will go through every bet made this round and will
