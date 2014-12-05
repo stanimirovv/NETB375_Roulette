@@ -5,8 +5,6 @@
 #-------------------------------------------------
 
 QT       += core gui
-QT += sql
-QT += core
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -16,9 +14,10 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    roulettegame.cpp
+    startwindow.cpp
 
 HEADERS  += mainwindow.h \
-    roulettegame.h
+    startwindow.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    startwindow.ui
