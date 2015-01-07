@@ -1,7 +1,7 @@
 #ifndef ROULETTEGAME_H
 #define ROULETTEGAME_H
 #include <QString>
-#include <QtSql>
+
 #include <QVector>
 
 struct board_element
