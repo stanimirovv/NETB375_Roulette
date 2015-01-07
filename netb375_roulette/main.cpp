@@ -4,12 +4,12 @@
 
 int n;// random generated number
 char color; //player chosen color
-int arr_rulette[37];//definirano za da se runva!!
-char arr_rulettec[37];//definirano za da se runva!!
+int arr_rulett[37];//definirano za da se runva!!
+char arr_rulettc[37];//definirano za da se runva!!
 
 bool check_num()//checks for 1 in the array of bets on the random generated number's position
 {
-    if(1==arr_rulette[n])
+    if(1==arr_rulett[n])
     {
         return true;
     }
@@ -22,7 +22,7 @@ bool check_num()//checks for 1 in the array of bets on the random generated numb
 
 bool check_color()//checks for the color of the random generated number
 {
-    if(arr_rulettec[n]==color)
+    if(arr_rulettc[n]==color)
     {
         return true;
     }
