@@ -276,6 +276,8 @@ private slots:
 
     void on_pushButton_black_clicked();
 
+    void on_pushButton_spin_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

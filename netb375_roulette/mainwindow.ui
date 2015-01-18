@@ -38,6 +38,9 @@
     <property name="text">
      <string>1</string>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
@@ -53,6 +56,9 @@
     </property>
     <property name="text">
      <string>2</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_3">
@@ -70,6 +76,9 @@
     <property name="text">
      <string>3</string>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_4">
     <property name="geometry">
@@ -85,6 +94,9 @@
     </property>
     <property name="text">
      <string>4</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_5">
@@ -102,6 +114,9 @@
     <property name="text">
      <string>5</string>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_6">
     <property name="geometry">
@@ -117,6 +132,9 @@
     </property>
     <property name="text">
      <string>6</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_spin">
@@ -139,6 +157,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string>Spin</string>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_10">
     <property name="geometry">
@@ -154,6 +175,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string>10</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_9">
@@ -171,6 +195,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string>9</string>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_11">
     <property name="geometry">
@@ -186,6 +213,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string>11</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_7">
@@ -209,6 +239,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string>7</string>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_8">
     <property name="geometry">
@@ -224,6 +257,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string>8</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_12">
@@ -241,6 +277,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string>12</string>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_16">
     <property name="geometry">
@@ -256,6 +295,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string>16</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_15">
@@ -273,6 +315,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string>15</string>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_17">
     <property name="geometry">
@@ -288,6 +333,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string>17</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_13">
@@ -311,6 +359,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string>13</string>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_14">
     <property name="geometry">
@@ -326,6 +377,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string>14</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_18">
@@ -343,6 +397,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string>18</string>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_22">
     <property name="geometry">
@@ -358,6 +415,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string>22</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_21">
@@ -375,6 +435,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string>21</string>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_23">
     <property name="geometry">
@@ -390,6 +453,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string>23</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_19">
@@ -413,6 +479,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string>19</string>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_20">
     <property name="geometry">
@@ -428,6 +497,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string>20</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_24">
@@ -445,6 +517,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string>24</string>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_28">
     <property name="geometry">
@@ -460,6 +535,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string>28</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_27">
@@ -477,6 +555,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string>27</string>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_29">
     <property name="geometry">
@@ -492,6 +573,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string>29</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_25">
@@ -515,6 +599,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string>25</string>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_26">
     <property name="geometry">
@@ -530,6 +617,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string>26</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_30">
@@ -547,6 +637,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string>30</string>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_34">
     <property name="geometry">
@@ -562,6 +655,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string>34</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_33">
@@ -579,6 +675,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string>33</string>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_35">
     <property name="geometry">
@@ -594,6 +693,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string>35</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_31">
@@ -617,6 +719,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string>31</string>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_32">
     <property name="geometry">
@@ -633,6 +738,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string>32</string>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_36">
     <property name="geometry">
@@ -648,6 +756,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string>36</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_0">
@@ -669,6 +780,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string>0</string>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_1st">
     <property name="geometry">
@@ -688,6 +802,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string>1st 12</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2nd">
@@ -709,6 +826,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string>2nd 12</string>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_3rd">
     <property name="geometry">
@@ -728,6 +848,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string>3rd 12</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_1_18">
@@ -749,6 +872,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string>1-18</string>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_even">
     <property name="geometry">
@@ -769,6 +895,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string>Even</string>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="redButton_red">
     <property name="geometry">
@@ -786,6 +915,9 @@ border-radius: 5px</string>
     </property>
     <property name="text">
      <string>RED</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_black">
@@ -811,6 +943,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string>BLACK</string>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_odd">
     <property name="geometry">
@@ -830,6 +965,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string>Odd</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_19_36">
@@ -851,6 +989,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string>19-36</string>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2to1_3">
     <property name="geometry">
@@ -870,6 +1011,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string>2 to 1</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2to1_2">
@@ -891,6 +1035,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string>2 to 1</string>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2to1_1">
     <property name="geometry">
@@ -910,6 +1057,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string>2 to 1</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QWidget" name="layoutWidget">
@@ -950,6 +1100,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2_plus_5">
     <property name="geometry">
@@ -966,6 +1119,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_1_plus_4_2_5">
     <property name="geometry">
@@ -978,6 +1134,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2_plus_5_3_6">
@@ -992,6 +1151,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_7_plus_10_8_11">
     <property name="geometry">
@@ -1004,6 +1166,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_26_plus_29_27_30">
@@ -1018,6 +1183,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_1_plus_2">
     <property name="geometry">
@@ -1031,6 +1199,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_4_plus_5">
     <property name="geometry">
@@ -1043,6 +1214,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_3_plus_6">
@@ -1060,6 +1234,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2_plus_3">
     <property name="geometry">
@@ -1073,6 +1250,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_5_plus_6">
     <property name="geometry">
@@ -1085,6 +1265,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_6_plus_9">
@@ -1102,6 +1285,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_5_plus_8_6_9">
     <property name="geometry">
@@ -1114,6 +1300,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_4_plus_7_5_8">
@@ -1128,6 +1317,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_4_plus_7">
     <property name="geometry">
@@ -1140,6 +1332,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_5_plus_8">
@@ -1157,6 +1352,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_7_plus_8">
     <property name="geometry">
@@ -1170,6 +1368,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_23_plus_26_24_27">
     <property name="geometry">
@@ -1182,6 +1383,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_19_plus_22">
@@ -1199,6 +1403,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_20_plus_23">
     <property name="geometry">
@@ -1211,6 +1418,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_13_plus_16">
@@ -1228,6 +1438,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_32_plus_35_33_36">
     <property name="geometry">
@@ -1241,6 +1454,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_22_plus_25_23_26">
     <property name="geometry">
@@ -1253,6 +1469,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_18_plus_21">
@@ -1270,6 +1489,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_21_plus_24">
     <property name="geometry">
@@ -1282,6 +1504,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_14_plus_17">
@@ -1299,6 +1524,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_29_plus_32_30_33">
     <property name="geometry">
@@ -1311,6 +1539,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_29_plus_32">
@@ -1328,6 +1559,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_31_plus_34">
     <property name="geometry">
@@ -1340,6 +1574,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_23_plus_26">
@@ -1357,6 +1594,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_28_Plus_31">
     <property name="geometry">
@@ -1373,6 +1613,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_32_plus_35">
     <property name="geometry">
@@ -1385,6 +1628,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_30_plus_33">
@@ -1402,6 +1648,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_27_plus_30">
     <property name="geometry">
@@ -1417,6 +1666,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_33_plus_36">
@@ -1434,6 +1686,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_25_plus_28">
     <property name="geometry">
@@ -1450,6 +1705,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_25_plus_28_26_29">
     <property name="geometry">
@@ -1462,6 +1720,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_22_Plus_25">
@@ -1479,6 +1740,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_26_plus_29">
     <property name="geometry">
@@ -1491,6 +1755,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_24_plus_27">
@@ -1508,6 +1775,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_31_plus_34_32_35">
     <property name="geometry">
@@ -1521,6 +1791,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_19_plus_22_20_23">
     <property name="geometry">
@@ -1533,6 +1806,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_16_plus_19">
@@ -1550,6 +1826,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_17_plus_20">
     <property name="geometry">
@@ -1562,6 +1841,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_15_plus_18">
@@ -1579,6 +1861,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_28_plus_31_29_32">
     <property name="geometry">
@@ -1592,6 +1877,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_16_plus_19_17_20">
     <property name="geometry">
@@ -1604,6 +1892,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_7_plus_10">
@@ -1621,6 +1912,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_10_plus_13">
     <property name="geometry">
@@ -1633,6 +1927,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_8_plus_11">
@@ -1650,6 +1947,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_17_plus_20_18_21">
     <property name="geometry">
@@ -1663,6 +1963,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_13_plus_16_14_17">
     <property name="geometry">
@@ -1675,6 +1978,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_11_plus_14">
@@ -1692,6 +1998,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_12_plus_15">
     <property name="geometry">
@@ -1704,6 +2013,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_9_plus_12">
@@ -1721,6 +2033,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_20_plus_23_21_24">
     <property name="geometry">
@@ -1733,6 +2048,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_14_plus_15">
@@ -1747,6 +2065,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_14_plus_17_15_18">
     <property name="geometry">
@@ -1759,6 +2080,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_11_plus_14_12_15">
@@ -1773,6 +2097,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_11_plus_12">
     <property name="geometry">
@@ -1785,6 +2112,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_8_plus_11_9_12">
@@ -1799,6 +2129,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_8_plus_9">
     <property name="geometry">
@@ -1811,6 +2144,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_10_plus_13_11_14">
@@ -1825,6 +2161,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_10_plus_11">
     <property name="geometry">
@@ -1837,6 +2176,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_13_plus_14">
@@ -1851,6 +2193,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_17_plus_18">
     <property name="geometry">
@@ -1863,6 +2208,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_16_plus_17">
@@ -1877,6 +2225,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_20_plus_21">
     <property name="geometry">
@@ -1889,6 +2240,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_23_plus_24">
@@ -1903,6 +2257,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_19_plus_20">
     <property name="geometry">
@@ -1915,6 +2272,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_22_plus_23">
@@ -1929,6 +2289,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_26_plus_27">
     <property name="geometry">
@@ -1941,6 +2304,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_25_plus_26">
@@ -1955,6 +2321,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_29_plus_30">
     <property name="geometry">
@@ -1967,6 +2336,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_28_plus_29">
@@ -1981,6 +2353,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_35_plus_36">
     <property name="geometry">
@@ -1993,6 +2368,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_34_plus_35">
@@ -2007,6 +2385,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_31_plus_32">
     <property name="geometry">
@@ -2019,6 +2400,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_32_plus_33">
@@ -2033,6 +2417,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="Bet_button1">
     <property name="geometry">
@@ -2045,6 +2432,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string>PushButton</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="Bet_button2">
@@ -2059,6 +2449,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string>PushButton</string>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="Bet_button3">
     <property name="geometry">
@@ -2071,6 +2464,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string>PushButton</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="Bet_button4">
@@ -2085,6 +2481,9 @@ border-radius: 5px;</string>
     <property name="text">
      <string>PushButton</string>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="Clear_Button">
     <property name="geometry">
@@ -2097,6 +2496,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string>Clear</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
     </property>
    </widget>
   </widget>

@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include <QMessageBox>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -20,15 +21,63 @@ MainWindow::~MainWindow()
 
 /* definisions for all the button functions
  * if a button is clicked it becomes flat
- * and in the coresponding position sets in the array 1
- * if a button is clicked again it set a 0 and is no longer flat
+ * and in the coresponding position sets in the array a "1"
+ * if a button is clicked again it set a "0" and is no longer flat
  * same for buttons from 0 to 36(starting from 1 the 0 is after 36)
  * (further gonna add chips on the bet buttons so when clicked and after that click on a number it will display the chip and the reverse)
  * (need to add funtions for bets,colors and clear)*/
 
+int n;// random generated number
+char color1,color2; //player chosen color
+
 int arr_rulette[37];//defines array for bets
 char arr_rulettec[37]={'G','R','B','R','B','R','B','R','B','R','B','B','R','B','R','B','R','B','R','R','B','R','B','R','B','R','B','R','B','B','R','B','R','B','R','B','R'};
 //defines arrays of colors
+
+bool check_num(int n)//checks for 1 in the array of bets on the random generated number's position
+{
+    if(1==arr_rulette[n])
+    {
+        QString str;
+        str.setNum(n);
+        QMessageBox message;
+        message.setText("you win the random number is "+str);
+        message.exec();
+    }
+    else
+    {
+        QString str;
+        str.setNum(n);
+        QMessageBox message1;
+        message1.setText("you lose the random number is "+str);
+        message1.exec();
+    }
+    return false;
+}
+
+bool check_color(int n)//checks for the color of the random generated number
+{
+    if(arr_rulettec[n]==color1 || arr_rulettec[n]==color2)
+    {
+        QString str;
+        str.setNum(n);
+        QMessageBox message;
+        message.setText("you win the random number is "+str);
+        message.exec();
+    }
+    else
+    {
+        QString str;
+        str.setNum(n);
+        QMessageBox message1;
+        message1.setText("you lose the random number is "+str);
+        message1.exec();
+    }
+    return false;
+}
+
+
+
 void MainWindow::on_pushButton_1_clicked()
 {
     if(ui->pushButton_1->isFlat())
@@ -3020,10 +3069,34 @@ void MainWindow::on_Clear_Button_clicked()
 
 void MainWindow::on_redButton_red_clicked()
 {
-    //places bets on all the red numbers
+    if(ui->redButton_red->isFlat())
+    {
+        color1 = 'W';
+        ui->redButton_red->setFlat(false);
+    }
+    else
+    {
+        color1 = 'R';
+        ui->redButton_red->setFlat(true);
+    }
 }
 
 void MainWindow::on_pushButton_black_clicked()
 {
-    //places bets on all the black numbers
+    if(ui->pushButton_black->isFlat())
+    {
+        color2 = 'W';
+        ui->pushButton_black->setFlat(false);
+    }
+    else
+    {
+        color2 = 'B';
+        ui->pushButton_black->setFlat(true);
+    }
+}
+
+void MainWindow::on_pushButton_spin_clicked()
+{
+    n=rand()%38;
+    check_color(n);
 }
