@@ -7,6 +7,9 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    setStyleSheet("MainWindow {background-color:green};"); //setting background color only to MainWindow
+    QPixmap pixmap("/home/aleksandar/Desktop/roulette working/NETB375_Roulette-master/netb375_roulette/img/roulette3.gif");
+    ui->label_gif->setPixmap(pixmap); //setting an image for the spin button
 }
 
 MainWindow::~MainWindow()
