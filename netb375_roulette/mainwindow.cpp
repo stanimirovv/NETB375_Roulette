@@ -3100,6 +3100,11 @@ void MainWindow::on_pushButton_black_clicked()
 
 void MainWindow::on_pushButton_spin_clicked()
 {
+    QMovie *movie = new QMovie("/home/aleksandar/Desktop/roulette working/NETB375_Roulette-master/netb375_roulette/img/roulette3.gif");
+    ui->label_gif->setMovie(movie);
+    movie->setSpeed(130);
+    movie->start();
+    
     n=rand()%38;
     check_color(n);
 }
