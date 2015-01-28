@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QPushButton>
 
 namespace Ui {
 class MainWindow;
@@ -14,6 +15,9 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
+    void bet_handler(int x,bool again);
+    void single_button_bet(int x);
+    void multi_button_bet(int x1, int x2,bool more);
 
 private slots:
     void on_pushButton_1_clicked();
@@ -278,8 +282,13 @@ private slots:
 
     void on_pushButton_spin_clicked();
 
+    void on_Bet_button5_clicked();
+
+    void on_Bet_button6_clicked();
+
 private:
     Ui::MainWindow *ui;
+    QPushButton *array_to_buttons[37];
 };
 
 #endif // MAINWINDOW_H
