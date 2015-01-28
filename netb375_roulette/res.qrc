@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/imgs">
+        <file>Chip_5.gif</file>
+        <file>Chip_10.gif</file>
+        <file>Chip_50.gif</file>
+        <file>Chip_100.gif</file>
+        <file>Chip_500.gif</file>
+        <file>Chip_1000.gif</file>
+    </qresource>
+</RCC>
