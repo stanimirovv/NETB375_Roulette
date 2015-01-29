@@ -113,7 +113,8 @@ debug/qrc_res.cpp: ../netb375_roulette/res.qrc \
 		../netb375_roulette/Chip_100.gif \
 		../netb375_roulette/Chip_5.gif \
 		../netb375_roulette/Chip_10.gif \
-		../netb375_roulette/Chip_1000.gif
+		../netb375_roulette/Chip_1000.gif \
+		../netb375_roulette/roulette3.gif
 	J:\QT\5.3\mingw482_32\bin\rcc.exe -name res ..\netb375_roulette\res.qrc -o debug\qrc_res.cpp
 
 compiler_moc_header_make_all: debug/moc_mainwindow.cpp
@@ -222,6 +223,9 @@ debug/moc_mainwindow.cpp: ../../../../QT/5.3/mingw482_32/include/QtWidgets/QMain
 		../../../../QT/5.3/mingw482_32/include/QtGui/qtouchdevice.h \
 		../../../../QT/5.3/mingw482_32/include/QtWidgets/qtabwidget.h \
 		../../../../QT/5.3/mingw482_32/include/QtGui/qicon.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/QPushButton \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qpushbutton.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qabstractbutton.h \
 		../netb375_roulette/mainwindow.h
 	J:\QT\5.3\mingw482_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IJ:/QT/5.3/mingw482_32/mkspecs/win32-g++ -IJ:/NETB375_Roulette-master/git/NETB375_Roulette/netb375_roulette -IJ:/QT/5.3/mingw482_32/include -IJ:/QT/5.3/mingw482_32/include/QtWidgets -IJ:/QT/5.3/mingw482_32/include/QtGui -IJ:/QT/5.3/mingw482_32/include/QtCore -I. ..\netb375_roulette\mainwindow.h -o debug\moc_mainwindow.cpp
 
@@ -349,6 +353,9 @@ debug/main.o: ../netb375_roulette/main.cpp ../netb375_roulette/mainwindow.h \
 		../../../../QT/5.3/mingw482_32/include/QtGui/qtouchdevice.h \
 		../../../../QT/5.3/mingw482_32/include/QtWidgets/qtabwidget.h \
 		../../../../QT/5.3/mingw482_32/include/QtGui/qicon.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/QPushButton \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qpushbutton.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qabstractbutton.h \
 		../../../../QT/5.3/mingw482_32/include/QtWidgets/QApplication \
 		../../../../QT/5.3/mingw482_32/include/QtWidgets/qapplication.h \
 		../../../../QT/5.3/mingw482_32/include/QtCore/qcoreapplication.h \
@@ -463,6 +470,9 @@ debug/mainwindow.o: ../netb375_roulette/mainwindow.cpp ../netb375_roulette/mainw
 		../../../../QT/5.3/mingw482_32/include/QtGui/qtouchdevice.h \
 		../../../../QT/5.3/mingw482_32/include/QtWidgets/qtabwidget.h \
 		../../../../QT/5.3/mingw482_32/include/QtGui/qicon.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/QPushButton \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qpushbutton.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qabstractbutton.h \
 		ui_mainwindow.h \
 		../../../../QT/5.3/mingw482_32/include/QtCore/QVariant \
 		../../../../QT/5.3/mingw482_32/include/QtWidgets/QAction \
@@ -503,9 +513,6 @@ debug/mainwindow.o: ../netb375_roulette/mainwindow.cpp ../netb375_roulette/mainw
 		../../../../QT/5.3/mingw482_32/include/QtWidgets/qmenu.h \
 		../../../../QT/5.3/mingw482_32/include/QtWidgets/QMenuBar \
 		../../../../QT/5.3/mingw482_32/include/QtWidgets/qmenubar.h \
-		../../../../QT/5.3/mingw482_32/include/QtWidgets/QPushButton \
-		../../../../QT/5.3/mingw482_32/include/QtWidgets/qpushbutton.h \
-		../../../../QT/5.3/mingw482_32/include/QtWidgets/qabstractbutton.h \
 		../../../../QT/5.3/mingw482_32/include/QtWidgets/QSlider \
 		../../../../QT/5.3/mingw482_32/include/QtWidgets/QSpinBox \
 		../../../../QT/5.3/mingw482_32/include/QtWidgets/qspinbox.h \

@@ -2596,14 +2596,24 @@ border-radius: 5px;</string>
    <widget class="QPushButton" name="Bet_button1">
     <property name="geometry">
      <rect>
-      <x>60</x>
+      <x>10</x>
       <y>440</y>
       <width>41</width>
       <height>41</height>
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/imgs/Chip_5.gif</normaloff>:/imgs/Chip_5.gif</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>40</width>
+      <height>40</height>
+     </size>
     </property>
     <property name="autoDefault">
      <bool>true</bool>
@@ -2612,14 +2622,24 @@ border-radius: 5px;</string>
    <widget class="QPushButton" name="Bet_button2">
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>70</x>
       <y>440</y>
       <width>41</width>
       <height>41</height>
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/imgs/Chip_10.gif</normaloff>:/imgs/Chip_10.gif</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>40</width>
+      <height>40</height>
+     </size>
     </property>
     <property name="autoDefault">
      <bool>true</bool>
@@ -2628,14 +2648,24 @@ border-radius: 5px;</string>
    <widget class="QPushButton" name="Bet_button3">
     <property name="geometry">
      <rect>
-      <x>180</x>
+      <x>130</x>
       <y>440</y>
       <width>41</width>
       <height>41</height>
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/imgs/Chip_50.gif</normaloff>:/imgs/Chip_50.gif</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>40</width>
+      <height>40</height>
+     </size>
     </property>
     <property name="autoDefault">
      <bool>true</bool>
@@ -2644,14 +2674,24 @@ border-radius: 5px;</string>
    <widget class="QPushButton" name="Bet_button4">
     <property name="geometry">
      <rect>
-      <x>240</x>
+      <x>190</x>
       <y>440</y>
       <width>41</width>
       <height>41</height>
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/imgs/Chip_100.gif</normaloff>:/imgs/Chip_100.gif</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>40</width>
+      <height>40</height>
+     </size>
     </property>
     <property name="autoDefault">
      <bool>true</bool>
@@ -2688,6 +2728,61 @@ border-radius: 5px;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="pixmap">
+     <pixmap resource="res.qrc">:/imgs/roulette3.gif</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Bet_button5">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>440</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/imgs/Chip_500.gif</normaloff>:/imgs/Chip_500.gif</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>40</width>
+      <height>40</height>
+     </size>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Bet_button6">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>440</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/imgs/Chip_1000.gif</normaloff>:/imgs/Chip_1000.gif</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>40</width>
+      <height>40</height>
+     </size>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -2696,7 +2791,7 @@ border-radius: 5px;</string>
      <x>0</x>
      <y>0</y>
      <width>1108</width>
-     <height>25</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuRoullet">
@@ -2717,6 +2812,8 @@ border-radius: 5px;</string>
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
  <connections/>
 </ui>

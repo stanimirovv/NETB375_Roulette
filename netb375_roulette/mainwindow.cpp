@@ -1,13 +1,13 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QMessageBox>
+#include <Qmovie>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-<<<<<<< HEAD
 
     array_to_buttons[0] = ui->pushButton_0;
     array_to_buttons[1] = ui->pushButton_1;
@@ -46,11 +46,11 @@ MainWindow::MainWindow(QWidget *parent) :
     array_to_buttons[34] = ui->pushButton_34;
     array_to_buttons[35] = ui->pushButton_35;
     array_to_buttons[36] = ui->pushButton_36;
-=======
+
     setStyleSheet("MainWindow {background-color:green};"); //setting background color only to MainWindow
     QPixmap pixmap("/home/aleksandar/Desktop/roulette working/NETB375_Roulette-master/netb375_roulette/img/roulette3.gif");
     ui->label_gif->setPixmap(pixmap); //setting an image for the spin button
->>>>>>> origin/master
+
 }
 
 MainWindow::~MainWindow()
@@ -1903,17 +1903,11 @@ void MainWindow::on_Clear_Button_clicked()
 
 void MainWindow::on_pushButton_spin_clicked()
 {
-<<<<<<< HEAD
-    n=1;
-
-    check_num(n);
-=======
-    QMovie *movie = new QMovie("/home/aleksandar/Desktop/roulette working/NETB375_Roulette-master/netb375_roulette/img/roulette3.gif");
+    QMovie *movie = new QMovie("/img/roulette3.gif");
     ui->label_gif->setMovie(movie);
     movie->setSpeed(130);
     movie->start();
     
-    n=rand()%38;
-    check_color(n);
->>>>>>> origin/master
+    n=rand()%37;
+    check_num(n);
 }
