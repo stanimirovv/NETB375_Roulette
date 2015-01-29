@@ -48,7 +48,7 @@ MainWindow::MainWindow(QWidget *parent) :
     array_to_buttons[36] = ui->pushButton_36;
 
     setStyleSheet("MainWindow {background-color:green};"); //setting background color only to MainWindow
-    QPixmap pixmap("/home/aleksandar/Desktop/roulette working/NETB375_Roulette-master/netb375_roulette/img/roulette3.gif");
+    QPixmap pixmap(":/imgs/roulette3.gif");
     ui->label_gif->setPixmap(pixmap); //setting an image for the spin button
 
 }
@@ -1903,7 +1903,7 @@ void MainWindow::on_Clear_Button_clicked()
 
 void MainWindow::on_pushButton_spin_clicked()
 {
-    QMovie *movie = new QMovie("/img/roulette3.gif");
+    QMovie *movie = new QMovie(":/imgs/roulette3.gif");
     ui->label_gif->setMovie(movie);
     movie->setSpeed(130);
     movie->start();
