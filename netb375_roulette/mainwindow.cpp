@@ -283,91 +283,76 @@ void MainWindow::multi_bet_animation(int d,QPushButton* currentbutton,int xg,int
 void MainWindow::on_pushButton_1_clicked()
 {
     single_button_bet(1);
-    this->rl.createBet(1, this->current_button_value, 37);
 }
 
 void MainWindow::on_pushButton_2_clicked()
 {
     single_button_bet(2);
-    this->rl.createBet(2, this->current_button_value, 37);
 }
 
 void MainWindow::on_pushButton_3_clicked()
 {
     single_button_bet(3);
-    this->rl.createBet(3, this->current_button_value, 37);
 }
 
 void MainWindow::on_pushButton_4_clicked()
 {
     single_button_bet(4);
-    this->rl.createBet(4, this->current_button_value, 37);
 }
 
 void MainWindow::on_pushButton_5_clicked()
 {
     single_button_bet(5);
-    this->rl.createBet(5, this->current_button_value, 37);
 }
 
 void MainWindow::on_pushButton_6_clicked()
 {
     single_button_bet(6);
-    this->rl.createBet(6, this->current_button_value, 37);
 }
 
 void MainWindow::on_pushButton_7_clicked()
 {
     single_button_bet(7);
-    this->rl.createBet(7, this->current_button_value, 37);
 }
 
 void MainWindow::on_pushButton_8_clicked()
 {
     single_button_bet(8);
-    this->rl.createBet(8, this->current_button_value, 37);
 }
 
 void MainWindow::on_pushButton_9_clicked()
 {
     single_button_bet(9);
-    this->rl.createBet(9, this->current_button_value, 37);
 }
 
 void MainWindow::on_pushButton_10_clicked()
 {
     single_button_bet(10);
-    this->rl.createBet(10, this->current_button_value, 37);
 }
 
 void MainWindow::on_pushButton_11_clicked()
 {
     single_button_bet(11);
-    this->rl.createBet(11, this->current_button_value, 37);
 }
 
 void MainWindow::on_pushButton_12_clicked()
 {
     single_button_bet(12);
-    this->rl.createBet(12, this->current_button_value, 37);
 }
 
 void MainWindow::on_pushButton_13_clicked()
 {
     single_button_bet(13);
-    this->rl.createBet(13, this->current_button_value, 37);
 }
 
 void MainWindow::on_pushButton_14_clicked()
 {
     single_button_bet(14);
-    this->rl.createBet(14, this->current_button_value, 37);
 }
 
 void MainWindow::on_pushButton_15_clicked()
 {
     single_button_bet(15);
-    this->rl.createBet(15, this->current_button_value, 37);
 }
 
 void MainWindow::on_pushButton_16_clicked()

@@ -66,7 +66,6 @@ int RouletteLogic::finishRound()
         this->round_bets.pop_front();
     }
     qDebug() << "Money after end round for player: " << this->person.current_money_cents << endl;
-    //this->saveGame();
     return 0;
 }
 

@@ -13,11 +13,14 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    roulette_logic.cpp \
+    game_loader.cpp
 
 
-HEADERS  += mainwindow.h
-
+HEADERS  += mainwindow.h \
+    roulette_logic.h \
+    game_loader.h
 
 FORMS    += mainwindow.ui \
 
