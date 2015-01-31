@@ -1,7 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QMessageBox>
-#include <Qmovie>
+#include <QMovie>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
