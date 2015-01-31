@@ -7,6 +7,13 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
+/* ZLATIN CODE DONT TOUCH IT OR I'LL FIND YOU AND RAPE YOUR PILLOW */
+    this->rl.SetSaveLoadPath("/home/bc/projects/qt_parser.txt");
+    this->rl.loadGame("Zlatin");
+
+
+/* ZLATIN CODE */
+
     ui->setupUi(this);
 
     array_to_buttons[0] = ui->pushButton_0;
@@ -77,12 +84,14 @@ char color1,color2; //player chosen color
 int arr_rulette[37];//defines array for bets
 char arr_rulettec[37]={'G','R','B','R','B','R','B','R','B','R','B','B','R','B','R','B','R','B','R','R','B','R','B','R','B','R','B','R','B','B','R','B','R','B','R','B','R'};
 //defines arrays of colors
-QIcon ButtonIcon; // defines an Object of QIcon that we use to store the currnet chip in
+// defines an Object of QIcon that we use to store the currnet chip in
 QPushButton *currentbutton;
-bool check_num(int n)//checks for 1 in the array of bets on the random generated number's position
+bool MainWindow::check_num(int n)//checks for 1 in the array of bets on the random generated number's position
 {
+    this->rl.finishRound();
     if(arr_rulette[n]!=0)
     {
+
         QString str;
         str.setNum(n);
         QMessageBox message;
@@ -135,6 +144,7 @@ void MainWindow::bet_handler(int x,bool again)
 
 void MainWindow::single_button_bet(int x)
 {
+    this->rl.createBet(x, this->current_button_value, 37);
     if(array_to_buttons[x]->isFlat())
     {
         bet_handler(x,false);
@@ -273,76 +283,91 @@ void MainWindow::multi_bet_animation(int d,QPushButton* currentbutton,int xg,int
 void MainWindow::on_pushButton_1_clicked()
 {
     single_button_bet(1);
+    this->rl.createBet(1, this->current_button_value, 37);
 }
 
 void MainWindow::on_pushButton_2_clicked()
 {
     single_button_bet(2);
+    this->rl.createBet(2, this->current_button_value, 37);
 }
 
 void MainWindow::on_pushButton_3_clicked()
 {
     single_button_bet(3);
+    this->rl.createBet(3, this->current_button_value, 37);
 }
 
 void MainWindow::on_pushButton_4_clicked()
 {
     single_button_bet(4);
+    this->rl.createBet(4, this->current_button_value, 37);
 }
 
 void MainWindow::on_pushButton_5_clicked()
 {
     single_button_bet(5);
+    this->rl.createBet(5, this->current_button_value, 37);
 }
 
 void MainWindow::on_pushButton_6_clicked()
 {
     single_button_bet(6);
+    this->rl.createBet(6, this->current_button_value, 37);
 }
 
 void MainWindow::on_pushButton_7_clicked()
 {
     single_button_bet(7);
+    this->rl.createBet(7, this->current_button_value, 37);
 }
 
 void MainWindow::on_pushButton_8_clicked()
 {
     single_button_bet(8);
+    this->rl.createBet(8, this->current_button_value, 37);
 }
 
 void MainWindow::on_pushButton_9_clicked()
 {
     single_button_bet(9);
+    this->rl.createBet(9, this->current_button_value, 37);
 }
 
 void MainWindow::on_pushButton_10_clicked()
 {
     single_button_bet(10);
+    this->rl.createBet(10, this->current_button_value, 37);
 }
 
 void MainWindow::on_pushButton_11_clicked()
 {
     single_button_bet(11);
+    this->rl.createBet(11, this->current_button_value, 37);
 }
 
 void MainWindow::on_pushButton_12_clicked()
 {
     single_button_bet(12);
+    this->rl.createBet(12, this->current_button_value, 37);
 }
 
 void MainWindow::on_pushButton_13_clicked()
 {
     single_button_bet(13);
+    this->rl.createBet(13, this->current_button_value, 37);
 }
 
 void MainWindow::on_pushButton_14_clicked()
 {
     single_button_bet(14);
+    this->rl.createBet(14, this->current_button_value, 37);
 }
 
 void MainWindow::on_pushButton_15_clicked()
 {
     single_button_bet(15);
+    this->rl.createBet(15, this->current_button_value, 37);
 }
 
 void MainWindow::on_pushButton_16_clicked()
@@ -1916,32 +1941,38 @@ void MainWindow::on_pushButton_32_plus_35_33_36_clicked()
 
 void MainWindow::on_Bet_button1_clicked()
 {
-    ButtonIcon = QIcon(":/imgs/Chip_5.gif");
+    this->ButtonIcon = QIcon(":/imgs/Chip_5.gif");
+    this->current_button_value = 5;
 }
 
 void MainWindow::on_Bet_button2_clicked()
 {
-    ButtonIcon = QIcon(":/imgs/Chip_10.gif");
+    this->ButtonIcon = QIcon(":/imgs/Chip_10.gif");
+    this->current_button_value = 10;
 }
 
 void MainWindow::on_Bet_button3_clicked()
 {
-    ButtonIcon = QIcon(":/imgs/Chip_50.gif");
+    this->ButtonIcon = QIcon(":/imgs/Chip_50.gif");
+    this->current_button_value = 50;
 }
 
 void MainWindow::on_Bet_button4_clicked()
 {
-    ButtonIcon = QIcon(":/imgs/Chip_100.gif");
+    this->ButtonIcon = QIcon(":/imgs/Chip_100.gif");
+    this->current_button_value = 100;
 }
 
 void MainWindow::on_Bet_button5_clicked()
 {
-    ButtonIcon = QIcon(":/imgs/Chip_500.gif");
+    this->ButtonIcon = QIcon(":/imgs/Chip_500.gif");
+    this->current_button_value = 500;
 }
 
 void MainWindow::on_Bet_button6_clicked()
 {
-    ButtonIcon = QIcon(":/imgs/Chip_1000.gif");
+    this->ButtonIcon = QIcon(":/imgs/Chip_1000.gif");
+    this->current_button_value = 1000;
 }
 
 void MainWindow::on_Clear_Button_clicked()
@@ -1958,7 +1989,7 @@ void MainWindow::on_pushButton_spin_clicked()
     
     n=rand()%37;
     n=1;
-    check_num(n);
+    check_num(1);
 }
 
 void MainWindow::on_pushButton_street_1_clicked()

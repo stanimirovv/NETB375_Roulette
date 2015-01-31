@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 #include <QPushButton>
+#include <game_loader.h>
+#include <roulette_logic.h>
 
 namespace Ui {
 class MainWindow;
@@ -11,6 +13,10 @@ class MainWindow;
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
+private:
+    QIcon ButtonIcon;
+    int current_button_value;
+    RouletteLogic rl;
 
 public:
     explicit MainWindow(QWidget *parent = 0);
@@ -19,6 +25,7 @@ public:
     void single_button_bet(int x);
     void multi_button_bet(int x1, int x2,bool more);
     void multi_bet_animation(int d,QPushButton* currentbutton,int xg,int yg,int width,int lenght,bool add);
+    bool check_num(int n);
 
 private slots:
     void on_pushButton_1_clicked();
