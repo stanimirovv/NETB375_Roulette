@@ -13,15 +13,12 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
-#include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QSlider>
-#include <QtWidgets/QSpinBox>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QWidget>
@@ -82,10 +79,6 @@ public:
     QPushButton *pushButton_2to1_3;
     QPushButton *pushButton_2to1_2;
     QPushButton *pushButton_2to1_1;
-    QWidget *layoutWidget;
-    QHBoxLayout *horizontalLayout;
-    QSlider *horizontalSlider;
-    QSpinBox *spinBox;
     QPushButton *pushButton_1_plus_4;
     QPushButton *pushButton_2_plus_5;
     QPushButton *pushButton_1_plus_4_2_5;
@@ -116,14 +109,14 @@ public:
     QPushButton *pushButton_29_plus_32;
     QPushButton *pushButton_31_plus_34;
     QPushButton *pushButton_23_plus_26;
-    QPushButton *pushButton_28_Plus_31;
+    QPushButton *pushButton_28_plus_31;
     QPushButton *pushButton_32_plus_35;
     QPushButton *pushButton_30_plus_33;
     QPushButton *pushButton_27_plus_30;
     QPushButton *pushButton_33_plus_36;
     QPushButton *pushButton_25_plus_28;
     QPushButton *pushButton_25_plus_28_26_29;
-    QPushButton *pushButton_22_Plus_25;
+    QPushButton *pushButton_22_plus_25;
     QPushButton *pushButton_26_plus_29;
     QPushButton *pushButton_24_plus_27;
     QPushButton *pushButton_31_plus_34_32_35;
@@ -173,6 +166,32 @@ public:
     QLabel *label_gif;
     QPushButton *Bet_button5;
     QPushButton *Bet_button6;
+    QPushButton *pushButton_street_6;
+    QPushButton *pushButton_street_10;
+    QPushButton *pushButton_line_2;
+    QPushButton *pushButton_street_3;
+    QPushButton *pushButton_line_3;
+    QPushButton *pushButton_line_5;
+    QPushButton *pushButton_line_11;
+    QPushButton *pushButton_street_2;
+    QPushButton *pushButton_line_6;
+    QPushButton *pushButton_street_5;
+    QPushButton *pushButton_street_9;
+    QPushButton *pushButton_line_8;
+    QPushButton *pushButton_line_4;
+    QPushButton *pushButton_street_1;
+    QPushButton *pushButton_line_7;
+    QPushButton *pushButton_line_10;
+    QPushButton *pushButton_line_9;
+    QPushButton *pushButton_line_1;
+    QPushButton *pushButton_street_7;
+    QPushButton *pushButton_street_8;
+    QPushButton *pushButton_street_12;
+    QPushButton *pushButton_street_11;
+    QPushButton *pushButton_street_4;
+    QPushButton *pushButton_3rd_row;
+    QPushButton *pushButton_2nd_row;
+    QPushButton *pushButton_1st_row;
     QMenuBar *menuBar;
     QMenu *menuRoullet;
     QToolBar *mainToolBar;
@@ -219,7 +238,7 @@ public:
         pushButton_6->setAutoDefault(true);
         pushButton_spin = new QPushButton(centralWidget);
         pushButton_spin->setObjectName(QStringLiteral("pushButton_spin"));
-        pushButton_spin->setGeometry(QRect(365, 440, 268, 41));
+        pushButton_spin->setGeometry(QRect(365, 450, 268, 41));
         pushButton_spin->setStyleSheet(QLatin1String("\n"
 "color:white;\n"
 "border-color:white;\n"
@@ -393,7 +412,7 @@ public:
         pushButton_0->setAutoDefault(true);
         pushButton_1st = new QPushButton(centralWidget);
         pushButton_1st->setObjectName(QStringLiteral("pushButton_1st"));
-        pushButton_1st->setGeometry(QRect(99, 310, 266, 41));
+        pushButton_1st->setGeometry(QRect(99, 320, 266, 41));
         pushButton_1st->setStyleSheet(QLatin1String("color:white;\n"
 "border-color:white;\n"
 "border-width: 2px;\n"
@@ -402,7 +421,7 @@ public:
         pushButton_1st->setAutoDefault(true);
         pushButton_2nd = new QPushButton(centralWidget);
         pushButton_2nd->setObjectName(QStringLiteral("pushButton_2nd"));
-        pushButton_2nd->setGeometry(QRect(365, 310, 268, 41));
+        pushButton_2nd->setGeometry(QRect(365, 320, 268, 41));
         pushButton_2nd->setStyleSheet(QLatin1String("color:white;\n"
 "border-color:white;\n"
 "border-width: 2px;\n"
@@ -411,7 +430,7 @@ public:
         pushButton_2nd->setAutoDefault(true);
         pushButton_3rd = new QPushButton(centralWidget);
         pushButton_3rd->setObjectName(QStringLiteral("pushButton_3rd"));
-        pushButton_3rd->setGeometry(QRect(633, 310, 268, 41));
+        pushButton_3rd->setGeometry(QRect(633, 320, 268, 41));
         pushButton_3rd->setStyleSheet(QLatin1String("color:white;\n"
 "border-color:white;\n"
 "border-width: 2px;\n"
@@ -420,7 +439,7 @@ public:
         pushButton_3rd->setAutoDefault(true);
         pushButton_1_18 = new QPushButton(centralWidget);
         pushButton_1_18->setObjectName(QStringLiteral("pushButton_1_18"));
-        pushButton_1_18->setGeometry(QRect(99, 350, 133, 41));
+        pushButton_1_18->setGeometry(QRect(99, 360, 133, 41));
         pushButton_1_18->setStyleSheet(QLatin1String("color:white;\n"
 "border-color:white;\n"
 "border-width: 2px;\n"
@@ -430,7 +449,7 @@ public:
         pushButton_1_18->setAutoDefault(true);
         pushButton_even = new QPushButton(centralWidget);
         pushButton_even->setObjectName(QStringLiteral("pushButton_even"));
-        pushButton_even->setGeometry(QRect(232, 350, 133, 41));
+        pushButton_even->setGeometry(QRect(232, 360, 133, 41));
         pushButton_even->setStyleSheet(QLatin1String("color:yellow;\n"
 "border-color:white;\n"
 "border-width: 2px;\n"
@@ -439,7 +458,7 @@ public:
         pushButton_even->setAutoDefault(true);
         redButton_red = new QPushButton(centralWidget);
         redButton_red->setObjectName(QStringLiteral("redButton_red"));
-        redButton_red->setGeometry(QRect(365, 350, 134, 41));
+        redButton_red->setGeometry(QRect(365, 360, 134, 41));
         redButton_red->setStyleSheet(QLatin1String("background-color: red; \n"
 "color: white;\n"
 "border-radius: 5px;"));
@@ -447,7 +466,7 @@ public:
         pushButton_black = new QPushButton(centralWidget);
         pushButton_black->setObjectName(QStringLiteral("pushButton_black"));
         pushButton_black->setEnabled(true);
-        pushButton_black->setGeometry(QRect(499, 350, 134, 41));
+        pushButton_black->setGeometry(QRect(499, 360, 134, 41));
         pushButton_black->setAutoFillBackground(false);
         pushButton_black->setStyleSheet(QLatin1String("background-color: black; \n"
 "color: white;\n"
@@ -455,7 +474,7 @@ public:
         pushButton_black->setAutoDefault(true);
         pushButton_odd = new QPushButton(centralWidget);
         pushButton_odd->setObjectName(QStringLiteral("pushButton_odd"));
-        pushButton_odd->setGeometry(QRect(634, 350, 134, 41));
+        pushButton_odd->setGeometry(QRect(634, 360, 134, 41));
         pushButton_odd->setStyleSheet(QLatin1String("color:yellow;\n"
 "border-color:white;\n"
 "border-width: 2px;\n"
@@ -464,7 +483,7 @@ public:
         pushButton_odd->setAutoDefault(true);
         pushButton_19_36 = new QPushButton(centralWidget);
         pushButton_19_36->setObjectName(QStringLiteral("pushButton_19_36"));
-        pushButton_19_36->setGeometry(QRect(768, 350, 134, 41));
+        pushButton_19_36->setGeometry(QRect(768, 360, 134, 41));
         pushButton_19_36->setStyleSheet(QLatin1String("color:white;\n"
 "border-color:white;\n"
 "border-width: 2px;\n"
@@ -498,26 +517,6 @@ public:
 "border-style: outset;\n"
 "border-radius: 5px;"));
         pushButton_2to1_1->setAutoDefault(true);
-        layoutWidget = new QWidget(centralWidget);
-        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
-        layoutWidget->setGeometry(QRect(380, 400, 241, 31));
-        horizontalLayout = new QHBoxLayout(layoutWidget);
-        horizontalLayout->setSpacing(6);
-        horizontalLayout->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
-        horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        horizontalSlider = new QSlider(layoutWidget);
-        horizontalSlider->setObjectName(QStringLiteral("horizontalSlider"));
-        horizontalSlider->setOrientation(Qt::Horizontal);
-
-        horizontalLayout->addWidget(horizontalSlider);
-
-        spinBox = new QSpinBox(layoutWidget);
-        spinBox->setObjectName(QStringLiteral("spinBox"));
-        spinBox->setStyleSheet(QStringLiteral("background-color: white;"));
-
-        horizontalLayout->addWidget(spinBox);
-
         pushButton_1_plus_4 = new QPushButton(centralWidget);
         pushButton_1_plus_4->setObjectName(QStringLiteral("pushButton_1_plus_4"));
         pushButton_1_plus_4->setGeometry(QRect(160, 250, 8, 61));
@@ -669,11 +668,11 @@ public:
         pushButton_23_plus_26->setGeometry(QRect(630, 181, 8, 61));
         pushButton_23_plus_26->setStyleSheet(QStringLiteral(""));
         pushButton_23_plus_26->setAutoDefault(true);
-        pushButton_28_Plus_31 = new QPushButton(centralWidget);
-        pushButton_28_Plus_31->setObjectName(QStringLiteral("pushButton_28_Plus_31"));
-        pushButton_28_Plus_31->setGeometry(QRect(764, 249, 8, 61));
-        pushButton_28_Plus_31->setStyleSheet(QStringLiteral(""));
-        pushButton_28_Plus_31->setAutoDefault(true);
+        pushButton_28_plus_31 = new QPushButton(centralWidget);
+        pushButton_28_plus_31->setObjectName(QStringLiteral("pushButton_28_plus_31"));
+        pushButton_28_plus_31->setGeometry(QRect(764, 249, 8, 61));
+        pushButton_28_plus_31->setStyleSheet(QStringLiteral(""));
+        pushButton_28_plus_31->setAutoDefault(true);
         pushButton_32_plus_35 = new QPushButton(centralWidget);
         pushButton_32_plus_35->setObjectName(QStringLiteral("pushButton_32_plus_35"));
         pushButton_32_plus_35->setGeometry(QRect(831, 181, 8, 61));
@@ -704,11 +703,11 @@ public:
         pushButton_25_plus_28_26_29->setGeometry(QRect(695, 239, 12, 12));
         pushButton_25_plus_28_26_29->setStyleSheet(QStringLiteral(""));
         pushButton_25_plus_28_26_29->setAutoDefault(true);
-        pushButton_22_Plus_25 = new QPushButton(centralWidget);
-        pushButton_22_Plus_25->setObjectName(QStringLiteral("pushButton_22_Plus_25"));
-        pushButton_22_Plus_25->setGeometry(QRect(630, 248, 8, 61));
-        pushButton_22_Plus_25->setStyleSheet(QStringLiteral(""));
-        pushButton_22_Plus_25->setAutoDefault(true);
+        pushButton_22_plus_25 = new QPushButton(centralWidget);
+        pushButton_22_plus_25->setObjectName(QStringLiteral("pushButton_22_plus_25"));
+        pushButton_22_plus_25->setGeometry(QRect(630, 248, 8, 61));
+        pushButton_22_plus_25->setStyleSheet(QStringLiteral(""));
+        pushButton_22_plus_25->setAutoDefault(true);
         pushButton_26_plus_29 = new QPushButton(centralWidget);
         pushButton_26_plus_29->setObjectName(QStringLiteral("pushButton_26_plus_29"));
         pushButton_26_plus_29->setGeometry(QRect(697, 181, 8, 61));
@@ -856,7 +855,7 @@ public:
         pushButton_16_plus_17->setAutoDefault(true);
         pushButton_20_plus_21 = new QPushButton(centralWidget);
         pushButton_20_plus_21->setObjectName(QStringLiteral("pushButton_20_plus_21"));
-        pushButton_20_plus_21->setGeometry(QRect(502, 174, 61, 8));
+        pushButton_20_plus_21->setGeometry(QRect(503, 174, 61, 8));
         pushButton_20_plus_21->setStyleSheet(QStringLiteral(""));
         pushButton_20_plus_21->setAutoDefault(true);
         pushButton_23_plus_24 = new QPushButton(centralWidget);
@@ -916,7 +915,7 @@ public:
         pushButton_32_plus_33->setAutoDefault(true);
         Bet_button1 = new QPushButton(centralWidget);
         Bet_button1->setObjectName(QStringLiteral("Bet_button1"));
-        Bet_button1->setGeometry(QRect(10, 440, 41, 41));
+        Bet_button1->setGeometry(QRect(10, 450, 41, 41));
         QIcon icon;
         icon.addFile(QStringLiteral(":/imgs/Chip_5.gif"), QSize(), QIcon::Normal, QIcon::Off);
         Bet_button1->setIcon(icon);
@@ -924,7 +923,7 @@ public:
         Bet_button1->setAutoDefault(true);
         Bet_button2 = new QPushButton(centralWidget);
         Bet_button2->setObjectName(QStringLiteral("Bet_button2"));
-        Bet_button2->setGeometry(QRect(70, 440, 41, 41));
+        Bet_button2->setGeometry(QRect(70, 450, 41, 41));
         QIcon icon1;
         icon1.addFile(QStringLiteral(":/imgs/Chip_10.gif"), QSize(), QIcon::Normal, QIcon::Off);
         Bet_button2->setIcon(icon1);
@@ -932,7 +931,7 @@ public:
         Bet_button2->setAutoDefault(true);
         Bet_button3 = new QPushButton(centralWidget);
         Bet_button3->setObjectName(QStringLiteral("Bet_button3"));
-        Bet_button3->setGeometry(QRect(130, 440, 41, 41));
+        Bet_button3->setGeometry(QRect(130, 450, 41, 41));
         QIcon icon2;
         icon2.addFile(QStringLiteral(":/imgs/Chip_50.gif"), QSize(), QIcon::Normal, QIcon::Off);
         Bet_button3->setIcon(icon2);
@@ -940,7 +939,7 @@ public:
         Bet_button3->setAutoDefault(true);
         Bet_button4 = new QPushButton(centralWidget);
         Bet_button4->setObjectName(QStringLiteral("Bet_button4"));
-        Bet_button4->setGeometry(QRect(190, 440, 41, 41));
+        Bet_button4->setGeometry(QRect(190, 450, 41, 41));
         QIcon icon3;
         icon3.addFile(QStringLiteral(":/imgs/Chip_100.gif"), QSize(), QIcon::Normal, QIcon::Off);
         Bet_button4->setIcon(icon3);
@@ -948,16 +947,16 @@ public:
         Bet_button4->setAutoDefault(true);
         Clear_Button = new QPushButton(centralWidget);
         Clear_Button->setObjectName(QStringLiteral("Clear_Button"));
-        Clear_Button->setGeometry(QRect(710, 450, 75, 23));
+        Clear_Button->setGeometry(QRect(710, 460, 75, 23));
         Clear_Button->setAutoDefault(true);
         label_gif = new QLabel(centralWidget);
         label_gif->setObjectName(QStringLiteral("label_gif"));
-        label_gif->setGeometry(QRect(445, 500, 111, 91));
+        label_gif->setGeometry(QRect(445, 510, 111, 91));
         label_gif->setMidLineWidth(0);
         label_gif->setPixmap(QPixmap(QString::fromUtf8(":/imgs/roulette3.gif")));
         Bet_button5 = new QPushButton(centralWidget);
         Bet_button5->setObjectName(QStringLiteral("Bet_button5"));
-        Bet_button5->setGeometry(QRect(250, 440, 41, 41));
+        Bet_button5->setGeometry(QRect(250, 450, 41, 41));
         QIcon icon4;
         icon4.addFile(QStringLiteral(":/imgs/Chip_500.gif"), QSize(), QIcon::Normal, QIcon::Off);
         Bet_button5->setIcon(icon4);
@@ -965,12 +964,142 @@ public:
         Bet_button5->setAutoDefault(true);
         Bet_button6 = new QPushButton(centralWidget);
         Bet_button6->setObjectName(QStringLiteral("Bet_button6"));
-        Bet_button6->setGeometry(QRect(310, 440, 41, 41));
+        Bet_button6->setGeometry(QRect(310, 450, 41, 41));
         QIcon icon5;
         icon5.addFile(QStringLiteral(":/imgs/Chip_1000.gif"), QSize(), QIcon::Normal, QIcon::Off);
         Bet_button6->setIcon(icon5);
         Bet_button6->setIconSize(QSize(40, 40));
         Bet_button6->setAutoDefault(true);
+        pushButton_street_6 = new QPushButton(centralWidget);
+        pushButton_street_6->setObjectName(QStringLiteral("pushButton_street_6"));
+        pushButton_street_6->setGeometry(QRect(434, 309, 61, 8));
+        pushButton_street_6->setStyleSheet(QStringLiteral(""));
+        pushButton_street_6->setAutoDefault(true);
+        pushButton_street_10 = new QPushButton(centralWidget);
+        pushButton_street_10->setObjectName(QStringLiteral("pushButton_street_10"));
+        pushButton_street_10->setGeometry(QRect(703, 309, 61, 8));
+        pushButton_street_10->setStyleSheet(QStringLiteral(""));
+        pushButton_street_10->setAutoDefault(true);
+        pushButton_line_2 = new QPushButton(centralWidget);
+        pushButton_line_2->setObjectName(QStringLiteral("pushButton_line_2"));
+        pushButton_line_2->setGeometry(QRect(224, 308, 12, 12));
+        pushButton_line_2->setStyleSheet(QStringLiteral(""));
+        pushButton_line_2->setAutoDefault(true);
+        pushButton_street_3 = new QPushButton(centralWidget);
+        pushButton_street_3->setObjectName(QStringLiteral("pushButton_street_3"));
+        pushButton_street_3->setGeometry(QRect(233, 310, 61, 8));
+        pushButton_street_3->setStyleSheet(QStringLiteral(""));
+        pushButton_street_3->setAutoDefault(true);
+        pushButton_line_3 = new QPushButton(centralWidget);
+        pushButton_line_3->setObjectName(QStringLiteral("pushButton_line_3"));
+        pushButton_line_3->setGeometry(QRect(291, 308, 12, 12));
+        pushButton_line_3->setStyleSheet(QStringLiteral(""));
+        pushButton_line_3->setAutoDefault(true);
+        pushButton_line_5 = new QPushButton(centralWidget);
+        pushButton_line_5->setObjectName(QStringLiteral("pushButton_line_5"));
+        pushButton_line_5->setGeometry(QRect(425, 307, 12, 12));
+        pushButton_line_5->setStyleSheet(QStringLiteral(""));
+        pushButton_line_5->setAutoDefault(true);
+        pushButton_line_11 = new QPushButton(centralWidget);
+        pushButton_line_11->setObjectName(QStringLiteral("pushButton_line_11"));
+        pushButton_line_11->setGeometry(QRect(828, 307, 12, 12));
+        pushButton_line_11->setStyleSheet(QStringLiteral(""));
+        pushButton_line_11->setAutoDefault(true);
+        pushButton_street_2 = new QPushButton(centralWidget);
+        pushButton_street_2->setObjectName(QStringLiteral("pushButton_street_2"));
+        pushButton_street_2->setGeometry(QRect(166, 311, 61, 8));
+        pushButton_street_2->setStyleSheet(QStringLiteral(""));
+        pushButton_street_2->setAutoDefault(true);
+        pushButton_line_6 = new QPushButton(centralWidget);
+        pushButton_line_6->setObjectName(QStringLiteral("pushButton_line_6"));
+        pushButton_line_6->setGeometry(QRect(492, 307, 12, 12));
+        pushButton_line_6->setStyleSheet(QStringLiteral(""));
+        pushButton_line_6->setAutoDefault(true);
+        pushButton_street_5 = new QPushButton(centralWidget);
+        pushButton_street_5->setObjectName(QStringLiteral("pushButton_street_5"));
+        pushButton_street_5->setGeometry(QRect(367, 309, 61, 8));
+        pushButton_street_5->setStyleSheet(QStringLiteral(""));
+        pushButton_street_5->setAutoDefault(true);
+        pushButton_street_9 = new QPushButton(centralWidget);
+        pushButton_street_9->setObjectName(QStringLiteral("pushButton_street_9"));
+        pushButton_street_9->setGeometry(QRect(636, 309, 61, 8));
+        pushButton_street_9->setStyleSheet(QStringLiteral(""));
+        pushButton_street_9->setAutoDefault(true);
+        pushButton_line_8 = new QPushButton(centralWidget);
+        pushButton_line_8->setObjectName(QStringLiteral("pushButton_line_8"));
+        pushButton_line_8->setGeometry(QRect(627, 307, 12, 12));
+        pushButton_line_8->setStyleSheet(QStringLiteral(""));
+        pushButton_line_8->setAutoDefault(true);
+        pushButton_line_4 = new QPushButton(centralWidget);
+        pushButton_line_4->setObjectName(QStringLiteral("pushButton_line_4"));
+        pushButton_line_4->setGeometry(QRect(358, 308, 12, 12));
+        pushButton_line_4->setStyleSheet(QStringLiteral(""));
+        pushButton_line_4->setAutoDefault(true);
+        pushButton_street_1 = new QPushButton(centralWidget);
+        pushButton_street_1->setObjectName(QStringLiteral("pushButton_street_1"));
+        pushButton_street_1->setGeometry(QRect(99, 311, 61, 8));
+        pushButton_street_1->setStyleSheet(QStringLiteral(""));
+        pushButton_street_1->setAutoDefault(true);
+        pushButton_line_7 = new QPushButton(centralWidget);
+        pushButton_line_7->setObjectName(QStringLiteral("pushButton_line_7"));
+        pushButton_line_7->setGeometry(QRect(560, 307, 12, 12));
+        pushButton_line_7->setStyleSheet(QStringLiteral(""));
+        pushButton_line_7->setAutoDefault(true);
+        pushButton_line_10 = new QPushButton(centralWidget);
+        pushButton_line_10->setObjectName(QStringLiteral("pushButton_line_10"));
+        pushButton_line_10->setGeometry(QRect(761, 307, 12, 12));
+        pushButton_line_10->setStyleSheet(QStringLiteral(""));
+        pushButton_line_10->setAutoDefault(true);
+        pushButton_line_9 = new QPushButton(centralWidget);
+        pushButton_line_9->setObjectName(QStringLiteral("pushButton_line_9"));
+        pushButton_line_9->setGeometry(QRect(694, 307, 12, 12));
+        pushButton_line_9->setStyleSheet(QStringLiteral(""));
+        pushButton_line_9->setAutoDefault(true);
+        pushButton_line_1 = new QPushButton(centralWidget);
+        pushButton_line_1->setObjectName(QStringLiteral("pushButton_line_1"));
+        pushButton_line_1->setGeometry(QRect(157, 308, 12, 12));
+        pushButton_line_1->setStyleSheet(QStringLiteral(""));
+        pushButton_line_1->setAutoDefault(true);
+        pushButton_street_7 = new QPushButton(centralWidget);
+        pushButton_street_7->setObjectName(QStringLiteral("pushButton_street_7"));
+        pushButton_street_7->setGeometry(QRect(502, 309, 61, 8));
+        pushButton_street_7->setStyleSheet(QStringLiteral(""));
+        pushButton_street_7->setAutoDefault(true);
+        pushButton_street_8 = new QPushButton(centralWidget);
+        pushButton_street_8->setObjectName(QStringLiteral("pushButton_street_8"));
+        pushButton_street_8->setGeometry(QRect(569, 309, 61, 8));
+        pushButton_street_8->setStyleSheet(QStringLiteral(""));
+        pushButton_street_8->setAutoDefault(true);
+        pushButton_street_12 = new QPushButton(centralWidget);
+        pushButton_street_12->setObjectName(QStringLiteral("pushButton_street_12"));
+        pushButton_street_12->setGeometry(QRect(837, 309, 61, 8));
+        pushButton_street_12->setStyleSheet(QStringLiteral(""));
+        pushButton_street_12->setAutoDefault(true);
+        pushButton_street_11 = new QPushButton(centralWidget);
+        pushButton_street_11->setObjectName(QStringLiteral("pushButton_street_11"));
+        pushButton_street_11->setGeometry(QRect(770, 309, 61, 8));
+        pushButton_street_11->setStyleSheet(QStringLiteral(""));
+        pushButton_street_11->setAutoDefault(true);
+        pushButton_street_4 = new QPushButton(centralWidget);
+        pushButton_street_4->setObjectName(QStringLiteral("pushButton_street_4"));
+        pushButton_street_4->setGeometry(QRect(300, 310, 61, 8));
+        pushButton_street_4->setStyleSheet(QStringLiteral(""));
+        pushButton_street_4->setAutoDefault(true);
+        pushButton_3rd_row = new QPushButton(centralWidget);
+        pushButton_3rd_row->setObjectName(QStringLiteral("pushButton_3rd_row"));
+        pushButton_3rd_row->setGeometry(QRect(950, 110, 8, 61));
+        pushButton_3rd_row->setStyleSheet(QStringLiteral(""));
+        pushButton_3rd_row->setAutoDefault(true);
+        pushButton_2nd_row = new QPushButton(centralWidget);
+        pushButton_2nd_row->setObjectName(QStringLiteral("pushButton_2nd_row"));
+        pushButton_2nd_row->setGeometry(QRect(950, 180, 8, 61));
+        pushButton_2nd_row->setStyleSheet(QStringLiteral(""));
+        pushButton_2nd_row->setAutoDefault(true);
+        pushButton_1st_row = new QPushButton(centralWidget);
+        pushButton_1st_row->setObjectName(QStringLiteral("pushButton_1st_row"));
+        pushButton_1st_row->setGeometry(QRect(950, 250, 8, 61));
+        pushButton_1st_row->setStyleSheet(QStringLiteral(""));
+        pushButton_1st_row->setAutoDefault(true);
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -1075,14 +1204,14 @@ public:
         pushButton_29_plus_32->setText(QString());
         pushButton_31_plus_34->setText(QString());
         pushButton_23_plus_26->setText(QString());
-        pushButton_28_Plus_31->setText(QString());
+        pushButton_28_plus_31->setText(QString());
         pushButton_32_plus_35->setText(QString());
         pushButton_30_plus_33->setText(QString());
         pushButton_27_plus_30->setText(QString());
         pushButton_33_plus_36->setText(QString());
         pushButton_25_plus_28->setText(QString());
         pushButton_25_plus_28_26_29->setText(QString());
-        pushButton_22_Plus_25->setText(QString());
+        pushButton_22_plus_25->setText(QString());
         pushButton_26_plus_29->setText(QString());
         pushButton_24_plus_27->setText(QString());
         pushButton_31_plus_34_32_35->setText(QString());
@@ -1132,6 +1261,32 @@ public:
         label_gif->setText(QString());
         Bet_button5->setText(QString());
         Bet_button6->setText(QString());
+        pushButton_street_6->setText(QString());
+        pushButton_street_10->setText(QString());
+        pushButton_line_2->setText(QString());
+        pushButton_street_3->setText(QString());
+        pushButton_line_3->setText(QString());
+        pushButton_line_5->setText(QString());
+        pushButton_line_11->setText(QString());
+        pushButton_street_2->setText(QString());
+        pushButton_line_6->setText(QString());
+        pushButton_street_5->setText(QString());
+        pushButton_street_9->setText(QString());
+        pushButton_line_8->setText(QString());
+        pushButton_line_4->setText(QString());
+        pushButton_street_1->setText(QString());
+        pushButton_line_7->setText(QString());
+        pushButton_line_10->setText(QString());
+        pushButton_line_9->setText(QString());
+        pushButton_line_1->setText(QString());
+        pushButton_street_7->setText(QString());
+        pushButton_street_8->setText(QString());
+        pushButton_street_12->setText(QString());
+        pushButton_street_11->setText(QString());
+        pushButton_street_4->setText(QString());
+        pushButton_3rd_row->setText(QString());
+        pushButton_2nd_row->setText(QString());
+        pushButton_1st_row->setText(QString());
         menuRoullet->setTitle(QApplication::translate("MainWindow", "Roullet", 0));
     } // retranslateUi
 

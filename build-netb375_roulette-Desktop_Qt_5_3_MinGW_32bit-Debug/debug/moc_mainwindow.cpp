@@ -236,9 +236,9 @@ QT_MOC_LITERAL(134, 4024, 22)
     "on_pushButton_13_plus_16_clicked\0"
     "on_pushButton_16_plus_19_clicked\0"
     "on_pushButton_19_plus_22_clicked\0"
-    "on_pushButton_22_Plus_25_clicked\0"
+    "on_pushButton_22_plus_25_clicked\0"
     "on_pushButton_25_plus_28_clicked\0"
-    "on_pushButton_28_Plus_31_clicked\0"
+    "on_pushButton_28_plus_31_clicked\0"
     "on_pushButton_31_plus_34_clicked\0"
     "on_pushButton_2_plus_5_clicked\0"
     "on_pushButton_5_plus_8_clicked\0"
@@ -660,9 +660,9 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 72: _t->on_pushButton_13_plus_16_clicked(); break;
         case 73: _t->on_pushButton_16_plus_19_clicked(); break;
         case 74: _t->on_pushButton_19_plus_22_clicked(); break;
-        case 75: _t->on_pushButton_22_Plus_25_clicked(); break;
+        case 75: _t->on_pushButton_22_plus_25_clicked(); break;
         case 76: _t->on_pushButton_25_plus_28_clicked(); break;
-        case 77: _t->on_pushButton_28_Plus_31_clicked(); break;
+        case 77: _t->on_pushButton_28_plus_31_clicked(); break;
         case 78: _t->on_pushButton_31_plus_34_clicked(); break;
         case 79: _t->on_pushButton_2_plus_5_clicked(); break;
         case 80: _t->on_pushButton_5_plus_8_clicked(); break;

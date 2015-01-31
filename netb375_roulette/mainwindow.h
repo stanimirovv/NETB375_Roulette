@@ -18,6 +18,7 @@ public:
     void bet_handler(int x,bool again);
     void single_button_bet(int x);
     void multi_button_bet(int x1, int x2,bool more);
+    void multi_bet_animation(int d,QPushButton* currentbutton,int xg,int yg,int width,int lenght,bool add);
 
 private slots:
     void on_pushButton_1_clicked();
@@ -170,11 +171,11 @@ private slots:
 
     void on_pushButton_19_plus_22_clicked();
 
-    void on_pushButton_22_Plus_25_clicked();
+    void on_pushButton_22_plus_25_clicked();
 
     void on_pushButton_25_plus_28_clicked();
 
-    void on_pushButton_28_Plus_31_clicked();
+    void on_pushButton_28_plus_31_clicked();
 
     void on_pushButton_31_plus_34_clicked();
 
@@ -285,6 +286,8 @@ private slots:
     void on_Bet_button5_clicked();
 
     void on_Bet_button6_clicked();
+
+    void on_pushButton_street_1_clicked();
 
 private:
     Ui::MainWindow *ui;
