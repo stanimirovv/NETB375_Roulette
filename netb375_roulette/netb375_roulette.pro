@@ -15,14 +15,20 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     roulette_logic.cpp \
-    game_loader.cpp
+    game_loader.cpp \
+    startwindow.cpp \
+    setprofile.cpp
 
 
 HEADERS  += mainwindow.h \
     roulette_logic.h \
-    game_loader.h
+    game_loader.h \
+    startwindow.h \
+    setprofile.h
 
 FORMS    += mainwindow.ui \
+    startwindow.ui \
+    setprofile.ui
 
 RESOURCES += \
     res.qrc
