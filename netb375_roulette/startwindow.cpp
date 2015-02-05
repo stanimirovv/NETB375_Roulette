@@ -7,6 +7,7 @@ StartWindow::StartWindow(QWidget *parent) :
     ui(new Ui::StartWindow)
 {
     ui->setupUi(this);
+    this->setWindowTitle("Roulette");
     this->move(800, 250);//window positioning
     setStyleSheet("StartWindow {background-color:green};");
 
