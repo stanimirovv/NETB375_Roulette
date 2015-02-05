@@ -17,18 +17,21 @@ SOURCES += main.cpp\
     roulette_logic.cpp \
     game_loader.cpp \
     startwindow.cpp \
-    setprofile.cpp
+    setprofile.cpp \
+    loadgame.cpp
 
 
 HEADERS  += mainwindow.h \
     roulette_logic.h \
     game_loader.h \
     startwindow.h \
-    setprofile.h
+    setprofile.h \
+    loadgame.h
 
 FORMS    += mainwindow.ui \
     startwindow.ui \
-    setprofile.ui
+    setprofile.ui \
+    loadgame.ui
 
 RESOURCES += \
     res.qrc
