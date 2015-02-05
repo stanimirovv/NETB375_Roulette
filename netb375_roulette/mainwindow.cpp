@@ -53,7 +53,8 @@ MainWindow::MainWindow(QWidget *parent) :
     array_to_buttons[34] = ui->pushButton_34;
     array_to_buttons[35] = ui->pushButton_35;
     array_to_buttons[36] = ui->pushButton_36;
-
+    
+    this->move(500, 150);//window positioning
     setStyleSheet("MainWindow {background-color:green};"); //setting background color only to MainWindow
     QPixmap pixmap(":/imgs/roulette3.gif");
     ui->label_gif->setPixmap(pixmap); //setting an image for the spin button
