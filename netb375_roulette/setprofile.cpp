@@ -8,6 +8,7 @@ SetProfile::SetProfile(QWidget *parent) :
     ui(new Ui::SetProfile)
 {
     ui->setupUi(this);
+    this->move(800, 250);//window positioning
     setStyleSheet("SetProfile {background-color:green};");
 }
 
