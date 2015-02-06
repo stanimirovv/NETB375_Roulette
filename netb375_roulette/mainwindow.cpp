@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include <QMessageBox>
 #include <QMovie>
+#include <QThread>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -58,18 +59,12 @@ MainWindow::MainWindow(QWidget *parent) :
     setStyleSheet("MainWindow {background-color:green};"); //setting background color only to MainWindow
     QPixmap pixmap(":/imgs/roulette3.gif");
     ui->label_gif->setPixmap(pixmap); //setting an image for the spin button
-
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
 }
-/* should remove spinner and slider
- * should add a second window
- * should add a resorse file and pictures for the chips
- * should add animation
- * should add Zlatin and Stoyan's work to this */
 
 /* definisions for all the button functions
  * if a button is clicked it becomes flat
@@ -1972,7 +1967,6 @@ void MainWindow::on_pushButton_spin_clicked()
     ui->label_gif->setMovie(movie);
     movie->setSpeed(130);
     movie->start();
-    
     n=rand()%37;
     n=1;
     check_num(1);
