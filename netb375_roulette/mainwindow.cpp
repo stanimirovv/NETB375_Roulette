@@ -10,10 +10,13 @@ MainWindow::MainWindow(QWidget *parent) :
 {
 /* ZLATIN CODE DONT TOUCH IT OR I'LL FIND YOU AND RAPE YOUR PILLOW */
     this->rl.SetSaveLoadPath("/home/bc/projects/qt_parser.txt");
-    this->rl.loadGame("Zlatin");
-
+    //this->rl.loadGame("Zlatin");
+    QTimer *timer = new QTimer(this);
+    connect(timer, SIGNAL(timeout()), this, SLOT(refreshShowcase()));
+    timer->start(1000);
 
 /* ZLATIN CODE */
+
 
     ui->setupUi(this);
 
@@ -102,9 +105,9 @@ bool MainWindow::check_num(int n)
 
 void MainWindow::single_button_bet(int x)
 {
-    this->rl.createBet(x, this->current_button_value, 37);
     if(array_to_buttons[x]->isFlat())
     {
+
         QString s = QString::number(x);
         array_to_buttons[x]->setText(s);
         array_to_buttons[x]->setIcon(QIcon());
@@ -112,6 +115,7 @@ void MainWindow::single_button_bet(int x)
     }
     else
     {
+        this->rl.createBet(x, this->current_button_value, 37, true);
         array_to_buttons[x]->setText("");
         array_to_buttons[x]->setIcon(ButtonIcon);
         array_to_buttons[x]->setIconSize(QSize(40,40));
@@ -366,6 +370,24 @@ void MainWindow::on_pushButton_1_18_clicked()
     }
     else
     {
+        this->rl.createBet(1, this->current_button_value, 1, true );
+        this->rl.createBet(2, this->current_button_value, 1, false );
+        this->rl.createBet(3, this->current_button_value, 1, false );
+        this->rl.createBet(4, this->current_button_value, 1, false );
+        this->rl.createBet(5, this->current_button_value, 1, false );
+        this->rl.createBet(6, this->current_button_value, 1, false );
+        this->rl.createBet(7, this->current_button_value, 1, false );
+        this->rl.createBet(8, this->current_button_value, 1, false );
+        this->rl.createBet(9, this->current_button_value, 1, false );
+        this->rl.createBet(10, this->current_button_value, 1, false );
+        this->rl.createBet(11, this->current_button_value, 1, false );
+        this->rl.createBet(12, this->current_button_value, 1, false );
+        this->rl.createBet(13, this->current_button_value, 1, false );
+        this->rl.createBet(14, this->current_button_value, 1, false );
+        this->rl.createBet(15, this->current_button_value, 1, false );
+        this->rl.createBet(16, this->current_button_value, 1, false );
+        this->rl.createBet(17, this->current_button_value, 1, false );
+        this->rl.createBet(18, this->current_button_value, 1, false );
         ui->pushButton_1_18->setText("");
         ui->pushButton_1_18->setIcon(ButtonIcon);
         ui->pushButton_1_18->setIconSize(QSize(40,40));
@@ -377,12 +399,31 @@ void MainWindow::on_pushButton_19_36_clicked()
 {
     if(ui->pushButton_19_36->isFlat())
     {
+
         ui->pushButton_19_36->setText("19-36");
         ui->pushButton_19_36->setIcon(QIcon());
         ui->pushButton_19_36->setFlat(false);
     }
     else
     {
+        this->rl.createBet(19, this->current_button_value, 1, true );
+        this->rl.createBet(20, this->current_button_value, 1, false );
+        this->rl.createBet(21, this->current_button_value, 1, false );
+        this->rl.createBet(22, this->current_button_value, 1, false );
+        this->rl.createBet(23, this->current_button_value, 1, false );
+        this->rl.createBet(24, this->current_button_value, 1, false );
+        this->rl.createBet(25, this->current_button_value, 1, false );
+        this->rl.createBet(26, this->current_button_value, 1, false );
+        this->rl.createBet(27, this->current_button_value, 1, false );
+        this->rl.createBet(28, this->current_button_value, 1, false );
+        this->rl.createBet(29, this->current_button_value, 1, false );
+        this->rl.createBet(30, this->current_button_value, 1, false );
+        this->rl.createBet(31, this->current_button_value, 1, false );
+        this->rl.createBet(32, this->current_button_value, 1, false );
+        this->rl.createBet(33, this->current_button_value, 1, false );
+        this->rl.createBet(34, this->current_button_value, 1, false );
+        this->rl.createBet(35, this->current_button_value, 1, false );
+        this->rl.createBet(36, this->current_button_value, 1, false );
         ui->pushButton_19_36->setText("");
         ui->pushButton_19_36->setIcon(ButtonIcon);
         ui->pushButton_19_36->setIconSize(QSize(40,40));
@@ -400,6 +441,18 @@ void MainWindow::on_pushButton_1st_clicked()
     }
     else
     {
+        this->rl.createBet(1, this->current_button_value, 2, true );
+        this->rl.createBet(2, this->current_button_value, 2, false );
+        this->rl.createBet(3, this->current_button_value, 2, false );
+        this->rl.createBet(4, this->current_button_value, 2, false );
+        this->rl.createBet(5, this->current_button_value, 2, false );
+        this->rl.createBet(6, this->current_button_value, 2, false );
+        this->rl.createBet(7, this->current_button_value, 2, false );
+        this->rl.createBet(8, this->current_button_value, 2, false );
+        this->rl.createBet(9, this->current_button_value, 2, false );
+        this->rl.createBet(10, this->current_button_value, 2, false );
+        this->rl.createBet(11, this->current_button_value, 2, false );
+         this->rl.createBet(12, this->current_button_value, 2, false );
         ui->pushButton_1st->setText("");
         ui->pushButton_1st->setIcon(ButtonIcon);
         ui->pushButton_1st->setIconSize(QSize(40,40));
@@ -416,6 +469,18 @@ void MainWindow::on_pushButton_2nd_clicked()
     }
     else
     {
+        this->rl.createBet(13, this->current_button_value, 2, true );
+        this->rl.createBet(14, this->current_button_value, 2, false );
+        this->rl.createBet(15, this->current_button_value, 2, false );
+        this->rl.createBet(16, this->current_button_value, 2, false );
+        this->rl.createBet(17, this->current_button_value, 2, false );
+        this->rl.createBet(18, this->current_button_value, 2, false );
+        this->rl.createBet(19, this->current_button_value, 2, false );
+        this->rl.createBet(20, this->current_button_value, 2, false );
+        this->rl.createBet(21, this->current_button_value, 2, false );
+        this->rl.createBet(22, this->current_button_value, 2, false );
+        this->rl.createBet(23, this->current_button_value, 2, false );
+        this->rl.createBet(24, this->current_button_value, 2, false );
         ui->pushButton_2nd->setText("");
         ui->pushButton_2nd->setIcon(ButtonIcon);
         ui->pushButton_2nd->setIconSize(QSize(40,40));
@@ -433,6 +498,18 @@ void MainWindow::on_pushButton_3rd_clicked()
     }
     else
     {
+        this->rl.createBet(25, this->current_button_value, 2, false );
+        this->rl.createBet(26, this->current_button_value, 2, false );
+        this->rl.createBet(27, this->current_button_value, 2, false );
+        this->rl.createBet(28, this->current_button_value, 2, false );
+        this->rl.createBet(29, this->current_button_value, 2, false );
+        this->rl.createBet(30, this->current_button_value, 2, false );
+        this->rl.createBet(31, this->current_button_value, 2, false );
+        this->rl.createBet(32, this->current_button_value, 2, false );
+        this->rl.createBet(33, this->current_button_value, 2, false );
+        this->rl.createBet(34, this->current_button_value, 2, false );
+        this->rl.createBet(35, this->current_button_value, 2, false );
+        this->rl.createBet(36, this->current_button_value, 2, false );
         ui->pushButton_3rd->setText("");
         ui->pushButton_3rd->setIcon(ButtonIcon);
         ui->pushButton_3rd->setIconSize(QSize(40,40));
@@ -1657,12 +1734,26 @@ void MainWindow::on_Clear_Button_clicked()
 
 void MainWindow::on_pushButton_spin_clicked()
 {
-    QMovie *movie = new QMovie(":/imgs/roulette3.gif");
-    ui->label_gif->setMovie(movie);
-    movie->setSpeed(130);
-    movie->start();
+    this->spinner = new QMovie(":/imgs/roulette3.gif");
+    ui->label_gif->setMovie(this->spinner);
+    this->spinner->setSpeed(130);
+    this->spinner->start();
+    QTimer::singleShot(2000, this, SLOT(slotStopMovie()));
+
     n=rand()%37;
     check_num(1);
+}
+
+
+void MainWindow::slotStopMovie()
+{
+    this->spinner->stop();
+}
+
+void MainWindow::refreshShowcase()
+{
+    ui->nameShowcase->setText(this->rl.getPlayer().name);
+    ui->creditsShowcase->setText(QString::number(this->rl.getPlayer().current_money_cents));
 }
 
 void MainWindow::on_pushButton_street_1_clicked()

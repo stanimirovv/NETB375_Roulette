@@ -21,6 +21,7 @@ private:
     QVector<bet> round_bets;
     GameLoader game_loader;
     player person;
+
 public:
     RouletteLogic();
     RouletteLogic(QString save_file_path);
@@ -28,10 +29,13 @@ public:
     int SetSaveLoadPath(QString save_file_path);
     int getRandomNumber();
 
-    int createBet(int symbol, int bet_amount_cents, int multiplyer);
+    int createBet(int symbol, int bet_amount_cents, int multiplyer, bool is_genuine_bet = false);
     int finishRound();
     int saveGame();
     int loadGame(QString player_name);
+
+    void setPlayer(player new_player);
+    player getPlayer();
 };
 
 #endif // ROULETTE_LOGIC_H

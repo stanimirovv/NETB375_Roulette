@@ -21,5 +21,10 @@ SetProfile::~SetProfile()
 void SetProfile::on_pushButton_play_clicked()
 {
     mwindow = new MainWindow(this); //creating a MainWindow obj->the board
+    player new_player;
+    new_player.name = ui->accountName->text();
+    new_player.current_money_cents = ui->accountMoney->text().toInt();
+    mwindow->rl.setPlayer(new_player);
+    qDebug() << "Account money:  "  << ui->accountMoney->text() << "  Account name: " << ui->accountName->text() << endl;
     mwindow->show();
 }

@@ -28,8 +28,9 @@ int RouletteLogic::getRandomNumber()
     return 14;
 }
 
-int RouletteLogic::createBet(int symbol, int bet_amount_cents, int multiplyer)
+int RouletteLogic::createBet(int symbol, int bet_amount_cents, int multiplyer, bool is_genuine_bet)
 {
+    qDebug() << "Printing the is_genuine_bet variable:" << is_genuine_bet << endl;
     if(bet_amount_cents <= 0 || multiplyer <= 0)
     {
         qDebug() << "There is an issue with the passed parameter" << endl;
@@ -41,6 +42,10 @@ int RouletteLogic::createBet(int symbol, int bet_amount_cents, int multiplyer)
         return 0;
     }
 
+    if(is_genuine_bet)
+    {
+        this->person.current_money_cents -= bet_amount_cents;
+    }
     bet new_bet;
     new_bet.bet_amount_cents = bet_amount_cents;
     new_bet.multiplyer = multiplyer;
@@ -66,6 +71,7 @@ int RouletteLogic::finishRound()
         this->round_bets.pop_front();
     }
     qDebug() << "Money after end round for player: " << this->person.current_money_cents << endl;
+    this->saveGame();
     return 0;
 }
 
@@ -79,4 +85,14 @@ int RouletteLogic::loadGame(QString player_name)
     this->person.name = player_name;
     this->person.current_money_cents = this->game_loader.getMoneyForAccount(player_name);
     return 0;
+}
+
+void RouletteLogic::setPlayer(player new_player)
+{
+    this->person = new_player;
+}
+
+player RouletteLogic::getPlayer()
+{
+    return this->person;
 }

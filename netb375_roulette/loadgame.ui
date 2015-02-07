@@ -17,7 +17,7 @@
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>160</y>
+     <y>150</y>
      <width>99</width>
      <height>27</height>
     </rect>
@@ -26,31 +26,15 @@
     <string>Load</string>
    </property>
   </widget>
-  <widget class="QComboBox" name="comboBox">
+  <widget class="QLineEdit" name="loadUser">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>80</y>
-     <width>241</width>
-     <height>31</height>
+     <x>50</x>
+     <y>90</y>
+     <width>301</width>
+     <height>33</height>
     </rect>
    </property>
-   <property name="editable">
-    <bool>false</bool>
-   </property>
-   <property name="frame">
-    <bool>true</bool>
-   </property>
-   <item>
-    <property name="text">
-     <string>Test Profile1</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>Test Profile2</string>
-    </property>
-   </item>
   </widget>
  </widget>
  <resources/>
