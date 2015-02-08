@@ -27,7 +27,7 @@ public:
     void single_button_bet(int x);
     void multi_button_bet(int x1, int x2,bool more);
     void multi_bet_animation(int d,QPushButton* currentbutton,int xg,int yg,int width,int lenght,bool add);
-    bool check_num(int n);
+    bool check_num();
     RouletteLogic rl;
     void clear_bets_gui();
 

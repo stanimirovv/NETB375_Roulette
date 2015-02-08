@@ -72,10 +72,8 @@ MainWindow::~MainWindow()
  * (further gonna add chips on the bet buttons so when clicked and after that click on a number it will display the chip and the reverse)
  * (need to add funtions for bets,colors and clear)*/
 
-int n;// random generated number
-
 QPushButton *currentbutton;
-bool MainWindow::check_num(int n)
+bool MainWindow::check_num()
 {
     int symbol =   this->rl.finishRound();
     QString current_symbol;
@@ -89,21 +87,11 @@ bool MainWindow::check_num(int n)
 
 void MainWindow::single_button_bet(int x)
 {
-    if(array_to_buttons[x]->isFlat())
-    {
-        QString s = QString::number(x);
-        array_to_buttons[x]->setText(s);
-        array_to_buttons[x]->setIcon(QIcon());
-        array_to_buttons[x]->setFlat(false);
-    }
-    else
-    {
-        this->rl.createBet(x, this->current_button_value, 37, true);
-        array_to_buttons[x]->setText("");
-        array_to_buttons[x]->setIcon(ButtonIcon);
-        array_to_buttons[x]->setIconSize(QSize(40,40));
-        array_to_buttons[x]->setFlat(true);
-    }
+    this->rl.createBet(x, this->current_button_value, 37, true);
+    array_to_buttons[x]->setText("");
+    array_to_buttons[x]->setIcon(ButtonIcon);
+    array_to_buttons[x]->setIconSize(QSize(40,40));
+    array_to_buttons[x]->setFlat(true);
 }
 
 void MainWindow::multi_bet_animation(int d,QPushButton* currentbutton,int xg,int yg,int width,int lenght,bool add)
@@ -1841,10 +1829,9 @@ void MainWindow::on_pushButton_spin_clicked()
     ui->label_gif->setMovie(this->spinner);
     this->spinner->setSpeed(130);
     this->spinner->start();
-    QTimer::singleShot(2000, this, SLOT(slotStopMovie()));
+    QTimer::singleShot(2500, this, SLOT(slotStopMovie()));
 
-    n=rand()%37;
-    this->check_num(1);
+    this->check_num();
     this->clear_bets_gui();
 }
 
