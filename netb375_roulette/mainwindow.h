@@ -29,6 +29,7 @@ public:
     void multi_bet_animation(int d,QPushButton* currentbutton,int xg,int yg,int width,int lenght,bool add);
     bool check_num(int n);
     RouletteLogic rl;
+    void clear_bets_gui();
 
 private slots:
     void refreshShowcase();
@@ -350,6 +351,8 @@ private slots:
     void on_pushButton_2nd_row_clicked();
 
     void on_pushButton_3rd_row_clicked();
+
+    void on_Clear_Button_pressed();
 
 private:
     Ui::MainWindow *ui;

@@ -8,15 +8,10 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
-/* ZLATIN CODE DONT TOUCH IT OR I'LL FIND YOU AND RAPE YOUR PILLOW */
     this->rl.SetSaveLoadPath("/home/bc/projects/qt_parser.txt");
-    //this->rl.loadGame("Zlatin");
     QTimer *timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(refreshShowcase()));
     timer->start(1000);
-
-/* ZLATIN CODE */
-
 
     ui->setupUi(this);
 
@@ -82,23 +77,12 @@ int n;// random generated number
 QPushButton *currentbutton;
 bool MainWindow::check_num(int n)
 {
-    this->rl.finishRound();
-    if(n!=0)                                                 // TRQBVA DA SE PROMENI! INACHE VINAGI SE PECHELI!
-    {
-        QString str;
-        str.setNum(n);
-        QMessageBox message;
-        message.setText("you win the random number is "+str);
-        message.exec();
-    }
-    else
-    {
-        QString str;
-        str.setNum(n);
-        QMessageBox message1;
-        message1.setText("you lose the random number is "+str);
-        message1.exec();
-    }
+    int symbol =   this->rl.finishRound();
+    QString current_symbol;
+    current_symbol.setNum(symbol);
+    QMessageBox message1;
+    message1.setText("The number is: "+current_symbol);
+    message1.exec();
     return false;
 }
 
@@ -545,7 +529,7 @@ void MainWindow::on_pushButton_3rd_clicked()
     }
     else
     {
-        this->rl.createBet(25, this->current_button_value, 2, false );
+        this->rl.createBet(25, this->current_button_value, 2, true );
         this->rl.createBet(26, this->current_button_value, 2, false );
         this->rl.createBet(27, this->current_button_value, 2, false );
         this->rl.createBet(28, this->current_button_value, 2, false );
@@ -574,6 +558,24 @@ void MainWindow::on_pushButton_even_clicked()
     }
     else
     {
+        this->rl.createBet(2, this->current_button_value, 1, true );
+        this->rl.createBet(4, this->current_button_value, 1, false );
+        this->rl.createBet(6, this->current_button_value, 1, false );
+        this->rl.createBet(8, this->current_button_value, 1, false );
+        this->rl.createBet(10, this->current_button_value, 1, false );
+        this->rl.createBet(12, this->current_button_value, 1, false );
+        this->rl.createBet(14, this->current_button_value, 1, false );
+        this->rl.createBet(16, this->current_button_value, 1, false );
+        this->rl.createBet(18, this->current_button_value, 1, false );
+        this->rl.createBet(20, this->current_button_value, 1, false );
+        this->rl.createBet(22, this->current_button_value, 1, false );
+        this->rl.createBet(24, this->current_button_value, 1, false );
+        this->rl.createBet(26, this->current_button_value, 1, false );
+        this->rl.createBet(28, this->current_button_value, 1, false );
+        this->rl.createBet(30, this->current_button_value, 1, false );
+        this->rl.createBet(32, this->current_button_value, 1, false );
+        this->rl.createBet(34, this->current_button_value, 1, false );
+        this->rl.createBet(36, this->current_button_value, 1, false );
         ui->pushButton_even->setText("");
         ui->pushButton_even->setIcon(ButtonIcon);
         ui->pushButton_even->setIconSize(QSize(40,40));
@@ -591,6 +593,24 @@ void MainWindow::on_pushButton_odd_clicked()
     }
     else
     {
+        this->rl.createBet(1, this->current_button_value, 1, true );
+        this->rl.createBet(3, this->current_button_value, 1, false );
+        this->rl.createBet(5, this->current_button_value, 1, false );
+        this->rl.createBet(7, this->current_button_value, 1, false );
+        this->rl.createBet(9, this->current_button_value, 1, false );
+        this->rl.createBet(11, this->current_button_value, 1, false );
+        this->rl.createBet(13, this->current_button_value, 1, false );
+        this->rl.createBet(15, this->current_button_value, 1, false );
+        this->rl.createBet(17, this->current_button_value, 1, false );
+        this->rl.createBet(19, this->current_button_value, 1, true );
+        this->rl.createBet(21, this->current_button_value, 1, false );
+        this->rl.createBet(23, this->current_button_value, 1, false );
+        this->rl.createBet(25, this->current_button_value, 1, false );
+        this->rl.createBet(27, this->current_button_value, 1, false );
+        this->rl.createBet(29, this->current_button_value, 1, false );
+        this->rl.createBet(31, this->current_button_value, 1, false );
+        this->rl.createBet(33, this->current_button_value, 1, false );
+        this->rl.createBet(35, this->current_button_value, 1, false );
         ui->pushButton_odd->setText("");
         ui->pushButton_odd->setIcon(ButtonIcon);
         ui->pushButton_odd->setIconSize(QSize(40,40));
@@ -608,6 +628,24 @@ void MainWindow::on_redButton_red_clicked()
     }
     else
     {
+        this->rl.createBet(1, this->current_button_value, 1, true );
+        this->rl.createBet(3, this->current_button_value, 1, false );
+        this->rl.createBet(5, this->current_button_value, 1, false );
+        this->rl.createBet(7, this->current_button_value, 1, false );
+        this->rl.createBet(9, this->current_button_value, 1, false );
+        this->rl.createBet(12, this->current_button_value, 1, false );
+        this->rl.createBet(14, this->current_button_value, 1, false );
+        this->rl.createBet(16, this->current_button_value, 1, false );
+        this->rl.createBet(18, this->current_button_value, 1, false );
+        this->rl.createBet(19, this->current_button_value, 1, false );
+        this->rl.createBet(21, this->current_button_value, 1, false );
+        this->rl.createBet(23, this->current_button_value, 1, false );
+        this->rl.createBet(25, this->current_button_value, 1, false );
+        this->rl.createBet(27, this->current_button_value, 1, false );
+        this->rl.createBet(30, this->current_button_value, 1, false );
+        this->rl.createBet(32, this->current_button_value, 1, false );
+        this->rl.createBet(34, this->current_button_value, 1, false );
+        this->rl.createBet(36, this->current_button_value, 1, false );
         ui->redButton_red->setText("");
         ui->redButton_red->setIcon(ButtonIcon);
         ui->redButton_red->setIconSize(QSize(40,40));
@@ -625,6 +663,24 @@ void MainWindow::on_pushButton_black_clicked()
     }
     else
     {
+        this->rl.createBet(2, this->current_button_value, 1, true );
+        this->rl.createBet(4, this->current_button_value, 1, false );
+        this->rl.createBet(6, this->current_button_value, 1, false );
+        this->rl.createBet(8, this->current_button_value, 1, false );
+        this->rl.createBet(10, this->current_button_value, 1, false );
+        this->rl.createBet(11, this->current_button_value, 1, false );
+        this->rl.createBet(13, this->current_button_value, 1, false );
+        this->rl.createBet(15, this->current_button_value, 1, false );
+        this->rl.createBet(17, this->current_button_value, 1, false );
+        this->rl.createBet(20, this->current_button_value, 1, false );
+        this->rl.createBet(22, this->current_button_value, 1, false );
+        this->rl.createBet(24, this->current_button_value, 1, false );
+        this->rl.createBet(26, this->current_button_value, 1, false );
+        this->rl.createBet(28, this->current_button_value, 1, false );
+        this->rl.createBet(29, this->current_button_value, 1, false );
+        this->rl.createBet(31, this->current_button_value, 1, false );
+        this->rl.createBet(33, this->current_button_value, 1, false );
+        this->rl.createBet(35, this->current_button_value, 1, false );
         ui->pushButton_black->setText("");
         ui->pushButton_black->setIcon(ButtonIcon);
         ui->pushButton_black->setIconSize(QSize(40,40));
@@ -1788,7 +1844,8 @@ void MainWindow::on_pushButton_spin_clicked()
     QTimer::singleShot(2000, this, SLOT(slotStopMovie()));
 
     n=rand()%37;
-    check_num(1);
+    this->check_num(1);
+    this->clear_bets_gui();
 }
 
 
@@ -1980,6 +2037,7 @@ void MainWindow::on_pushButton_line_1_clicked()
     }
     else
     {
+
         currentbutton = ui->pushButton_line_1;
         multi_bet_animation(5,currentbutton,157,308,12,12,true);
     }
@@ -2134,6 +2192,19 @@ void MainWindow::on_pushButton_1st_row_clicked()
     }
     else
     {
+
+        this->rl.createBet(1, this->current_button_value, 2, true );
+        this->rl.createBet(4, this->current_button_value, 2, false );
+        this->rl.createBet(7, this->current_button_value, 2, false );
+        this->rl.createBet(10, this->current_button_value, 2, false );
+        this->rl.createBet(13, this->current_button_value, 2, false );
+        this->rl.createBet(16, this->current_button_value, 2, false );
+        this->rl.createBet(19, this->current_button_value, 2, false );
+        this->rl.createBet(22, this->current_button_value, 2, false );
+        this->rl.createBet(25, this->current_button_value, 2, false );
+        this->rl.createBet(28, this->current_button_value, 2, false );
+        this->rl.createBet(31, this->current_button_value, 2, false );
+        this->rl.createBet(34, this->current_button_value, 2, false );
         currentbutton = ui->pushButton_1st_row;
         multi_bet_animation(11,currentbutton,950,250,8,61,true);
     }
@@ -2148,6 +2219,18 @@ void MainWindow::on_pushButton_2nd_row_clicked()
     }
     else
     {
+        this->rl.createBet(2, this->current_button_value, 2, true );
+        this->rl.createBet(5, this->current_button_value, 2, false );
+        this->rl.createBet(8, this->current_button_value, 2, false );
+        this->rl.createBet(11, this->current_button_value, 2, false );
+        this->rl.createBet(14, this->current_button_value, 2, false );
+        this->rl.createBet(17, this->current_button_value, 2, false );
+        this->rl.createBet(20, this->current_button_value, 2, false );
+        this->rl.createBet(23, this->current_button_value, 2, false );
+        this->rl.createBet(26, this->current_button_value, 2, false );
+        this->rl.createBet(29, this->current_button_value, 2, false );
+        this->rl.createBet(32, this->current_button_value, 2, false );
+        this->rl.createBet(35, this->current_button_value, 2, false );
         currentbutton = ui->pushButton_2nd_row;
         multi_bet_animation(11,currentbutton,950,180,8,61,true);
     }
@@ -2162,7 +2245,272 @@ void MainWindow::on_pushButton_3rd_row_clicked()
     }
     else
     {
+        this->rl.createBet(3, this->current_button_value, 2, true );
+        this->rl.createBet(6, this->current_button_value, 2, false );
+        this->rl.createBet(9, this->current_button_value, 2, false );
+        this->rl.createBet(12, this->current_button_value, 2, false );
+        this->rl.createBet(15, this->current_button_value, 2, false );
+        this->rl.createBet(18, this->current_button_value, 2, false );
+        this->rl.createBet(21, this->current_button_value, 2, false );
+        this->rl.createBet(24, this->current_button_value, 2, false );
+        this->rl.createBet(27, this->current_button_value, 2, false );
+        this->rl.createBet(30, this->current_button_value, 2, false );
+        this->rl.createBet(33, this->current_button_value, 2, false );
+        this->rl.createBet(36, this->current_button_value, 2, false );
         currentbutton = ui->pushButton_3rd_row;
         multi_bet_animation(11,currentbutton,950,110,8,61,true);
     }
+}
+
+void MainWindow::clear_bets_gui()
+{
+    for(int x = 0;x<37;x++)
+    {
+            QString s = QString::number(x);
+            array_to_buttons[x]->setText(s);
+            array_to_buttons[x]->setIcon(QIcon());
+    }
+            ui->pushButton_1_18->setText("1-18");
+            ui->pushButton_1_18->setIcon(QIcon());
+            ui->pushButton_19_36->setFlat(false);
+            ui->pushButton_19_36->setText("19-36");
+            ui->pushButton_19_36->setIcon(QIcon());
+            ui->pushButton_19_36->setFlat(false);
+            ui->pushButton_1st->setText("1st 12");
+            ui->pushButton_1st->setIcon(QIcon());
+            ui->pushButton_1st->setFlat(false);
+            ui->pushButton_2nd->setText("2nd 12");
+            ui->pushButton_2nd->setIcon(QIcon());
+            ui->pushButton_2nd->setFlat(false);
+            ui->pushButton_3rd->setText("3rd 12");
+            ui->pushButton_3rd->setIcon(QIcon());
+            ui->pushButton_3rd->setFlat(false);
+            ui->pushButton_even->setText("Even");
+            ui->pushButton_even->setIcon(QIcon());
+            ui->pushButton_even->setFlat(false);
+            ui->pushButton_odd->setText("Odd");
+            ui->pushButton_odd->setIcon(QIcon());
+            ui->pushButton_odd->setFlat(false);
+            ui->redButton_red->setText("RED");
+            ui->redButton_red->setIcon(QIcon());
+            ui->redButton_red->setFlat(false);
+            ui->pushButton_black->setText("BLACK");
+            ui->pushButton_black->setIcon(QIcon());
+            ui->pushButton_black->setFlat(false);
+            currentbutton = ui->pushButton_1_plus_2;
+            multi_bet_animation(1,currentbutton,100,243,61,8,false);
+            currentbutton = ui->pushButton_2_plus_3;
+            multi_bet_animation(1,currentbutton,100,176,61,8,false);
+            currentbutton =  ui->pushButton_4_plus_5;
+            multi_bet_animation(1,currentbutton,167,243,61,8,false);
+            currentbutton = ui->pushButton_5_plus_6;
+            multi_bet_animation(1,currentbutton,167,176,61,8,false);
+            currentbutton = ui->pushButton_7_plus_8;
+            multi_bet_animation(1,currentbutton,234,242,61,8,false);
+            currentbutton =  ui->pushButton_8_plus_9;
+            multi_bet_animation(1,currentbutton,234,175,61,8,false);
+            currentbutton = ui->pushButton_10_plus_11;
+            multi_bet_animation(1,currentbutton,301,242,61,8,false);
+            currentbutton = ui->pushButton_11_plus_12;
+            multi_bet_animation(1,currentbutton,301,175,61,8,false);
+            currentbutton = ui->pushButton_13_plus_14;
+            multi_bet_animation(1,currentbutton,368,241,61,8,false);
+            currentbutton = ui->pushButton_14_plus_15;
+            multi_bet_animation(1,currentbutton,368,174,61,8,false);
+            currentbutton = ui->pushButton_16_plus_17;
+            multi_bet_animation(1,currentbutton,435,241,61,8,false);
+            currentbutton = ui->pushButton_17_plus_18;
+            multi_bet_animation(1,currentbutton,435,174,61,8,false);
+            currentbutton = ui->pushButton_19_plus_20;
+            multi_bet_animation(1,currentbutton,503,241,61,8,false);
+            currentbutton = ui->pushButton_20_plus_21;
+            multi_bet_animation(1,currentbutton,503,174,61,8,false);
+            currentbutton = ui->pushButton_22_plus_23;
+            multi_bet_animation(1,currentbutton,570,241,61,8,false);
+             currentbutton = ui->pushButton_23_plus_24;
+            multi_bet_animation(1,currentbutton,570,174,61,8,false);
+            currentbutton = ui->pushButton_25_plus_26;
+            multi_bet_animation(1,currentbutton,637,241,61,8,false);
+            currentbutton = ui->pushButton_26_plus_27;
+            multi_bet_animation(1,currentbutton,637,174,61,8,false);
+            currentbutton = ui->pushButton_28_plus_29;
+            multi_bet_animation(1,currentbutton,704,241,61,8,false);
+            currentbutton = ui->pushButton_29_plus_30;
+            multi_bet_animation(1,currentbutton,704,174,61,8,false);
+            currentbutton = ui->pushButton_31_plus_32;
+            multi_bet_animation(1,currentbutton,771,241,61,8,false);
+            currentbutton = ui->pushButton_32_plus_33;
+            multi_bet_animation(1,currentbutton,771,174,61,8,false);
+            currentbutton = ui->pushButton_34_plus_35;
+            multi_bet_animation(1,currentbutton,838,241,61,8,false);
+            currentbutton = ui->pushButton_35_plus_36;
+            multi_bet_animation(1,currentbutton,838,174,61,8,false);
+            currentbutton = ui->pushButton_1_plus_4;
+            multi_bet_animation(3,currentbutton,160,250,8,61,false);
+            currentbutton = ui->pushButton_4_plus_7;
+            multi_bet_animation(3,currentbutton,227,250,8,61,false);
+            currentbutton = ui->pushButton_7_plus_10;
+            multi_bet_animation(3,currentbutton,294,250,8,61,false);
+            currentbutton = ui->pushButton_10_plus_13;
+            multi_bet_animation(3,currentbutton,362,250,8,61,false);
+            currentbutton = ui->pushButton_13_plus_16;
+            multi_bet_animation(3,currentbutton,429,250,8,61,false);
+            currentbutton = ui->pushButton_16_plus_19;
+            multi_bet_animation(3,currentbutton,496,250,8,61,false);
+            currentbutton = ui->pushButton_19_plus_22;
+            multi_bet_animation(3,currentbutton,563,250,8,61,false);
+            currentbutton = ui->pushButton_22_plus_25;
+            multi_bet_animation(3,currentbutton,630,250,8,61,false);
+            currentbutton = ui->pushButton_25_plus_28;
+            multi_bet_animation(3,currentbutton,697,250,8,61,false);
+            currentbutton = ui->pushButton_28_plus_31;
+            multi_bet_animation(3,currentbutton,764,250,8,61,false);
+            currentbutton = ui->pushButton_31_plus_34;
+            multi_bet_animation(3,currentbutton,831,250,8,61,false);
+            currentbutton = ui->pushButton_2_plus_5;
+            multi_bet_animation(3,currentbutton,160,181,8,61,false);
+            currentbutton = ui->pushButton_5_plus_8;
+            multi_bet_animation(3,currentbutton,227,181,8,61,false);
+            currentbutton = ui->pushButton_8_plus_11;
+            multi_bet_animation(3,currentbutton,294,181,8,61,false);
+            currentbutton = ui->pushButton_11_plus_14;
+            multi_bet_animation(3,currentbutton,362,181,8,61,false);
+            currentbutton = ui->pushButton_14_plus_17;
+            multi_bet_animation(3,currentbutton,429,181,8,61,false);
+            currentbutton = ui->pushButton_17_plus_20;
+            multi_bet_animation(3,currentbutton,496,181,8,61,false);
+            currentbutton =  ui->pushButton_20_plus_23;
+            multi_bet_animation(3,currentbutton,563,181,8,61,false);
+            currentbutton =  ui->pushButton_23_plus_26;
+            multi_bet_animation(3,currentbutton,630,181,8,61,false);
+            currentbutton =  ui->pushButton_26_plus_29;
+            multi_bet_animation(3,currentbutton,697,181,8,61,false);
+            currentbutton =  ui->pushButton_29_plus_32;
+            multi_bet_animation(3,currentbutton,764,181,8,61,false);
+            currentbutton =  ui->pushButton_32_plus_35;
+            multi_bet_animation(3,currentbutton,831,181,8,61,false);
+            currentbutton =  ui->pushButton_3_plus_6;
+            multi_bet_animation(3,currentbutton,160,113,8,61,false);
+            currentbutton =  ui->pushButton_6_plus_9;
+            multi_bet_animation(3,currentbutton,227,113,8,61,false);
+            currentbutton =  ui->pushButton_9_plus_12;
+            multi_bet_animation(3,currentbutton,294,113,8,61,false);
+            currentbutton =  ui->pushButton_12_plus_15;
+            multi_bet_animation(3,currentbutton,362,113,8,61,false);
+            currentbutton =  ui->pushButton_15_plus_18;
+            multi_bet_animation(3,currentbutton,429,113,8,61,false);
+            currentbutton =  ui->pushButton_18_plus_21;
+            multi_bet_animation(3,currentbutton,496,113,8,61,false);
+            currentbutton =  ui->pushButton_21_plus_24;
+            multi_bet_animation(3,currentbutton,563,113,8,61,false);
+            currentbutton =  ui->pushButton_24_plus_27;
+            multi_bet_animation(3,currentbutton,630,113,8,61,false);
+            currentbutton =  ui->pushButton_27_plus_30;
+            multi_bet_animation(3,currentbutton,697,113,8,61,false);
+            currentbutton =  ui->pushButton_30_plus_33;
+            multi_bet_animation(3,currentbutton,764,113,8,61,false);
+            currentbutton =  ui->pushButton_33_plus_36;
+            multi_bet_animation(3,currentbutton,831,113,8,61,false);
+            currentbutton = ui->pushButton_1_plus_4_2_5;
+            multi_bet_animation(4,currentbutton,158,240,12,12,false);
+            currentbutton = ui->pushButton_2_plus_5_3_6;
+            multi_bet_animation(4,currentbutton,158,173,12,12,false);
+            currentbutton = ui->pushButton_5_plus_8_6_9;
+            multi_bet_animation(4,currentbutton,225,173,12,12,false);
+            currentbutton = ui->pushButton_4_plus_7_5_8;
+            multi_bet_animation(4,currentbutton,225,240,12,12,false);
+            currentbutton = ui->pushButton_7_plus_10_8_11;
+            multi_bet_animation(4,currentbutton,292,240,12,12,false);
+            currentbutton = ui->pushButton_8_plus_11_9_12;
+            multi_bet_animation(4,currentbutton,292,173,12,12,false);
+            currentbutton = ui->pushButton_11_plus_14_12_15;
+            multi_bet_animation(4,currentbutton,360,173,12,12,false);
+            currentbutton = ui->pushButton_10_plus_13_11_14;
+            multi_bet_animation(4,currentbutton,360,240,12,12,false);
+            currentbutton = ui->pushButton_13_plus_16_14_17;
+            multi_bet_animation(4,currentbutton,426,240,12,12,false);
+            currentbutton = ui->pushButton_14_plus_17_15_18;
+            multi_bet_animation(4,currentbutton,426,173,12,12,false);
+            currentbutton = ui->pushButton_17_plus_20_18_21;
+            multi_bet_animation(4,currentbutton,493,173,12,12,false);
+            currentbutton = ui->pushButton_16_plus_19_17_20;
+            multi_bet_animation(4,currentbutton,493,240,12,12,false);
+            currentbutton = ui->pushButton_19_plus_22_20_23;
+            multi_bet_animation(4,currentbutton,561,240,12,12,false);
+            currentbutton = ui->pushButton_20_plus_23_21_24;
+            multi_bet_animation(4,currentbutton,561,173,12,12,false);
+            currentbutton = ui->pushButton_22_plus_25_23_26;
+            multi_bet_animation(4,currentbutton,628,173,12,12,false);
+            currentbutton = ui->pushButton_23_plus_26_24_27;
+            multi_bet_animation(4,currentbutton,628,240,12,12,false);
+            currentbutton = ui->pushButton_25_plus_28_26_29;
+            multi_bet_animation(4,currentbutton,695,240,12,12,false);
+            currentbutton = ui->pushButton_26_plus_29_27_30;
+            multi_bet_animation(4,currentbutton,695,173,12,12,false);
+            currentbutton = ui->pushButton_29_plus_32_30_33;
+            multi_bet_animation(4,currentbutton,762,173,12,12,false);
+            currentbutton = ui->pushButton_28_plus_31_29_32;
+            multi_bet_animation(4,currentbutton,762,240,12,12,false);
+            currentbutton = ui->pushButton_31_plus_34_32_35;
+            multi_bet_animation(4,currentbutton,829,240,12,12,false);
+            currentbutton = ui->pushButton_32_plus_35_33_36;
+            multi_bet_animation(4,currentbutton,829,173,12,12,false);
+            currentbutton = ui->pushButton_street_1;
+            multi_bet_animation(2,currentbutton,99,311,61,8,false);
+            currentbutton = ui->pushButton_street_2;
+            multi_bet_animation(2,currentbutton,166,311,61,8,false);
+            currentbutton = ui->pushButton_street_3;
+            multi_bet_animation(2,currentbutton,233,310,61,8,false);
+            currentbutton = ui->pushButton_street_4;
+            multi_bet_animation(2,currentbutton,300,310,61,8,false);
+            currentbutton = ui->pushButton_street_5;
+            multi_bet_animation(2,currentbutton,367,309,61,8,false);
+            currentbutton = ui->pushButton_street_6;
+            multi_bet_animation(2,currentbutton,434,309,61,8,false);
+            currentbutton = ui->pushButton_street_7;
+            multi_bet_animation(2,currentbutton,502,309,61,8,false);
+            currentbutton = ui->pushButton_street_8;
+            multi_bet_animation(2,currentbutton,569,309 ,61,8,false);
+            currentbutton = ui->pushButton_street_9;
+            multi_bet_animation(2,currentbutton,636,309,61,8,false);
+            currentbutton = ui->pushButton_street_10;
+            multi_bet_animation(2,currentbutton,703,309,61,8,false);
+            currentbutton = ui->pushButton_street_11;
+            multi_bet_animation(2,currentbutton,770,309,61,8,false);
+            currentbutton = ui->pushButton_street_12;
+            multi_bet_animation(2,currentbutton,837,309,61,8,false);
+            currentbutton = ui->pushButton_line_1;
+            multi_bet_animation(5,currentbutton,157,308,12,12,false);
+            currentbutton = ui->pushButton_line_2;
+            multi_bet_animation(5,currentbutton,224,308,12,12,false);
+            currentbutton = ui->pushButton_line_3;
+            multi_bet_animation(5,currentbutton,291,308,12,12,false);
+            currentbutton = ui->pushButton_line_4;
+            multi_bet_animation(5,currentbutton,358,308,12,12,false);
+            currentbutton = ui->pushButton_line_5;
+            multi_bet_animation(5,currentbutton,425,307,12,12,false);
+            currentbutton = ui->pushButton_line_6;
+            multi_bet_animation(5,currentbutton,492,307,12,12,false);
+            currentbutton = ui->pushButton_line_7;
+            multi_bet_animation(5,currentbutton,560,307,12,12,false);
+            currentbutton = ui->pushButton_line_8;
+            multi_bet_animation(5,currentbutton,627,307,12,12,false);
+            currentbutton = ui->pushButton_line_9;
+            multi_bet_animation(5,currentbutton,694,307,12,12,false);
+            currentbutton = ui->pushButton_line_10;
+            multi_bet_animation(5,currentbutton,761,307,12,12,false);
+            currentbutton = ui->pushButton_line_11;
+            multi_bet_animation(5,currentbutton,828,307,12,12,false);
+            currentbutton = ui->pushButton_1st_row;
+            multi_bet_animation(11,currentbutton,950,250,8,61,false);
+            currentbutton = ui->pushButton_2nd_row;
+            multi_bet_animation(11,currentbutton,950,180,8,61,false);
+            currentbutton = ui->pushButton_3rd_row;
+            multi_bet_animation(11,currentbutton,950,110,8,61,false);
+}
+
+void MainWindow::on_Clear_Button_pressed()
+{
+    this->rl.clearAllBets();
+    this->clear_bets_gui();
 }

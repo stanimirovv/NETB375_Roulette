@@ -1,6 +1,10 @@
 #include "loadgame.h"
 #include "ui_loadgame.h"
 
+/*
+ * Automatically generated constructor from the Qt IDE. There are a few custom settings for the window's style.
+ */
+
 LoadGame::LoadGame(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::LoadGame)
@@ -18,6 +22,11 @@ LoadGame::~LoadGame()
     delete ui;
 }
 
+/*
+ * This method takes no parameters.
+ * Loads a game with the username typed in the text box.
+ * This method returns no value.
+ */
 void LoadGame::on_pushButton_released()
 {
     mwindow->rl.loadGame(ui->loadUser->text());

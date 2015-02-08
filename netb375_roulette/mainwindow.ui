@@ -2674,14 +2674,14 @@ border-radius: 5px;</string>
    <widget class="QPushButton" name="Clear_Button">
     <property name="geometry">
      <rect>
-      <x>710</x>
-      <y>460</y>
-      <width>75</width>
-      <height>23</height>
+      <x>690</x>
+      <y>450</y>
+      <width>181</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="text">
-     <string>Clear</string>
+     <string>Clear Bets</string>
     </property>
     <property name="autoDefault">
      <bool>true</bool>
@@ -3478,7 +3478,7 @@ border-radius: 5px;</string>
      <x>0</x>
      <y>0</y>
      <width>1108</width>
-     <height>21</height>
+     <height>27</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuRoullet">

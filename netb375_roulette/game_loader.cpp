@@ -1,27 +1,35 @@
 #include "game_loader.h"
 
 
-
+/*
+Default constructor.
+*/
 GameLoader::GameLoader()
 {
     this->file_path = "";
 }
 
+/*
+ * Constructor which takes the initial path to the file as a prameter and
+ * sets the file_path member to the passed value.
+ */
 GameLoader::GameLoader(QString initial_path)
 {
     this->file_path = initial_path;
 }
 
+/*
+ * This function returns the current file path.
+ */
 QString GameLoader::getCurrentPath()
 {
     return this->file_path;
 }
 
 /*
- note: for the functions below, 1 is considered that the function has finished successfully, where as a 0 return means
- that there has been an error.
+ * Sets the current path of the file. Takes as parameter the new file path
+ * returns 0 if there has been an error. Returns 1 if the function has executed correctly
  */
-
 int GameLoader::setCurrentPath(QString new_path)
 {
     if(new_path == "")
@@ -36,6 +44,9 @@ int GameLoader::setCurrentPath(QString new_path)
 /*
     The function will return 0 if there is no match found.
     If it finds the match it will return the money it's found.
+
+    The function searches the text file for an entry with the matching account name.
+    if it finds it, it will return the value. Else it will return 0.
 */
 int GameLoader::getMoneyForAccount(QString account_name)
 {
@@ -69,7 +80,11 @@ int GameLoader::getMoneyForAccount(QString account_name)
 /*
  note: for the functions below, 1 is considered that the function has finished successfully, where as a 0 return means
  that there has been an error.
- */
+
+ Attempts to save the money for an account. If the accoutn exists in the file the function will update the entry. If the account
+ doesn't exist it will create a new entry.
+ Takes the account name and the account's money as parameters.
+*/
 
 int GameLoader::setMoneyForAccount(QString account_name, int account_money)
 {
