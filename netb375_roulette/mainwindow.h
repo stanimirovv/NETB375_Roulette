@@ -301,6 +301,56 @@ private slots:
 
     void on_pushButton_street_1_clicked();
 
+    void on_pushButton_street_2_clicked();
+
+    void on_pushButton_street_3_clicked();
+
+    void on_pushButton_street_4_clicked();
+
+    void on_pushButton_street_5_clicked();
+
+    void on_pushButton_street_6_clicked();
+
+    void on_pushButton_street_7_clicked();
+
+    void on_pushButton_street_8_clicked();
+
+    void on_pushButton_street_9_clicked();
+
+    void on_pushButton_street_10_clicked();
+
+    void on_pushButton_street_11_clicked();
+
+    void on_pushButton_street_12_clicked();
+
+    void on_pushButton_line_1_clicked();
+
+    void on_pushButton_line_2_clicked();
+
+    void on_pushButton_line_3_clicked();
+
+    void on_pushButton_line_4_clicked();
+
+    void on_pushButton_line_5_clicked();
+
+    void on_pushButton_line_6_clicked();
+
+    void on_pushButton_line_7_clicked();
+
+    void on_pushButton_line_8_clicked();
+
+    void on_pushButton_line_9_clicked();
+
+    void on_pushButton_line_10_clicked();
+
+    void on_pushButton_line_11_clicked();
+
+    void on_pushButton_1st_row_clicked();
+
+    void on_pushButton_2nd_row_clicked();
+
+    void on_pushButton_3rd_row_clicked();
+
 private:
     Ui::MainWindow *ui;
     QPushButton *array_to_buttons[37];

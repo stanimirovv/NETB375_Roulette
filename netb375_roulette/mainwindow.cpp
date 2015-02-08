@@ -107,7 +107,6 @@ void MainWindow::single_button_bet(int x)
 {
     if(array_to_buttons[x]->isFlat())
     {
-
         QString s = QString::number(x);
         array_to_buttons[x]->setText(s);
         array_to_buttons[x]->setIcon(QIcon());
@@ -126,6 +125,22 @@ void MainWindow::single_button_bet(int x)
 void MainWindow::multi_bet_animation(int d,QPushButton* currentbutton,int xg,int yg,int width,int lenght,bool add)
 {
     if(d==1)
+    {
+        if(add)
+        {
+            currentbutton->setGeometry(xg+10,yg-18,width-21,lenght+32);
+            currentbutton->setIcon(ButtonIcon);
+            currentbutton->setIconSize(QSize(40,40));
+            currentbutton->setFlat(true);
+        }
+        else
+        {
+            currentbutton->setGeometry(xg,yg,width,lenght);
+            currentbutton->setIcon(QIcon());
+            currentbutton->setFlat(false);
+        }
+    }
+    else if(d==2)
     {
         if(add)
         {
@@ -162,6 +177,38 @@ void MainWindow::multi_bet_animation(int d,QPushButton* currentbutton,int xg,int
         if(add)
         {
             currentbutton->setGeometry(xg-14,yg-13,width+28,lenght+28);
+            currentbutton->setIcon(ButtonIcon);
+            currentbutton->setIconSize(QSize(40,40));
+            currentbutton->setFlat(true);
+        }
+        else
+        {
+            currentbutton->setGeometry(xg,yg,width,lenght);
+            currentbutton->setIcon(QIcon());
+            currentbutton->setFlat(false);
+        }
+    }
+    else if(d==5)
+    {
+        if(add)
+        {
+            currentbutton->setGeometry(xg-14,yg-13,width+28,lenght+28);
+            currentbutton->setIcon(ButtonIcon);
+            currentbutton->setIconSize(QSize(40,40));
+            currentbutton->setFlat(true);
+        }
+        else
+        {
+            currentbutton->setGeometry(xg,yg,width,lenght);
+            currentbutton->setIcon(QIcon());
+            currentbutton->setFlat(false);
+        }
+    }
+    else if(d==11)
+    {
+        if(add)
+        {
+            currentbutton->setGeometry(xg-16,yg+10,width+32,lenght-21);
             currentbutton->setIcon(ButtonIcon);
             currentbutton->setIconSize(QSize(40,40));
             currentbutton->setFlat(true);
@@ -1077,7 +1124,7 @@ void MainWindow::on_pushButton_31_plus_34_clicked()
 
 void MainWindow::on_pushButton_2_plus_5_clicked()
 {
-    if(ui->pushButton_31_plus_34->isFlat())
+    if(ui->pushButton_2_plus_5->isFlat())
     {
         currentbutton = ui->pushButton_2_plus_5;
         multi_bet_animation(3,currentbutton,160,181,8,61,false);
@@ -1758,5 +1805,364 @@ void MainWindow::refreshShowcase()
 
 void MainWindow::on_pushButton_street_1_clicked()
 {
+    if(ui->pushButton_street_1->isFlat())
+    {
+        currentbutton = ui->pushButton_street_1;
+        multi_bet_animation(2,currentbutton,99,311,61,8,false);
+    }
+    else
+    {
+        currentbutton = ui->pushButton_street_1;
+        multi_bet_animation(2,currentbutton,99,311,61,8,true);
+    }
+}
 
+void MainWindow::on_pushButton_street_2_clicked()
+{
+    if(ui->pushButton_street_2->isFlat())
+    {
+        currentbutton = ui->pushButton_street_2;
+        multi_bet_animation(2,currentbutton,166,311,61,8,false);
+    }
+    else
+    {
+        currentbutton = ui->pushButton_street_2;
+        multi_bet_animation(2,currentbutton,166,311,61,8,true);
+    }
+}
+
+void MainWindow::on_pushButton_street_3_clicked()
+{
+    if(ui->pushButton_street_3->isFlat())
+    {
+        currentbutton = ui->pushButton_street_3;
+        multi_bet_animation(2,currentbutton,233,310,61,8,false);
+    }
+    else
+    {
+        currentbutton = ui->pushButton_street_3;
+        multi_bet_animation(2,currentbutton,233,310,61,8,true);
+    }
+}
+
+void MainWindow::on_pushButton_street_4_clicked()
+{
+    if(ui->pushButton_street_4->isFlat())
+    {
+        currentbutton = ui->pushButton_street_4;
+        multi_bet_animation(2,currentbutton,300,310,61,8,false);
+    }
+    else
+    {
+        currentbutton = ui->pushButton_street_4;
+        multi_bet_animation(2,currentbutton,300,310,61,8,true);
+    }
+}
+
+void MainWindow::on_pushButton_street_5_clicked()
+{
+    if(ui->pushButton_street_5->isFlat())
+    {
+        currentbutton = ui->pushButton_street_5;
+        multi_bet_animation(2,currentbutton,367,309,61,8,false);
+    }
+    else
+    {
+        currentbutton = ui->pushButton_street_5;
+        multi_bet_animation(2,currentbutton,367,309,61,8,true);
+    }
+}
+
+void MainWindow::on_pushButton_street_6_clicked()
+{
+    if(ui->pushButton_street_6->isFlat())
+    {
+        currentbutton = ui->pushButton_street_6;
+        multi_bet_animation(2,currentbutton,434,309,61,8,false);
+    }
+    else
+    {
+        currentbutton = ui->pushButton_street_6;
+        multi_bet_animation(2,currentbutton,434,309,61,8,true);
+    }
+}
+
+void MainWindow::on_pushButton_street_7_clicked()
+{
+    if(ui->pushButton_street_7->isFlat())
+    {
+        currentbutton = ui->pushButton_street_7;
+        multi_bet_animation(2,currentbutton,502,309,61,8,false);
+    }
+    else
+    {
+        currentbutton = ui->pushButton_street_7;
+        multi_bet_animation(2,currentbutton,502,309,61,8,true);
+    }
+}
+
+void MainWindow::on_pushButton_street_8_clicked()
+{
+    if(ui->pushButton_street_8->isFlat())
+    {
+        currentbutton = ui->pushButton_street_8;
+        multi_bet_animation(2,currentbutton,569,309 ,61,8,false);
+    }
+    else
+    {
+        currentbutton = ui->pushButton_street_8;
+        multi_bet_animation(2,currentbutton,569,309,61,8,true);
+    }
+}
+
+void MainWindow::on_pushButton_street_9_clicked()
+{
+    if(ui->pushButton_street_9->isFlat())
+    {
+        currentbutton = ui->pushButton_street_9;
+        multi_bet_animation(2,currentbutton,636,309,61,8,false);
+    }
+    else
+    {
+        currentbutton = ui->pushButton_street_9;
+        multi_bet_animation(2,currentbutton,636,309,61,8,true);
+    }
+}
+
+void MainWindow::on_pushButton_street_10_clicked()
+{
+    if(ui->pushButton_street_10->isFlat())
+    {
+        currentbutton = ui->pushButton_street_10;
+        multi_bet_animation(2,currentbutton,703,309,61,8,false);
+    }
+    else
+    {
+        currentbutton = ui->pushButton_street_10;
+        multi_bet_animation(2,currentbutton,703,309,61,8,true);
+    }
+}
+
+void MainWindow::on_pushButton_street_11_clicked()
+{
+    if(ui->pushButton_street_11->isFlat())
+    {
+        currentbutton = ui->pushButton_street_11;
+        multi_bet_animation(2,currentbutton,770,309,61,8,false);
+    }
+    else
+    {
+        currentbutton = ui->pushButton_street_11;
+        multi_bet_animation(2,currentbutton,770,309,61,8,true);
+    }
+}
+
+void MainWindow::on_pushButton_street_12_clicked()
+{
+    if(ui->pushButton_street_12->isFlat())
+    {
+        currentbutton = ui->pushButton_street_12;
+        multi_bet_animation(2,currentbutton,837,309,61,8,false);
+    }
+    else
+    {
+        currentbutton = ui->pushButton_street_12;
+        multi_bet_animation(2,currentbutton,837,309,61,8,true);
+    }
+}
+
+void MainWindow::on_pushButton_line_1_clicked()
+{
+    if(ui->pushButton_line_1->isFlat())
+    {
+        currentbutton = ui->pushButton_line_1;
+        multi_bet_animation(5,currentbutton,157,308,12,12,false);
+    }
+    else
+    {
+        currentbutton = ui->pushButton_line_1;
+        multi_bet_animation(5,currentbutton,157,308,12,12,true);
+    }
+}
+
+void MainWindow::on_pushButton_line_2_clicked()
+{
+    if(ui->pushButton_line_2->isFlat())
+    {
+        currentbutton = ui->pushButton_line_2;
+        multi_bet_animation(5,currentbutton,224,308,12,12,false);
+    }
+    else
+    {
+        currentbutton = ui->pushButton_line_2;
+        multi_bet_animation(5,currentbutton,224,308,12,12,true);
+    }
+}
+
+void MainWindow::on_pushButton_line_3_clicked()
+{
+    if(ui->pushButton_line_3->isFlat())
+    {
+        currentbutton = ui->pushButton_line_3;
+        multi_bet_animation(5,currentbutton,291,308,12,12,false);
+    }
+    else
+    {
+        currentbutton = ui->pushButton_line_3;
+        multi_bet_animation(5,currentbutton,291,308,12,12,true);
+    }
+}
+
+void MainWindow::on_pushButton_line_4_clicked()
+{
+    if(ui->pushButton_line_4->isFlat())
+    {
+        currentbutton = ui->pushButton_line_4;
+        multi_bet_animation(5,currentbutton,358,308,12,12,false);
+    }
+    else
+    {
+        currentbutton = ui->pushButton_line_4;
+        multi_bet_animation(5,currentbutton,358,308,12,12,true);
+    }
+}
+
+void MainWindow::on_pushButton_line_5_clicked()
+{
+    if(ui->pushButton_line_5->isFlat())
+    {
+        currentbutton = ui->pushButton_line_5;
+        multi_bet_animation(5,currentbutton,425,307,12,12,false);
+    }
+    else
+    {
+        currentbutton = ui->pushButton_line_5;
+        multi_bet_animation(5,currentbutton,425,307,12,12,true);
+    }
+}
+
+void MainWindow::on_pushButton_line_6_clicked()
+{
+    if(ui->pushButton_line_6->isFlat())
+    {
+        currentbutton = ui->pushButton_line_6;
+        multi_bet_animation(5,currentbutton,492,307,12,12,false);
+    }
+    else
+    {
+        currentbutton = ui->pushButton_line_6;
+        multi_bet_animation(5,currentbutton,492,307,12,12,true);
+    }
+}
+
+void MainWindow::on_pushButton_line_7_clicked()
+{
+    if(ui->pushButton_line_7->isFlat())
+    {
+        currentbutton = ui->pushButton_line_7;
+        multi_bet_animation(5,currentbutton,560,307,12,12,false);
+    }
+    else
+    {
+        currentbutton = ui->pushButton_line_7;
+        multi_bet_animation(5,currentbutton,560,307,12,12,true);
+    }
+}
+
+void MainWindow::on_pushButton_line_8_clicked()
+{
+    if(ui->pushButton_line_8->isFlat())
+    {
+        currentbutton = ui->pushButton_line_8;
+        multi_bet_animation(5,currentbutton,627,307,12,12,false);
+    }
+    else
+    {
+        currentbutton = ui->pushButton_line_8;
+        multi_bet_animation(5,currentbutton,627,307,12,12,true);
+    }
+}
+
+void MainWindow::on_pushButton_line_9_clicked()
+{
+    if(ui->pushButton_line_9->isFlat())
+    {
+        currentbutton = ui->pushButton_line_9;
+        multi_bet_animation(5,currentbutton,694,307,12,12,false);
+    }
+    else
+    {
+        currentbutton = ui->pushButton_line_9;
+        multi_bet_animation(5,currentbutton,694,307,12,12,true);
+    }
+}
+
+void MainWindow::on_pushButton_line_10_clicked()
+{
+    if(ui->pushButton_line_10->isFlat())
+    {
+        currentbutton = ui->pushButton_line_10;
+        multi_bet_animation(5,currentbutton,761,307,12,12,false);
+    }
+    else
+    {
+        currentbutton = ui->pushButton_line_10;
+        multi_bet_animation(5,currentbutton,761,307,12,12,true);
+    }
+}
+
+void MainWindow::on_pushButton_line_11_clicked()
+{
+    if(ui->pushButton_line_11->isFlat())
+    {
+        currentbutton = ui->pushButton_line_11;
+        multi_bet_animation(5,currentbutton,828,307,12,12,false);
+    }
+    else
+    {
+        currentbutton = ui->pushButton_line_11;
+        multi_bet_animation(5,currentbutton,828,307,12,12,true);
+    }
+}
+
+void MainWindow::on_pushButton_1st_row_clicked()
+{
+    if(ui->pushButton_1st_row->isFlat())
+    {
+        currentbutton = ui->pushButton_1st_row;
+        multi_bet_animation(11,currentbutton,950,250,8,61,false);
+    }
+    else
+    {
+        currentbutton = ui->pushButton_1st_row;
+        multi_bet_animation(11,currentbutton,950,250,8,61,true);
+    }
+}
+
+void MainWindow::on_pushButton_2nd_row_clicked()
+{
+    if(ui->pushButton_2nd_row->isFlat())
+    {
+        currentbutton = ui->pushButton_2nd_row;
+        multi_bet_animation(11,currentbutton,950,180,8,61,false);
+    }
+    else
+    {
+        currentbutton = ui->pushButton_2nd_row;
+        multi_bet_animation(11,currentbutton,950,180,8,61,true);
+    }
+}
+
+void MainWindow::on_pushButton_3rd_row_clicked()
+{
+    if(ui->pushButton_3rd_row->isFlat())
+    {
+        currentbutton = ui->pushButton_3rd_row;
+        multi_bet_animation(11,currentbutton,950,110,8,61,false);
+    }
+    else
+    {
+        currentbutton = ui->pushButton_3rd_row;
+        multi_bet_animation(11,currentbutton,950,110,8,61,true);
+    }
 }
