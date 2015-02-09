@@ -1885,6 +1885,9 @@ void MainWindow::on_pushButton_street_1_clicked()
     }
     else
     {
+        this->rl.createBet(1, this->current_button_value, 11, true );
+        this->rl.createBet(2, this->current_button_value, 11, false );
+        this->rl.createBet(3, this->current_button_value, 11, false );
         currentbutton = ui->pushButton_street_1;
         multi_bet_animation(1,2,currentbutton,99,311,61,8,true);
     }
@@ -1899,6 +1902,9 @@ void MainWindow::on_pushButton_street_2_clicked()
     }
     else
     {
+        this->rl.createBet(4, this->current_button_value, 11, true );
+        this->rl.createBet(5, this->current_button_value, 11, false );
+        this->rl.createBet(6, this->current_button_value, 11, false );
         currentbutton = ui->pushButton_street_2;
         multi_bet_animation(2,2,currentbutton,166,311,61,8,true);
     }
@@ -1913,6 +1919,9 @@ void MainWindow::on_pushButton_street_3_clicked()
     }
     else
     {
+        this->rl.createBet(7, this->current_button_value, 11, true );
+        this->rl.createBet(8, this->current_button_value, 11, false );
+        this->rl.createBet(9, this->current_button_value, 11, false );
         currentbutton = ui->pushButton_street_3;
         multi_bet_animation(3,2,currentbutton,233,310,61,8,true);
     }
@@ -1927,6 +1936,9 @@ void MainWindow::on_pushButton_street_4_clicked()
     }
     else
     {
+        this->rl.createBet(10, this->current_button_value, 11, true );
+        this->rl.createBet(11, this->current_button_value, 11, false );
+        this->rl.createBet(12, this->current_button_value, 11, false );
         currentbutton = ui->pushButton_street_4;
         multi_bet_animation(4,2,currentbutton,300,310,61,8,true);
     }
@@ -1941,6 +1953,9 @@ void MainWindow::on_pushButton_street_5_clicked()
     }
     else
     {
+        this->rl.createBet(13, this->current_button_value, 11, true );
+        this->rl.createBet(14, this->current_button_value, 11, false );
+        this->rl.createBet(15, this->current_button_value, 11, false );
         currentbutton = ui->pushButton_street_5;
         multi_bet_animation(5,2,currentbutton,367,309,61,8,true);
     }
@@ -1955,6 +1970,9 @@ void MainWindow::on_pushButton_street_6_clicked()
     }
     else
     {
+        this->rl.createBet(16, this->current_button_value, 11, true );
+        this->rl.createBet(17, this->current_button_value, 11, false );
+        this->rl.createBet(18, this->current_button_value, 11, false );
         currentbutton = ui->pushButton_street_6;
         multi_bet_animation(6,2,currentbutton,434,309,61,8,true);
     }
@@ -1969,6 +1987,9 @@ void MainWindow::on_pushButton_street_7_clicked()
     }
     else
     {
+        this->rl.createBet(19, this->current_button_value, 11, true );
+        this->rl.createBet(20, this->current_button_value, 11, false );
+        this->rl.createBet(21, this->current_button_value, 11, false );
         currentbutton = ui->pushButton_street_7;
         multi_bet_animation(7,2,currentbutton,502,309,61,8,true);
     }
@@ -1983,6 +2004,9 @@ void MainWindow::on_pushButton_street_8_clicked()
     }
     else
     {
+        this->rl.createBet(22, this->current_button_value, 11, true );
+        this->rl.createBet(23, this->current_button_value, 11, false );
+        this->rl.createBet(24, this->current_button_value, 11, false );
         currentbutton = ui->pushButton_street_8;
         multi_bet_animation(8,2,currentbutton,569,309,61,8,true);
     }
@@ -1997,6 +2021,9 @@ void MainWindow::on_pushButton_street_9_clicked()
     }
     else
     {
+        this->rl.createBet(25, this->current_button_value, 11, true );
+        this->rl.createBet(26, this->current_button_value, 11, false );
+        this->rl.createBet(27, this->current_button_value, 11, false );
         currentbutton = ui->pushButton_street_9;
         multi_bet_animation(9,2,currentbutton,636,309,61,8,true);
     }
@@ -2011,6 +2038,9 @@ void MainWindow::on_pushButton_street_10_clicked()
     }
     else
     {
+        this->rl.createBet(28, this->current_button_value, 11, true );
+        this->rl.createBet(29, this->current_button_value, 11, false );
+        this->rl.createBet(30, this->current_button_value, 11, false );
         currentbutton = ui->pushButton_street_10;
         multi_bet_animation(10,2,currentbutton,703,309,61,8,true);
     }
@@ -2025,6 +2055,9 @@ void MainWindow::on_pushButton_street_11_clicked()
     }
     else
     {
+        this->rl.createBet(31, this->current_button_value, 11, true );
+        this->rl.createBet(32, this->current_button_value, 11, false );
+        this->rl.createBet(33, this->current_button_value, 11, false );
         currentbutton = ui->pushButton_street_11;
         multi_bet_animation(11,2,currentbutton,770,309,61,8,true);
     }
@@ -2039,6 +2072,9 @@ void MainWindow::on_pushButton_street_12_clicked()
     }
     else
     {
+        this->rl.createBet(34, this->current_button_value, 11, true );
+        this->rl.createBet(34, this->current_button_value, 11, false );
+        this->rl.createBet(36, this->current_button_value, 11, false );
         currentbutton = ui->pushButton_street_12;
         multi_bet_animation(12,2,currentbutton,837,309,61,8,true);
     }
