@@ -94,12 +94,14 @@ void MainWindow::single_button_bet(int x)
     array_to_buttons[x]->setFlat(true);
 }
 
-void MainWindow::multi_bet_animation(int d,QPushButton* currentbutton,int xg,int yg,int width,int lenght,bool add)
+void MainWindow::multi_bet_animation(int x1,int d,QPushButton* currentbutton,int xg,int yg,int width,int lenght,bool add)
 {
     if(d==1)
     {
         if(add)
         {
+            this->rl.createBet(x1, this->current_button_value, 37, true);
+            this->rl.createBet(x1+1, this->current_button_value, 37, false);
             currentbutton->setGeometry(xg+10,yg-18,width-21,lenght+32);
             currentbutton->setIcon(ButtonIcon);
             currentbutton->setIconSize(QSize(40,40));
@@ -116,6 +118,9 @@ void MainWindow::multi_bet_animation(int d,QPushButton* currentbutton,int xg,int
     {
         if(add)
         {
+            this->rl.createBet(x1, this->current_button_value, 37, true);
+            this->rl.createBet(x1+1, this->current_button_value, 37, false);
+            this->rl.createBet(x1+2, this->current_button_value, 37, false);
             currentbutton->setGeometry(xg+10,yg-18,width-21,lenght+32);
             currentbutton->setIcon(ButtonIcon);
             currentbutton->setIconSize(QSize(40,40));
@@ -132,6 +137,8 @@ void MainWindow::multi_bet_animation(int d,QPushButton* currentbutton,int xg,int
     {
         if(add)
         {
+            this->rl.createBet(x1, this->current_button_value, 37, true);
+            this->rl.createBet(x1+3, this->current_button_value, 37, false);
             currentbutton->setGeometry(xg-16,yg+10,width+32,lenght-21);
             currentbutton->setIcon(ButtonIcon);
             currentbutton->setIconSize(QSize(40,40));
@@ -148,6 +155,10 @@ void MainWindow::multi_bet_animation(int d,QPushButton* currentbutton,int xg,int
     {
         if(add)
         {
+            this->rl.createBet(x1, this->current_button_value, 37, true);
+            this->rl.createBet(x1+1, this->current_button_value, 37, false);
+            this->rl.createBet(x1+3, this->current_button_value, 37, false);
+            this->rl.createBet(x1+4, this->current_button_value, 37, false);
             currentbutton->setGeometry(xg-14,yg-13,width+28,lenght+28);
             currentbutton->setIcon(ButtonIcon);
             currentbutton->setIconSize(QSize(40,40));
@@ -164,6 +175,12 @@ void MainWindow::multi_bet_animation(int d,QPushButton* currentbutton,int xg,int
     {
         if(add)
         {
+            this->rl.createBet(x1, this->current_button_value, 37, true);
+            this->rl.createBet(x1+1, this->current_button_value, 37, false);
+            this->rl.createBet(x1+2, this->current_button_value, 37, false);
+            this->rl.createBet(x1+3, this->current_button_value, 37, false);
+            this->rl.createBet(x1+4, this->current_button_value, 37, false);
+            this->rl.createBet(x1+5, this->current_button_value, 37, false);
             currentbutton->setGeometry(xg-14,yg-13,width+28,lenght+28);
             currentbutton->setIcon(ButtonIcon);
             currentbutton->setIconSize(QSize(40,40));
@@ -180,6 +197,18 @@ void MainWindow::multi_bet_animation(int d,QPushButton* currentbutton,int xg,int
     {
         if(add)
         {
+            this->rl.createBet(x1, this->current_button_value, 37, true);
+            this->rl.createBet(x1+3, this->current_button_value, 37, false);
+            this->rl.createBet(x1+6, this->current_button_value, 37, false);
+            this->rl.createBet(x1+9, this->current_button_value, 37, false);
+            this->rl.createBet(x1+12, this->current_button_value, 37, false);
+            this->rl.createBet(x1+15, this->current_button_value, 37, false);
+            this->rl.createBet(x1+18, this->current_button_value, 37, false);
+            this->rl.createBet(x1+21, this->current_button_value, 37, false);
+            this->rl.createBet(x1+24, this->current_button_value, 37, false);
+            this->rl.createBet(x1+27, this->current_button_value, 37, false);
+            this->rl.createBet(x1+30, this->current_button_value, 37, false);
+            this->rl.createBet(x1+33, this->current_button_value, 37, false);
             currentbutton->setGeometry(xg-16,yg+10,width+32,lenght-21);
             currentbutton->setIcon(ButtonIcon);
             currentbutton->setIconSize(QSize(40,40));
@@ -681,12 +710,12 @@ void MainWindow::on_pushButton_1_plus_2_clicked()
     if(ui->pushButton_1_plus_2->isFlat())
     {
         currentbutton = ui->pushButton_1_plus_2;
-        multi_bet_animation(1,currentbutton,100,243,61,8,false);
+        multi_bet_animation(1,1,currentbutton,100,243,61,8,false);
     }
     else
     {
         currentbutton = ui->pushButton_1_plus_2;
-        multi_bet_animation(1,currentbutton,100,243,61,8,true);
+        multi_bet_animation(1,1,currentbutton,100,243,61,8,true);
     }
 }
 
@@ -695,12 +724,12 @@ void MainWindow::on_pushButton_2_plus_3_clicked()
     if(ui->pushButton_2_plus_3->isFlat())
     {
         currentbutton = ui->pushButton_2_plus_3;
-        multi_bet_animation(1,currentbutton,100,176,61,8,false);
+        multi_bet_animation(2,1,currentbutton,100,176,61,8,false);
     }
     else
     {
         currentbutton = ui->pushButton_2_plus_3;
-        multi_bet_animation(1,currentbutton,100,176,61,8,true);
+        multi_bet_animation(2,1,currentbutton,100,176,61,8,true);
     }
 }
 
@@ -709,12 +738,12 @@ void MainWindow::on_pushButton_4_plus_5_clicked()
     if(ui->pushButton_4_plus_5->isFlat())
     {
         currentbutton =  ui->pushButton_4_plus_5;
-        multi_bet_animation(1,currentbutton,167,243,61,8,false);
+        multi_bet_animation(4,1,currentbutton,167,243,61,8,false);
     }
     else
     {
         currentbutton =  ui->pushButton_4_plus_5;
-        multi_bet_animation(1,currentbutton,167,243,61,8,true);
+        multi_bet_animation(4,1,currentbutton,167,243,61,8,true);
     }
 }
 
@@ -723,12 +752,12 @@ void MainWindow::on_pushButton_5_plus_6_clicked()
     if(ui->pushButton_5_plus_6->isFlat())
     {
         currentbutton = ui->pushButton_5_plus_6;
-        multi_bet_animation(1,currentbutton,167,176,61,8,false);
+        multi_bet_animation(5,1,currentbutton,167,176,61,8,false);
     }
     else
     {
         currentbutton = ui->pushButton_5_plus_6;
-        multi_bet_animation(1,currentbutton,167,176,61,8,true);
+        multi_bet_animation(5,1,currentbutton,167,176,61,8,true);
     }
 }
 
@@ -737,12 +766,12 @@ void MainWindow::on_pushButton_7_plus_8_clicked()
     if(ui->pushButton_7_plus_8->isFlat())
     {
         currentbutton = ui->pushButton_7_plus_8;
-        multi_bet_animation(1,currentbutton,234,242,61,8,false);
+        multi_bet_animation(7,1,currentbutton,234,242,61,8,false);
     }
     else
     {
         currentbutton = ui->pushButton_7_plus_8;
-        multi_bet_animation(1,currentbutton,234,242,61,8,true);
+        multi_bet_animation(7,1,currentbutton,234,242,61,8,true);
     }
 }
 
@@ -751,12 +780,12 @@ void MainWindow::on_pushButton_8_plus_9_clicked()
     if(ui->pushButton_8_plus_9->isFlat())
     {
         currentbutton =  ui->pushButton_8_plus_9;
-        multi_bet_animation(1,currentbutton,234,175,61,8,false);
+        multi_bet_animation(8,1,currentbutton,234,175,61,8,false);
     }
     else
     {
         currentbutton =  ui->pushButton_8_plus_9;
-        multi_bet_animation(1,currentbutton,234,175,61,8,true);
+        multi_bet_animation(8,1,currentbutton,234,175,61,8,true);
     }
 }
 
@@ -765,12 +794,12 @@ void MainWindow::on_pushButton_10_plus_11_clicked()
     if(ui->pushButton_10_plus_11->isFlat())
     {
         currentbutton = ui->pushButton_10_plus_11;
-        multi_bet_animation(1,currentbutton,301,242,61,8,false);
+        multi_bet_animation(10,1,currentbutton,301,242,61,8,false);
     }
     else
     {
         currentbutton = ui->pushButton_10_plus_11;
-        multi_bet_animation(1,currentbutton,301,242,61,8,true);
+        multi_bet_animation(10,1,currentbutton,301,242,61,8,true);
     }
 }
 
@@ -779,12 +808,12 @@ void MainWindow::on_pushButton_11_plus_12_clicked()
     if(ui->pushButton_11_plus_12->isFlat())
     {
         currentbutton = ui->pushButton_11_plus_12;
-        multi_bet_animation(1,currentbutton,301,175,61,8,false);
+        multi_bet_animation(11,1,currentbutton,301,175,61,8,false);
     }
     else
     {
         currentbutton = ui->pushButton_11_plus_12;
-        multi_bet_animation(1,currentbutton,301,175,61,8,true);
+        multi_bet_animation(11,1,currentbutton,301,175,61,8,true);
     }
 }
 
@@ -793,12 +822,12 @@ void MainWindow::on_pushButton_13_plus_14_clicked()
     if(ui->pushButton_13_plus_14->isFlat())
     {
         currentbutton = ui->pushButton_13_plus_14;
-        multi_bet_animation(1,currentbutton,368,241,61,8,false);
+        multi_bet_animation(13,1,currentbutton,368,241,61,8,false);
     }
     else
     {
         currentbutton = ui->pushButton_13_plus_14;
-        multi_bet_animation(1,currentbutton,368,241,61,8,true);
+        multi_bet_animation(13,1,currentbutton,368,241,61,8,true);
     }
 }
 
@@ -807,12 +836,12 @@ void MainWindow::on_pushButton_14_plus_15_clicked()
     if(ui->pushButton_14_plus_15->isFlat())
     {
         currentbutton = ui->pushButton_14_plus_15;
-        multi_bet_animation(1,currentbutton,368,174,61,8,false);
+        multi_bet_animation(14,1,currentbutton,368,174,61,8,false);
     }
     else
     {
         currentbutton = ui->pushButton_14_plus_15;
-        multi_bet_animation(1,currentbutton,368,174,61,8,true);
+        multi_bet_animation(14,1,currentbutton,368,174,61,8,true);
     }
 }
 
@@ -821,12 +850,12 @@ void MainWindow::on_pushButton_16_plus_17_clicked()
     if(ui->pushButton_16_plus_17->isFlat())
     {
         currentbutton = ui->pushButton_16_plus_17;
-        multi_bet_animation(1,currentbutton,435,241,61,8,false);
+        multi_bet_animation(16,1,currentbutton,435,241,61,8,false);
     }
     else
     {
         currentbutton = ui->pushButton_16_plus_17;
-        multi_bet_animation(1,currentbutton,435,241,61,8,true);
+        multi_bet_animation(16,1,currentbutton,435,241,61,8,true);
     }
 }
 
@@ -835,12 +864,12 @@ void MainWindow::on_pushButton_17_plus_18_clicked()
     if(ui->pushButton_17_plus_18->isFlat())
     {
         currentbutton = ui->pushButton_17_plus_18;
-        multi_bet_animation(1,currentbutton,435,174,61,8,false);
+        multi_bet_animation(17,1,currentbutton,435,174,61,8,false);
     }
     else
     {
         currentbutton = ui->pushButton_17_plus_18;
-        multi_bet_animation(1,currentbutton,435,174,61,8,true);
+        multi_bet_animation(17,1,currentbutton,435,174,61,8,true);
     }
 }
 
@@ -849,12 +878,12 @@ void MainWindow::on_pushButton_19_plus_20_clicked()
     if(ui->pushButton_19_plus_20->isFlat())
     {
         currentbutton = ui->pushButton_19_plus_20;
-        multi_bet_animation(1,currentbutton,503,241,61,8,false);
+        multi_bet_animation(19,1,currentbutton,503,241,61,8,false);
     }
     else
     {
         currentbutton = ui->pushButton_19_plus_20;
-        multi_bet_animation(1,currentbutton,503,241,61,8,true);
+        multi_bet_animation(19,1,currentbutton,503,241,61,8,true);
     }
 }
 
@@ -863,12 +892,12 @@ void MainWindow::on_pushButton_20_plus_21_clicked()
     if(ui->pushButton_20_plus_21->isFlat())
     {
         currentbutton = ui->pushButton_20_plus_21;
-        multi_bet_animation(1,currentbutton,503,174,61,8,false);
+        multi_bet_animation(20,1,currentbutton,503,174,61,8,false);
     }
     else
     {
         currentbutton = ui->pushButton_20_plus_21;
-        multi_bet_animation(1,currentbutton,503,174,61,8,true);
+        multi_bet_animation(20,1,currentbutton,503,174,61,8,true);
     }
 }
 
@@ -877,12 +906,12 @@ void MainWindow::on_pushButton_22_plus_23_clicked()
     if(ui->pushButton_22_plus_23->isFlat())
     {
          currentbutton = ui->pushButton_22_plus_23;
-         multi_bet_animation(1,currentbutton,570,241,61,8,false);
+         multi_bet_animation(22,1,currentbutton,570,241,61,8,false);
     }
     else
     {
         currentbutton = ui->pushButton_22_plus_23;
-        multi_bet_animation(1,currentbutton,570,241,61,8,true);
+        multi_bet_animation(22,1,currentbutton,570,241,61,8,true);
     }
 }
 
@@ -891,12 +920,12 @@ void MainWindow::on_pushButton_23_plus_24_clicked()
     if(ui->pushButton_23_plus_24->isFlat())
     {
          currentbutton = ui->pushButton_23_plus_24;
-        multi_bet_animation(1,currentbutton,570,174,61,8,false);
+        multi_bet_animation(23,1,currentbutton,570,174,61,8,false);
     }
     else
     {
         currentbutton = ui->pushButton_23_plus_24;
-        multi_bet_animation(1,currentbutton,570,174,61,8,true);
+        multi_bet_animation(23,1,currentbutton,570,174,61,8,true);
     }
 }
 
@@ -905,12 +934,12 @@ void MainWindow::on_pushButton_25_plus_26_clicked()
     if(ui->pushButton_25_plus_26->isFlat())
     {
         currentbutton = ui->pushButton_25_plus_26;
-        multi_bet_animation(1,currentbutton,637,241,61,8,false);
+        multi_bet_animation(25,1,currentbutton,637,241,61,8,false);
     }
     else
     {
         currentbutton = ui->pushButton_25_plus_26;
-        multi_bet_animation(1,currentbutton,637,241,61,8,true);
+        multi_bet_animation(25,1,currentbutton,637,241,61,8,true);
     }
 }
 
@@ -919,12 +948,12 @@ void MainWindow::on_pushButton_26_plus_27_clicked()
     if(ui->pushButton_26_plus_27->isFlat())
     {
         currentbutton = ui->pushButton_26_plus_27;
-        multi_bet_animation(1,currentbutton,637,174,61,8,false);
+        multi_bet_animation(26,1,currentbutton,637,174,61,8,false);
     }
     else
     {
         currentbutton = ui->pushButton_26_plus_27;
-        multi_bet_animation(1,currentbutton,637,174,61,8,true);
+        multi_bet_animation(26,1,currentbutton,637,174,61,8,true);
     }
 }
 
@@ -933,12 +962,12 @@ void MainWindow::on_pushButton_28_plus_29_clicked()
     if(ui->pushButton_28_plus_29->isFlat())
     {
         currentbutton = ui->pushButton_28_plus_29;
-        multi_bet_animation(1,currentbutton,704,241,61,8,false);
+        multi_bet_animation(28,1,currentbutton,704,241,61,8,false);
     }
     else
     {
         currentbutton = ui->pushButton_28_plus_29;
-        multi_bet_animation(1,currentbutton,704,241,61,8,true);
+        multi_bet_animation(28,1,currentbutton,704,241,61,8,true);
     }
 }
 
@@ -947,12 +976,12 @@ void MainWindow::on_pushButton_29_plus_30_clicked()
     if(ui->pushButton_29_plus_30->isFlat())
     {
         currentbutton = ui->pushButton_29_plus_30;
-        multi_bet_animation(1,currentbutton,704,174,61,8,false);
+        multi_bet_animation(29,1,currentbutton,704,174,61,8,false);
     }
     else
     {
         currentbutton = ui->pushButton_29_plus_30;
-        multi_bet_animation(1,currentbutton,704,174,61,8,true);
+        multi_bet_animation(29,1,currentbutton,704,174,61,8,true);
     }
 }
 
@@ -961,12 +990,12 @@ void MainWindow::on_pushButton_31_plus_32_clicked()
     if(ui->pushButton_31_plus_32->isFlat())
     {
         currentbutton = ui->pushButton_31_plus_32;
-        multi_bet_animation(1,currentbutton,771,241,61,8,false);
+        multi_bet_animation(31,1,currentbutton,771,241,61,8,false);
     }
     else
     {
         currentbutton = ui->pushButton_31_plus_32;
-        multi_bet_animation(1,currentbutton,771,241,61,8,true);
+        multi_bet_animation(31,1,currentbutton,771,241,61,8,true);
     }
 }
 
@@ -975,12 +1004,12 @@ void MainWindow::on_pushButton_32_plus_33_clicked()
     if(ui->pushButton_32_plus_33->isFlat())
     {
         currentbutton = ui->pushButton_32_plus_33;
-        multi_bet_animation(1,currentbutton,771,174,61,8,false);
+        multi_bet_animation(32,1,currentbutton,771,174,61,8,false);
     }
     else
     {
         currentbutton = ui->pushButton_32_plus_33;
-        multi_bet_animation(1,currentbutton,771,174,61,8,true);
+        multi_bet_animation(32,1,currentbutton,771,174,61,8,true);
     }
 }
 
@@ -989,12 +1018,12 @@ void MainWindow::on_pushButton_34_plus_35_clicked()
     if(ui->pushButton_34_plus_35->isFlat())
     {
         currentbutton = ui->pushButton_34_plus_35;
-        multi_bet_animation(1,currentbutton,838,241,61,8,false);
+        multi_bet_animation(34,1,currentbutton,838,241,61,8,false);
     }
     else
     {
         currentbutton = ui->pushButton_34_plus_35;
-        multi_bet_animation(1,currentbutton,838,241,61,8,true);
+        multi_bet_animation(34,1,currentbutton,838,241,61,8,true);
     }
 }
 
@@ -1003,12 +1032,12 @@ void MainWindow::on_pushButton_35_plus_36_clicked()
     if(ui->pushButton_35_plus_36->isFlat())
     {
         currentbutton = ui->pushButton_35_plus_36;
-        multi_bet_animation(1,currentbutton,838,174,61,8,false);
+        multi_bet_animation(35,1,currentbutton,838,174,61,8,false);
     }
     else
     {
         currentbutton = ui->pushButton_35_plus_36;
-        multi_bet_animation(1,currentbutton,838,174,61,8,true);
+        multi_bet_animation(35,1,currentbutton,838,174,61,8,true);
     }
 }
 
@@ -1017,12 +1046,12 @@ void MainWindow::on_pushButton_1_plus_4_clicked()
     if(ui->pushButton_1_plus_4->isFlat())
     {
         currentbutton = ui->pushButton_1_plus_4;
-        multi_bet_animation(3,currentbutton,160,250,8,61,false);
+        multi_bet_animation(1,3,currentbutton,160,250,8,61,false);
     }
     else
     {
         currentbutton = ui->pushButton_1_plus_4;
-        multi_bet_animation(3,currentbutton,160,250,8,61,true);
+        multi_bet_animation(1,3,currentbutton,160,250,8,61,true);
     }
 }
 
@@ -1031,12 +1060,12 @@ void MainWindow::on_pushButton_4_plus_7_clicked()
     if(ui->pushButton_4_plus_7->isFlat())
     {
         currentbutton = ui->pushButton_4_plus_7;
-        multi_bet_animation(3,currentbutton,227,250,8,61,false);
+        multi_bet_animation(4,3,currentbutton,227,250,8,61,false);
     }
     else
     {
         currentbutton = ui->pushButton_4_plus_7;
-        multi_bet_animation(3,currentbutton,227,250,8,61,true);
+        multi_bet_animation(4,3,currentbutton,227,250,8,61,true);
     }
 }
 
@@ -1045,12 +1074,12 @@ void MainWindow::on_pushButton_7_plus_10_clicked()
     if(ui->pushButton_7_plus_10->isFlat())
     {
         currentbutton = ui->pushButton_7_plus_10;
-        multi_bet_animation(3,currentbutton,294,250,8,61,false);
+        multi_bet_animation(7,3,currentbutton,294,250,8,61,false);
     }
     else
     {
         currentbutton = ui->pushButton_7_plus_10;
-        multi_bet_animation(3,currentbutton,294,250,8,61,true);
+        multi_bet_animation(7,3,currentbutton,294,250,8,61,true);
     }
 }
 
@@ -1059,12 +1088,12 @@ void MainWindow::on_pushButton_10_plus_13_clicked()
     if(ui->pushButton_10_plus_13->isFlat())
     {
         currentbutton = ui->pushButton_10_plus_13;
-        multi_bet_animation(3,currentbutton,362,250,8,61,false);
+        multi_bet_animation(10,3,currentbutton,362,250,8,61,false);
     }
     else
     {
         currentbutton = ui->pushButton_10_plus_13;
-        multi_bet_animation(3,currentbutton,362,250,8,61,true);
+        multi_bet_animation(10,3,currentbutton,362,250,8,61,true);
     }
 }
 
@@ -1073,12 +1102,12 @@ void MainWindow::on_pushButton_13_plus_16_clicked()
     if(ui->pushButton_13_plus_16->isFlat())
     {
         currentbutton = ui->pushButton_13_plus_16;
-        multi_bet_animation(3,currentbutton,429,250,8,61,false);
+        multi_bet_animation(13,3,currentbutton,429,250,8,61,false);
     }
     else
     {
         currentbutton = ui->pushButton_13_plus_16;
-        multi_bet_animation(3,currentbutton,429,250,8,61,true);
+        multi_bet_animation(13,3,currentbutton,429,250,8,61,true);
     }
 }
 
@@ -1087,12 +1116,12 @@ void MainWindow::on_pushButton_16_plus_19_clicked()
     if(ui->pushButton_16_plus_19->isFlat())
     {
         currentbutton = ui->pushButton_16_plus_19;
-        multi_bet_animation(3,currentbutton,496,250,8,61,false);
+        multi_bet_animation(16,3,currentbutton,496,250,8,61,false);
     }
     else
     {
         currentbutton = ui->pushButton_16_plus_19;
-        multi_bet_animation(3,currentbutton,496,250,8,61,true);
+        multi_bet_animation(16,3,currentbutton,496,250,8,61,true);
     }
 }
 
@@ -1101,12 +1130,12 @@ void MainWindow::on_pushButton_19_plus_22_clicked()
     if(ui->pushButton_19_plus_22->isFlat())
     {
         currentbutton = ui->pushButton_19_plus_22;
-        multi_bet_animation(3,currentbutton,563,250,8,61,false);
+        multi_bet_animation(19,3,currentbutton,563,250,8,61,false);
     }
     else
     {
         currentbutton = ui->pushButton_19_plus_22;
-        multi_bet_animation(3,currentbutton,563,250,8,61,true);
+        multi_bet_animation(19,3,currentbutton,563,250,8,61,true);
     }
 }
 
@@ -1115,12 +1144,12 @@ void MainWindow::on_pushButton_22_plus_25_clicked()
     if(ui->pushButton_22_plus_25->isFlat())
     {
         currentbutton = ui->pushButton_22_plus_25;
-        multi_bet_animation(3,currentbutton,630,250,8,61,false);
+        multi_bet_animation(22,3,currentbutton,630,250,8,61,false);
     }
     else
     {
         currentbutton = ui->pushButton_22_plus_25;
-        multi_bet_animation(3,currentbutton,630,250,8,61,true);
+        multi_bet_animation(22,3,currentbutton,630,250,8,61,true);
     }
 }
 
@@ -1129,12 +1158,12 @@ void MainWindow::on_pushButton_25_plus_28_clicked()
     if(ui->pushButton_25_plus_28->isFlat())
     {
         currentbutton = ui->pushButton_25_plus_28;
-        multi_bet_animation(3,currentbutton,697,250,8,61,false);
+        multi_bet_animation(25,3,currentbutton,697,250,8,61,false);
     }
     else
     {
         currentbutton = ui->pushButton_25_plus_28;
-        multi_bet_animation(3,currentbutton,697,250,8,61,true);
+        multi_bet_animation(25,3,currentbutton,697,250,8,61,true);
     }
 }
 
@@ -1143,12 +1172,12 @@ void MainWindow::on_pushButton_28_plus_31_clicked()
     if(ui->pushButton_28_plus_31->isFlat())
     {
         currentbutton = ui->pushButton_28_plus_31;
-        multi_bet_animation(3,currentbutton,764,250,8,61,false);
+        multi_bet_animation(28,3,currentbutton,764,250,8,61,false);
     }
     else
     {
         currentbutton = ui->pushButton_28_plus_31;
-        multi_bet_animation(3,currentbutton,764,250,8,61,true);
+        multi_bet_animation(28,3,currentbutton,764,250,8,61,true);
     }
 }
 
@@ -1157,12 +1186,12 @@ void MainWindow::on_pushButton_31_plus_34_clicked()
     if(ui->pushButton_31_plus_34->isFlat())
     {
         currentbutton = ui->pushButton_31_plus_34;
-        multi_bet_animation(3,currentbutton,831,250,8,61,false);
+        multi_bet_animation(31,3,currentbutton,831,250,8,61,false);
     }
     else
     {
         currentbutton = ui->pushButton_31_plus_34;
-        multi_bet_animation(3,currentbutton,831,250,8,61,true);
+        multi_bet_animation(31,3,currentbutton,831,250,8,61,true);
     }
 }
 
@@ -1171,12 +1200,12 @@ void MainWindow::on_pushButton_2_plus_5_clicked()
     if(ui->pushButton_2_plus_5->isFlat())
     {
         currentbutton = ui->pushButton_2_plus_5;
-        multi_bet_animation(3,currentbutton,160,181,8,61,false);
+        multi_bet_animation(2,3,currentbutton,160,181,8,61,false);
     }
     else
     {
         currentbutton = ui->pushButton_2_plus_5;
-        multi_bet_animation(3,currentbutton,160,181,8,61,true);
+        multi_bet_animation(2,3,currentbutton,160,181,8,61,true);
     }
 }
 
@@ -1185,12 +1214,12 @@ void MainWindow::on_pushButton_5_plus_8_clicked()
     if(ui->pushButton_5_plus_8->isFlat())
     {
         currentbutton = ui->pushButton_5_plus_8;
-        multi_bet_animation(3,currentbutton,227,181,8,61,false);
+        multi_bet_animation(5,3,currentbutton,227,181,8,61,false);
     }
     else
     {
         currentbutton = ui->pushButton_5_plus_8;
-        multi_bet_animation(3,currentbutton,227,181,8,61,true);
+        multi_bet_animation(5,3,currentbutton,227,181,8,61,true);
     }
 }
 
@@ -1199,12 +1228,12 @@ void MainWindow::on_pushButton_8_plus_11_clicked()
     if(ui->pushButton_8_plus_11->isFlat())
     {
         currentbutton = ui->pushButton_8_plus_11;
-        multi_bet_animation(3,currentbutton,294,181,8,61,false);
+        multi_bet_animation(8,3,currentbutton,294,181,8,61,false);
     }
     else
     {
         currentbutton = ui->pushButton_8_plus_11;
-        multi_bet_animation(3,currentbutton,294,181,8,61,true);
+        multi_bet_animation(8,3,currentbutton,294,181,8,61,true);
     }
 }
 
@@ -1213,12 +1242,12 @@ void MainWindow::on_pushButton_11_plus_14_clicked()
     if(ui->pushButton_11_plus_14->isFlat())
     {
         currentbutton = ui->pushButton_11_plus_14;
-        multi_bet_animation(3,currentbutton,362,181,8,61,false);
+        multi_bet_animation(11,3,currentbutton,362,181,8,61,false);
     }
     else
     {
         currentbutton = ui->pushButton_11_plus_14;
-        multi_bet_animation(3,currentbutton,362,181,8,61,true);
+        multi_bet_animation(11,3,currentbutton,362,181,8,61,true);
     }
 }
 
@@ -1227,12 +1256,12 @@ void MainWindow::on_pushButton_14_plus_17_clicked()
     if(ui->pushButton_14_plus_17->isFlat())
     {
         currentbutton = ui->pushButton_14_plus_17;
-        multi_bet_animation(3,currentbutton,429,181,8,61,false);
+        multi_bet_animation(14,3,currentbutton,429,181,8,61,false);
     }
     else
     {
         currentbutton = ui->pushButton_14_plus_17;
-        multi_bet_animation(3,currentbutton,429,181,8,61,true);
+        multi_bet_animation(14,3,currentbutton,429,181,8,61,true);
     }
 }
 
@@ -1241,12 +1270,12 @@ void MainWindow::on_pushButton_17_plus_20_clicked()
     if(ui->pushButton_17_plus_20->isFlat())
     {
         currentbutton = ui->pushButton_17_plus_20;
-        multi_bet_animation(3,currentbutton,496,181,8,61,false);
+        multi_bet_animation(17,3,currentbutton,496,181,8,61,false);
     }
     else
     {
         currentbutton = ui->pushButton_17_plus_20;
-        multi_bet_animation(3,currentbutton,496,181,8,61,true);
+        multi_bet_animation(17,3,currentbutton,496,181,8,61,true);
     }
 }
 
@@ -1255,12 +1284,12 @@ void MainWindow::on_pushButton_20_plus_23_clicked()
     if(ui->pushButton_20_plus_23->isFlat())
     {
         currentbutton =  ui->pushButton_20_plus_23;
-        multi_bet_animation(3,currentbutton,563,181,8,61,false);
+        multi_bet_animation(20,3,currentbutton,563,181,8,61,false);
     }
     else
     {
         currentbutton =  ui->pushButton_20_plus_23;
-        multi_bet_animation(3,currentbutton,563,181,8,61,true);
+        multi_bet_animation(20,3,currentbutton,563,181,8,61,true);
     }
 }
 
@@ -1269,12 +1298,12 @@ void MainWindow::on_pushButton_23_plus_26_clicked()
     if(ui->pushButton_23_plus_26->isFlat())
     {
         currentbutton =  ui->pushButton_23_plus_26;
-        multi_bet_animation(3,currentbutton,630,181,8,61,false);
+        multi_bet_animation(23,3,currentbutton,630,181,8,61,false);
     }
     else
     {
         currentbutton =  ui->pushButton_23_plus_26;
-        multi_bet_animation(3,currentbutton,630,181,8,61,true);
+        multi_bet_animation(23,3,currentbutton,630,181,8,61,true);
     }
 }
 
@@ -1283,12 +1312,12 @@ void MainWindow::on_pushButton_26_plus_29_clicked()
     if(ui->pushButton_26_plus_29->isFlat())
     {
         currentbutton =  ui->pushButton_26_plus_29;
-        multi_bet_animation(3,currentbutton,697,181,8,61,false);
+        multi_bet_animation(26,3,currentbutton,697,181,8,61,false);
     }
     else
     {
         currentbutton =  ui->pushButton_26_plus_29;
-        multi_bet_animation(3,currentbutton,697,181,8,61,true);
+        multi_bet_animation(26,3,currentbutton,697,181,8,61,true);
     }
 }
 
@@ -1297,12 +1326,12 @@ void MainWindow::on_pushButton_29_plus_32_clicked()
     if(ui->pushButton_29_plus_32->isFlat())
     {
         currentbutton =  ui->pushButton_29_plus_32;
-        multi_bet_animation(3,currentbutton,764,181,8,61,false);
+        multi_bet_animation(29,3,currentbutton,764,181,8,61,false);
     }
     else
     {
         currentbutton =  ui->pushButton_29_plus_32;
-        multi_bet_animation(3,currentbutton,764,181,8,61,true);
+        multi_bet_animation(29,3,currentbutton,764,181,8,61,true);
     }
 }
 
@@ -1311,12 +1340,12 @@ void MainWindow::on_pushButton_32_plus_35_clicked()
     if(ui->pushButton_32_plus_35->isFlat())
     {
         currentbutton =  ui->pushButton_32_plus_35;
-        multi_bet_animation(3,currentbutton,831,181,8,61,false);
+        multi_bet_animation(32,3,currentbutton,831,181,8,61,false);
     }
     else
     {
         currentbutton =  ui->pushButton_32_plus_35;
-        multi_bet_animation(3,currentbutton,831,181,8,61,true);
+        multi_bet_animation(32,3,currentbutton,831,181,8,61,true);
     }
 }
 
@@ -1325,12 +1354,12 @@ void MainWindow::on_pushButton_3_plus_6_clicked()
     if(ui->pushButton_3_plus_6->isFlat())
     {
         currentbutton =  ui->pushButton_3_plus_6;
-        multi_bet_animation(3,currentbutton,160,113,8,61,false);
+        multi_bet_animation(3,3,currentbutton,160,113,8,61,false);
     }
     else
     {
         currentbutton =  ui->pushButton_3_plus_6;
-        multi_bet_animation(3,currentbutton,160,113,8,61,true);
+        multi_bet_animation(3,3,currentbutton,160,113,8,61,true);
     }
 }
 
@@ -1339,12 +1368,12 @@ void MainWindow::on_pushButton_6_plus_9_clicked()
     if(ui->pushButton_6_plus_9->isFlat())
     {
         currentbutton =  ui->pushButton_6_plus_9;
-        multi_bet_animation(3,currentbutton,227,113,8,61,false);
+        multi_bet_animation(6,3,currentbutton,227,113,8,61,false);
     }
     else
     {
         currentbutton =  ui->pushButton_6_plus_9;
-        multi_bet_animation(3,currentbutton,227,113,8,61,true);
+        multi_bet_animation(6,3,currentbutton,227,113,8,61,true);
     }
 }
 
@@ -1353,12 +1382,12 @@ void MainWindow::on_pushButton_9_plus_12_clicked()
     if(ui->pushButton_9_plus_12->isFlat())
     {
         currentbutton =  ui->pushButton_9_plus_12;
-        multi_bet_animation(3,currentbutton,294,113,8,61,false);
+        multi_bet_animation(9,3,currentbutton,294,113,8,61,false);
     }
     else
     {
         currentbutton =  ui->pushButton_9_plus_12;
-        multi_bet_animation(3,currentbutton,294,113,8,61,true);
+        multi_bet_animation(9,3,currentbutton,294,113,8,61,true);
     }
 }
 
@@ -1367,12 +1396,12 @@ void MainWindow::on_pushButton_12_plus_15_clicked()
     if(ui->pushButton_12_plus_15->isFlat())
     {
         currentbutton =  ui->pushButton_12_plus_15;
-        multi_bet_animation(3,currentbutton,362,113,8,61,false);
+        multi_bet_animation(12,3,currentbutton,362,113,8,61,false);
     }
     else
     {
         currentbutton =  ui->pushButton_12_plus_15;
-        multi_bet_animation(3,currentbutton,362,113,8,61,true);
+        multi_bet_animation(12,3,currentbutton,362,113,8,61,true);
     }
 }
 
@@ -1381,12 +1410,12 @@ void MainWindow::on_pushButton_15_plus_18_clicked()
     if(ui->pushButton_15_plus_18->isFlat())
     {
         currentbutton =  ui->pushButton_15_plus_18;
-        multi_bet_animation(3,currentbutton,429,113,8,61,false);
+        multi_bet_animation(15,3,currentbutton,429,113,8,61,false);
     }
     else
     {
         currentbutton =  ui->pushButton_15_plus_18;
-        multi_bet_animation(3,currentbutton,429,113,8,61,true);
+        multi_bet_animation(15,3,currentbutton,429,113,8,61,true);
     }
 }
 
@@ -1395,12 +1424,12 @@ void MainWindow::on_pushButton_18_plus_21_clicked()
     if(ui->pushButton_18_plus_21->isFlat())
     {
         currentbutton =  ui->pushButton_18_plus_21;
-        multi_bet_animation(3,currentbutton,496,113,8,61,false);
+        multi_bet_animation(18,3,currentbutton,496,113,8,61,false);
     }
     else
     {
         currentbutton =  ui->pushButton_18_plus_21;
-        multi_bet_animation(3,currentbutton,496,113,8,61,true);
+        multi_bet_animation(18,3,currentbutton,496,113,8,61,true);
     }
 }
 
@@ -1409,12 +1438,12 @@ void MainWindow::on_pushButton_21_plus_24_clicked()
     if(ui->pushButton_21_plus_24->isFlat())
     {
         currentbutton =  ui->pushButton_21_plus_24;
-        multi_bet_animation(3,currentbutton,563,113,8,61,false);
+        multi_bet_animation(21,3,currentbutton,563,113,8,61,false);
     }
     else
     {
         currentbutton =  ui->pushButton_21_plus_24;
-        multi_bet_animation(3,currentbutton,563,113,8,61,true);
+        multi_bet_animation(21,3,currentbutton,563,113,8,61,true);
     }
 }
 
@@ -1423,12 +1452,12 @@ void MainWindow::on_pushButton_24_plus_27_clicked()
     if(ui->pushButton_24_plus_27->isFlat())
     {
         currentbutton =  ui->pushButton_24_plus_27;
-        multi_bet_animation(3,currentbutton,630,113,8,61,false);
+        multi_bet_animation(24,3,currentbutton,630,113,8,61,false);
     }
     else
     {
         currentbutton =  ui->pushButton_24_plus_27;
-        multi_bet_animation(3,currentbutton,630,113,8,61,true);
+        multi_bet_animation(24,3,currentbutton,630,113,8,61,true);
     }
 }
 
@@ -1437,12 +1466,12 @@ void MainWindow::on_pushButton_27_plus_30_clicked()
     if(ui->pushButton_27_plus_30->isFlat())
     {
         currentbutton =  ui->pushButton_27_plus_30;
-        multi_bet_animation(3,currentbutton,697,113,8,61,false);
+        multi_bet_animation(27,3,currentbutton,697,113,8,61,false);
     }
     else
     {
         currentbutton =  ui->pushButton_27_plus_30;
-        multi_bet_animation(3,currentbutton,697,113,8,61,true);
+        multi_bet_animation(27,3,currentbutton,697,113,8,61,true);
     }
 }
 
@@ -1451,12 +1480,12 @@ void MainWindow::on_pushButton_30_plus_33_clicked()
     if(ui->pushButton_30_plus_33->isFlat())
     {
         currentbutton =  ui->pushButton_30_plus_33;
-        multi_bet_animation(3,currentbutton,764,113,8,61,false);
+        multi_bet_animation(30,3,currentbutton,764,113,8,61,false);
     }
     else
     {
         currentbutton =  ui->pushButton_30_plus_33;
-        multi_bet_animation(3,currentbutton,764,113,8,61,true);
+        multi_bet_animation(30,3,currentbutton,764,113,8,61,true);
     }
 }
 
@@ -1465,12 +1494,12 @@ void MainWindow::on_pushButton_33_plus_36_clicked()
     if(ui->pushButton_33_plus_36->isFlat())
     {
         currentbutton =  ui->pushButton_33_plus_36;
-        multi_bet_animation(3,currentbutton,831,113,8,61,false);
+        multi_bet_animation(33,3,currentbutton,831,113,8,61,false);
     }
     else
     {
         currentbutton =  ui->pushButton_33_plus_36;
-        multi_bet_animation(3,currentbutton,831,113,8,61,true);
+        multi_bet_animation(33,3,currentbutton,831,113,8,61,true);
     }
 }
 
@@ -1479,12 +1508,12 @@ void MainWindow::on_pushButton_1_plus_4_2_5_clicked()
     if(ui->pushButton_1_plus_4_2_5->isFlat())
     {
         currentbutton = ui->pushButton_1_plus_4_2_5;
-        multi_bet_animation(4,currentbutton,158,240,12,12,false);
+        multi_bet_animation(1,4,currentbutton,158,240,12,12,false);
     }
     else
     {
         currentbutton = ui->pushButton_1_plus_4_2_5;
-        multi_bet_animation(4,currentbutton,158,240,12,12,true);
+        multi_bet_animation(1,4,currentbutton,158,240,12,12,true);
     }
 }
 
@@ -1493,12 +1522,12 @@ void MainWindow::on_pushButton_2_plus_5_3_6_clicked()
     if(ui->pushButton_2_plus_5_3_6->isFlat())
     {
         currentbutton = ui->pushButton_2_plus_5_3_6;
-        multi_bet_animation(4,currentbutton,158,173,12,12,false);
+        multi_bet_animation(2,4,currentbutton,158,173,12,12,false);
     }
     else
     {
         currentbutton = ui->pushButton_2_plus_5_3_6;
-        multi_bet_animation(4,currentbutton,158,173,12,12,true);
+        multi_bet_animation(2,4,currentbutton,158,173,12,12,true);
     }
 }
 
@@ -1507,12 +1536,12 @@ void MainWindow::on_pushButton_5_plus_8_6_9_clicked()
     if(ui->pushButton_5_plus_8_6_9->isFlat())
     {
         currentbutton = ui->pushButton_5_plus_8_6_9;
-        multi_bet_animation(4,currentbutton,225,173,12,12,false);
+        multi_bet_animation(5,4,currentbutton,225,173,12,12,false);
     }
     else
     {
         currentbutton = ui->pushButton_5_plus_8_6_9;
-        multi_bet_animation(4,currentbutton,225,173,12,12,true);
+        multi_bet_animation(5,4,currentbutton,225,173,12,12,true);
     }
 }
 
@@ -1521,12 +1550,12 @@ void MainWindow::on_pushButton_4_plus_7_5_8_clicked()
     if(ui->pushButton_4_plus_7_5_8->isFlat())
     {
         currentbutton = ui->pushButton_4_plus_7_5_8;
-        multi_bet_animation(4,currentbutton,225,240,12,12,false);
+        multi_bet_animation(4,4,currentbutton,225,240,12,12,false);
     }
     else
     {
         currentbutton = ui->pushButton_4_plus_7_5_8;
-        multi_bet_animation(4,currentbutton,225,240,12,12,true);
+        multi_bet_animation(4,4,currentbutton,225,240,12,12,true);
     }
 }
 
@@ -1535,12 +1564,12 @@ void MainWindow::on_pushButton_7_plus_10_8_11_clicked()
     if(ui->pushButton_7_plus_10_8_11->isFlat())
     {
         currentbutton = ui->pushButton_7_plus_10_8_11;
-        multi_bet_animation(4,currentbutton,292,240,12,12,false);
+        multi_bet_animation(7,4,currentbutton,292,240,12,12,false);
     }
     else
     {
         currentbutton = ui->pushButton_7_plus_10_8_11;
-        multi_bet_animation(4,currentbutton,292,240,12,12,true);
+        multi_bet_animation(7,4,currentbutton,292,240,12,12,true);
     }
 }
 
@@ -1549,12 +1578,12 @@ void MainWindow::on_pushButton_8_plus_11_9_12_clicked()
     if(ui->pushButton_8_plus_11_9_12->isFlat())
     {
         currentbutton = ui->pushButton_8_plus_11_9_12;
-        multi_bet_animation(4,currentbutton,292,173,12,12,false);
+        multi_bet_animation(8,4,currentbutton,292,173,12,12,false);
     }
     else
     {
         currentbutton = ui->pushButton_8_plus_11_9_12;
-        multi_bet_animation(4,currentbutton,292,173,12,12,true);
+        multi_bet_animation(8,4,currentbutton,292,173,12,12,true);
     }
 }
 
@@ -1563,12 +1592,12 @@ void MainWindow::on_pushButton_11_plus_14_12_15_clicked()
     if(ui->pushButton_11_plus_14_12_15->isFlat())
     {
         currentbutton = ui->pushButton_11_plus_14_12_15;
-        multi_bet_animation(4,currentbutton,360,173,12,12,false);
+        multi_bet_animation(11,4,currentbutton,360,173,12,12,false);
     }
     else
     {
         currentbutton = ui->pushButton_11_plus_14_12_15;
-        multi_bet_animation(4,currentbutton,360,173,12,12,true);
+        multi_bet_animation(11,4,currentbutton,360,173,12,12,true);
     }
 }
 
@@ -1577,12 +1606,12 @@ void MainWindow::on_pushButton_10_plus_13_11_14_clicked()
     if(ui->pushButton_10_plus_13_11_14->isFlat())
     {
         currentbutton = ui->pushButton_10_plus_13_11_14;
-        multi_bet_animation(4,currentbutton,360,240,12,12,false);
+        multi_bet_animation(10,4,currentbutton,360,240,12,12,false);
     }
     else
     {
         currentbutton = ui->pushButton_10_plus_13_11_14;
-        multi_bet_animation(4,currentbutton,360,240,12,12,true);
+        multi_bet_animation(10,4,currentbutton,360,240,12,12,true);
     }
 }
 
@@ -1591,12 +1620,12 @@ void MainWindow::on_pushButton_13_plus_16_14_17_clicked()
     if(ui->pushButton_13_plus_16_14_17->isFlat())
     {
         currentbutton = ui->pushButton_13_plus_16_14_17;
-        multi_bet_animation(4,currentbutton,426,240,12,12,false);
+        multi_bet_animation(13,4,currentbutton,426,240,12,12,false);
     }
     else
     {
         currentbutton = ui->pushButton_13_plus_16_14_17;
-        multi_bet_animation(4,currentbutton,426,240,12,12,true);
+        multi_bet_animation(13,4,currentbutton,426,240,12,12,true);
     }
 }
 
@@ -1605,12 +1634,12 @@ void MainWindow::on_pushButton_14_plus_17_15_18_clicked()
     if(ui->pushButton_14_plus_17_15_18->isFlat())
     {
         currentbutton = ui->pushButton_14_plus_17_15_18;
-        multi_bet_animation(4,currentbutton,426,173,12,12,false);
+        multi_bet_animation(14,4,currentbutton,426,173,12,12,false);
     }
     else
     {
         currentbutton = ui->pushButton_14_plus_17_15_18;
-        multi_bet_animation(4,currentbutton,426,173,12,12,true);
+        multi_bet_animation(14,4,currentbutton,426,173,12,12,true);
     }
 }
 
@@ -1619,12 +1648,12 @@ void MainWindow::on_pushButton_17_plus_20_18_21_clicked()
     if(ui->pushButton_17_plus_20_18_21->isFlat())
     {
         currentbutton = ui->pushButton_17_plus_20_18_21;
-        multi_bet_animation(4,currentbutton,493,173,12,12,false);
+        multi_bet_animation(17,4,currentbutton,493,173,12,12,false);
     }
     else
     {
         currentbutton = ui->pushButton_17_plus_20_18_21;
-        multi_bet_animation(4,currentbutton,493,173,12,12,true);
+        multi_bet_animation(17,4,currentbutton,493,173,12,12,true);
     }
 }
 
@@ -1633,12 +1662,12 @@ void MainWindow::on_pushButton_16_plus_19_17_20_clicked()
     if(ui->pushButton_16_plus_19_17_20->isFlat())
     {
         currentbutton = ui->pushButton_16_plus_19_17_20;
-        multi_bet_animation(4,currentbutton,493,240,12,12,false);
+        multi_bet_animation(16,4,currentbutton,493,240,12,12,false);
     }
     else
     {
         currentbutton = ui->pushButton_16_plus_19_17_20;
-        multi_bet_animation(4,currentbutton,493,240,12,12,true);
+        multi_bet_animation(16,4,currentbutton,493,240,12,12,true);
     }
 }
 
@@ -1647,12 +1676,12 @@ void MainWindow::on_pushButton_19_plus_22_20_23_clicked()
     if(ui->pushButton_19_plus_22_20_23->isFlat())
     {
         currentbutton = ui->pushButton_19_plus_22_20_23;
-        multi_bet_animation(4,currentbutton,561,240,12,12,false);
+        multi_bet_animation(19,4,currentbutton,561,240,12,12,false);
     }
     else
     {
         currentbutton = ui->pushButton_19_plus_22_20_23;
-        multi_bet_animation(4,currentbutton,561,240,12,12,true);
+        multi_bet_animation(19,4,currentbutton,561,240,12,12,true);
     }
 }
 
@@ -1661,12 +1690,12 @@ void MainWindow::on_pushButton_20_plus_23_21_24_clicked()
     if(ui->pushButton_20_plus_23_21_24->isFlat())
     {
         currentbutton = ui->pushButton_20_plus_23_21_24;
-        multi_bet_animation(4,currentbutton,561,173,12,12,false);
+        multi_bet_animation(20,4,currentbutton,561,173,12,12,false);
     }
     else
     {
         currentbutton = ui->pushButton_20_plus_23_21_24;
-        multi_bet_animation(4,currentbutton,561,173,12,12,true);
+        multi_bet_animation(20,4,currentbutton,561,173,12,12,true);
     }
 }
 
@@ -1675,12 +1704,12 @@ void MainWindow::on_pushButton_22_plus_25_23_26_clicked()
     if(ui->pushButton_22_plus_25_23_26->isFlat())
     {
         currentbutton = ui->pushButton_22_plus_25_23_26;
-        multi_bet_animation(4,currentbutton,628,173,12,12,false);
+        multi_bet_animation(22,4,currentbutton,628,173,12,12,false);
     }
     else
     {
         currentbutton = ui->pushButton_22_plus_25_23_26;
-        multi_bet_animation(4,currentbutton,628,173,12,12,true);
+        multi_bet_animation(22,4,currentbutton,628,173,12,12,true);
     }
 }
 
@@ -1689,12 +1718,12 @@ void MainWindow::on_pushButton_23_plus_26_24_27_clicked()
     if(ui->pushButton_23_plus_26_24_27->isFlat())
     {
         currentbutton = ui->pushButton_23_plus_26_24_27;
-        multi_bet_animation(4,currentbutton,628,240,12,12,false);
+        multi_bet_animation(23,4,currentbutton,628,240,12,12,false);
     }
     else
     {
         currentbutton = ui->pushButton_23_plus_26_24_27;
-        multi_bet_animation(4,currentbutton,628,240,12,12,true);
+        multi_bet_animation(23,4,currentbutton,628,240,12,12,true);
     }
 }
 
@@ -1703,12 +1732,12 @@ void MainWindow::on_pushButton_25_plus_28_26_29_clicked()
     if(ui->pushButton_25_plus_28_26_29->isFlat())
     {
         currentbutton = ui->pushButton_25_plus_28_26_29;
-        multi_bet_animation(4,currentbutton,695,240,12,12,false);
+        multi_bet_animation(25,4,currentbutton,695,240,12,12,false);
     }
     else
     {
         currentbutton = ui->pushButton_25_plus_28_26_29;
-        multi_bet_animation(4,currentbutton,695,240,12,12,true);
+        multi_bet_animation(25,4,currentbutton,695,240,12,12,true);
     }
 }
 
@@ -1717,12 +1746,12 @@ void MainWindow::on_pushButton_26_plus_29_27_30_clicked()
     if(ui->pushButton_26_plus_29_27_30->isFlat())
     {
         currentbutton = ui->pushButton_26_plus_29_27_30;
-        multi_bet_animation(4,currentbutton,695,173,12,12,false);
+        multi_bet_animation(26,4,currentbutton,695,173,12,12,false);
     }
     else
     {
         currentbutton = ui->pushButton_26_plus_29_27_30;
-        multi_bet_animation(4,currentbutton,695,173,12,12,true);
+        multi_bet_animation(26,4,currentbutton,695,173,12,12,true);
     }
 }
 
@@ -1731,12 +1760,12 @@ void MainWindow::on_pushButton_29_plus_32_30_33_clicked()
     if(ui->pushButton_29_plus_32_30_33->isFlat())
     {
         currentbutton = ui->pushButton_29_plus_32_30_33;
-        multi_bet_animation(4,currentbutton,762,173,12,12,false);
+        multi_bet_animation(29,4,currentbutton,762,173,12,12,false);
     }
     else
     {
         currentbutton = ui->pushButton_29_plus_32_30_33;
-        multi_bet_animation(4,currentbutton,762,173,12,12,true);
+        multi_bet_animation(29,4,currentbutton,762,173,12,12,true);
     }
 }
 
@@ -1745,12 +1774,12 @@ void MainWindow::on_pushButton_28_plus_31_29_32_clicked()
     if(ui->pushButton_28_plus_31_29_32->isFlat())
     {
         currentbutton = ui->pushButton_28_plus_31_29_32;
-        multi_bet_animation(4,currentbutton,762,240,12,12,false);
+        multi_bet_animation(28,4,currentbutton,762,240,12,12,false);
     }
     else
     {
         currentbutton = ui->pushButton_28_plus_31_29_32;
-        multi_bet_animation(4,currentbutton,762,240,12,12,true);
+        multi_bet_animation(28,4,currentbutton,762,240,12,12,true);
     }
 }
 
@@ -1759,12 +1788,12 @@ void MainWindow::on_pushButton_31_plus_34_32_35_clicked()
     if(ui->pushButton_31_plus_34_32_35->isFlat())
     {
         currentbutton = ui->pushButton_31_plus_34_32_35;
-        multi_bet_animation(4,currentbutton,829,240,12,12,false);
+        multi_bet_animation(31,4,currentbutton,829,240,12,12,false);
     }
     else
     {
         currentbutton = ui->pushButton_31_plus_34_32_35;
-        multi_bet_animation(4,currentbutton,829,240,12,12,true);
+        multi_bet_animation(31,4,currentbutton,829,240,12,12,true);
     }
 }
 
@@ -1773,12 +1802,12 @@ void MainWindow::on_pushButton_32_plus_35_33_36_clicked()
     if(ui->pushButton_32_plus_35_33_36->isFlat())
     {
         currentbutton = ui->pushButton_32_plus_35_33_36;
-        multi_bet_animation(4,currentbutton,829,173,12,12,false);
+        multi_bet_animation(32,4,currentbutton,829,173,12,12,false);
     }
     else
     {
         currentbutton = ui->pushButton_32_plus_35_33_36;
-        multi_bet_animation(4,currentbutton,829,173,12,12,true);
+        multi_bet_animation(32,4,currentbutton,829,173,12,12,true);
     }
 }
 
@@ -1852,12 +1881,12 @@ void MainWindow::on_pushButton_street_1_clicked()
     if(ui->pushButton_street_1->isFlat())
     {
         currentbutton = ui->pushButton_street_1;
-        multi_bet_animation(2,currentbutton,99,311,61,8,false);
+        multi_bet_animation(1,2,currentbutton,99,311,61,8,false);
     }
     else
     {
         currentbutton = ui->pushButton_street_1;
-        multi_bet_animation(2,currentbutton,99,311,61,8,true);
+        multi_bet_animation(1,2,currentbutton,99,311,61,8,true);
     }
 }
 
@@ -1866,12 +1895,12 @@ void MainWindow::on_pushButton_street_2_clicked()
     if(ui->pushButton_street_2->isFlat())
     {
         currentbutton = ui->pushButton_street_2;
-        multi_bet_animation(2,currentbutton,166,311,61,8,false);
+        multi_bet_animation(2,2,currentbutton,166,311,61,8,false);
     }
     else
     {
         currentbutton = ui->pushButton_street_2;
-        multi_bet_animation(2,currentbutton,166,311,61,8,true);
+        multi_bet_animation(2,2,currentbutton,166,311,61,8,true);
     }
 }
 
@@ -1880,12 +1909,12 @@ void MainWindow::on_pushButton_street_3_clicked()
     if(ui->pushButton_street_3->isFlat())
     {
         currentbutton = ui->pushButton_street_3;
-        multi_bet_animation(2,currentbutton,233,310,61,8,false);
+        multi_bet_animation(3,2,currentbutton,233,310,61,8,false);
     }
     else
     {
         currentbutton = ui->pushButton_street_3;
-        multi_bet_animation(2,currentbutton,233,310,61,8,true);
+        multi_bet_animation(3,2,currentbutton,233,310,61,8,true);
     }
 }
 
@@ -1894,12 +1923,12 @@ void MainWindow::on_pushButton_street_4_clicked()
     if(ui->pushButton_street_4->isFlat())
     {
         currentbutton = ui->pushButton_street_4;
-        multi_bet_animation(2,currentbutton,300,310,61,8,false);
+        multi_bet_animation(4,2,currentbutton,300,310,61,8,false);
     }
     else
     {
         currentbutton = ui->pushButton_street_4;
-        multi_bet_animation(2,currentbutton,300,310,61,8,true);
+        multi_bet_animation(4,2,currentbutton,300,310,61,8,true);
     }
 }
 
@@ -1908,12 +1937,12 @@ void MainWindow::on_pushButton_street_5_clicked()
     if(ui->pushButton_street_5->isFlat())
     {
         currentbutton = ui->pushButton_street_5;
-        multi_bet_animation(2,currentbutton,367,309,61,8,false);
+        multi_bet_animation(5,2,currentbutton,367,309,61,8,false);
     }
     else
     {
         currentbutton = ui->pushButton_street_5;
-        multi_bet_animation(2,currentbutton,367,309,61,8,true);
+        multi_bet_animation(5,2,currentbutton,367,309,61,8,true);
     }
 }
 
@@ -1922,12 +1951,12 @@ void MainWindow::on_pushButton_street_6_clicked()
     if(ui->pushButton_street_6->isFlat())
     {
         currentbutton = ui->pushButton_street_6;
-        multi_bet_animation(2,currentbutton,434,309,61,8,false);
+        multi_bet_animation(6,2,currentbutton,434,309,61,8,false);
     }
     else
     {
         currentbutton = ui->pushButton_street_6;
-        multi_bet_animation(2,currentbutton,434,309,61,8,true);
+        multi_bet_animation(6,2,currentbutton,434,309,61,8,true);
     }
 }
 
@@ -1936,12 +1965,12 @@ void MainWindow::on_pushButton_street_7_clicked()
     if(ui->pushButton_street_7->isFlat())
     {
         currentbutton = ui->pushButton_street_7;
-        multi_bet_animation(2,currentbutton,502,309,61,8,false);
+        multi_bet_animation(7,2,currentbutton,502,309,61,8,false);
     }
     else
     {
         currentbutton = ui->pushButton_street_7;
-        multi_bet_animation(2,currentbutton,502,309,61,8,true);
+        multi_bet_animation(7,2,currentbutton,502,309,61,8,true);
     }
 }
 
@@ -1950,12 +1979,12 @@ void MainWindow::on_pushButton_street_8_clicked()
     if(ui->pushButton_street_8->isFlat())
     {
         currentbutton = ui->pushButton_street_8;
-        multi_bet_animation(2,currentbutton,569,309 ,61,8,false);
+        multi_bet_animation(8,2,currentbutton,569,309 ,61,8,false);
     }
     else
     {
         currentbutton = ui->pushButton_street_8;
-        multi_bet_animation(2,currentbutton,569,309,61,8,true);
+        multi_bet_animation(8,2,currentbutton,569,309,61,8,true);
     }
 }
 
@@ -1964,12 +1993,12 @@ void MainWindow::on_pushButton_street_9_clicked()
     if(ui->pushButton_street_9->isFlat())
     {
         currentbutton = ui->pushButton_street_9;
-        multi_bet_animation(2,currentbutton,636,309,61,8,false);
+        multi_bet_animation(9,2,currentbutton,636,309,61,8,false);
     }
     else
     {
         currentbutton = ui->pushButton_street_9;
-        multi_bet_animation(2,currentbutton,636,309,61,8,true);
+        multi_bet_animation(9,2,currentbutton,636,309,61,8,true);
     }
 }
 
@@ -1978,12 +2007,12 @@ void MainWindow::on_pushButton_street_10_clicked()
     if(ui->pushButton_street_10->isFlat())
     {
         currentbutton = ui->pushButton_street_10;
-        multi_bet_animation(2,currentbutton,703,309,61,8,false);
+        multi_bet_animation(10,2,currentbutton,703,309,61,8,false);
     }
     else
     {
         currentbutton = ui->pushButton_street_10;
-        multi_bet_animation(2,currentbutton,703,309,61,8,true);
+        multi_bet_animation(10,2,currentbutton,703,309,61,8,true);
     }
 }
 
@@ -1992,12 +2021,12 @@ void MainWindow::on_pushButton_street_11_clicked()
     if(ui->pushButton_street_11->isFlat())
     {
         currentbutton = ui->pushButton_street_11;
-        multi_bet_animation(2,currentbutton,770,309,61,8,false);
+        multi_bet_animation(11,2,currentbutton,770,309,61,8,false);
     }
     else
     {
         currentbutton = ui->pushButton_street_11;
-        multi_bet_animation(2,currentbutton,770,309,61,8,true);
+        multi_bet_animation(11,2,currentbutton,770,309,61,8,true);
     }
 }
 
@@ -2006,12 +2035,12 @@ void MainWindow::on_pushButton_street_12_clicked()
     if(ui->pushButton_street_12->isFlat())
     {
         currentbutton = ui->pushButton_street_12;
-        multi_bet_animation(2,currentbutton,837,309,61,8,false);
+        multi_bet_animation(12,2,currentbutton,837,309,61,8,false);
     }
     else
     {
         currentbutton = ui->pushButton_street_12;
-        multi_bet_animation(2,currentbutton,837,309,61,8,true);
+        multi_bet_animation(12,2,currentbutton,837,309,61,8,true);
     }
 }
 
@@ -2020,13 +2049,13 @@ void MainWindow::on_pushButton_line_1_clicked()
     if(ui->pushButton_line_1->isFlat())
     {
         currentbutton = ui->pushButton_line_1;
-        multi_bet_animation(5,currentbutton,157,308,12,12,false);
+        multi_bet_animation(1,5,currentbutton,157,308,12,12,false);
     }
     else
     {
 
         currentbutton = ui->pushButton_line_1;
-        multi_bet_animation(5,currentbutton,157,308,12,12,true);
+        multi_bet_animation(1,5,currentbutton,157,308,12,12,true);
     }
 }
 
@@ -2035,12 +2064,12 @@ void MainWindow::on_pushButton_line_2_clicked()
     if(ui->pushButton_line_2->isFlat())
     {
         currentbutton = ui->pushButton_line_2;
-        multi_bet_animation(5,currentbutton,224,308,12,12,false);
+        multi_bet_animation(2,5,currentbutton,224,308,12,12,false);
     }
     else
     {
         currentbutton = ui->pushButton_line_2;
-        multi_bet_animation(5,currentbutton,224,308,12,12,true);
+        multi_bet_animation(2,5,currentbutton,224,308,12,12,true);
     }
 }
 
@@ -2049,12 +2078,12 @@ void MainWindow::on_pushButton_line_3_clicked()
     if(ui->pushButton_line_3->isFlat())
     {
         currentbutton = ui->pushButton_line_3;
-        multi_bet_animation(5,currentbutton,291,308,12,12,false);
+        multi_bet_animation(3,5,currentbutton,291,308,12,12,false);
     }
     else
     {
         currentbutton = ui->pushButton_line_3;
-        multi_bet_animation(5,currentbutton,291,308,12,12,true);
+        multi_bet_animation(3,5,currentbutton,291,308,12,12,true);
     }
 }
 
@@ -2063,12 +2092,12 @@ void MainWindow::on_pushButton_line_4_clicked()
     if(ui->pushButton_line_4->isFlat())
     {
         currentbutton = ui->pushButton_line_4;
-        multi_bet_animation(5,currentbutton,358,308,12,12,false);
+        multi_bet_animation(4,5,currentbutton,358,308,12,12,false);
     }
     else
     {
         currentbutton = ui->pushButton_line_4;
-        multi_bet_animation(5,currentbutton,358,308,12,12,true);
+        multi_bet_animation(4,5,currentbutton,358,308,12,12,true);
     }
 }
 
@@ -2077,12 +2106,12 @@ void MainWindow::on_pushButton_line_5_clicked()
     if(ui->pushButton_line_5->isFlat())
     {
         currentbutton = ui->pushButton_line_5;
-        multi_bet_animation(5,currentbutton,425,307,12,12,false);
+        multi_bet_animation(5,5,currentbutton,425,307,12,12,false);
     }
     else
     {
         currentbutton = ui->pushButton_line_5;
-        multi_bet_animation(5,currentbutton,425,307,12,12,true);
+        multi_bet_animation(5,5,currentbutton,425,307,12,12,true);
     }
 }
 
@@ -2091,12 +2120,12 @@ void MainWindow::on_pushButton_line_6_clicked()
     if(ui->pushButton_line_6->isFlat())
     {
         currentbutton = ui->pushButton_line_6;
-        multi_bet_animation(5,currentbutton,492,307,12,12,false);
+        multi_bet_animation(6,5,currentbutton,492,307,12,12,false);
     }
     else
     {
         currentbutton = ui->pushButton_line_6;
-        multi_bet_animation(5,currentbutton,492,307,12,12,true);
+        multi_bet_animation(6,5,currentbutton,492,307,12,12,true);
     }
 }
 
@@ -2105,12 +2134,12 @@ void MainWindow::on_pushButton_line_7_clicked()
     if(ui->pushButton_line_7->isFlat())
     {
         currentbutton = ui->pushButton_line_7;
-        multi_bet_animation(5,currentbutton,560,307,12,12,false);
+        multi_bet_animation(7,5,currentbutton,560,307,12,12,false);
     }
     else
     {
         currentbutton = ui->pushButton_line_7;
-        multi_bet_animation(5,currentbutton,560,307,12,12,true);
+        multi_bet_animation(7,5,currentbutton,560,307,12,12,true);
     }
 }
 
@@ -2119,12 +2148,12 @@ void MainWindow::on_pushButton_line_8_clicked()
     if(ui->pushButton_line_8->isFlat())
     {
         currentbutton = ui->pushButton_line_8;
-        multi_bet_animation(5,currentbutton,627,307,12,12,false);
+        multi_bet_animation(8,5,currentbutton,627,307,12,12,false);
     }
     else
     {
         currentbutton = ui->pushButton_line_8;
-        multi_bet_animation(5,currentbutton,627,307,12,12,true);
+        multi_bet_animation(8,5,currentbutton,627,307,12,12,true);
     }
 }
 
@@ -2133,12 +2162,12 @@ void MainWindow::on_pushButton_line_9_clicked()
     if(ui->pushButton_line_9->isFlat())
     {
         currentbutton = ui->pushButton_line_9;
-        multi_bet_animation(5,currentbutton,694,307,12,12,false);
+        multi_bet_animation(9,5,currentbutton,694,307,12,12,false);
     }
     else
     {
         currentbutton = ui->pushButton_line_9;
-        multi_bet_animation(5,currentbutton,694,307,12,12,true);
+        multi_bet_animation(9,5,currentbutton,694,307,12,12,true);
     }
 }
 
@@ -2147,12 +2176,12 @@ void MainWindow::on_pushButton_line_10_clicked()
     if(ui->pushButton_line_10->isFlat())
     {
         currentbutton = ui->pushButton_line_10;
-        multi_bet_animation(5,currentbutton,761,307,12,12,false);
+        multi_bet_animation(10,5,currentbutton,761,307,12,12,false);
     }
     else
     {
         currentbutton = ui->pushButton_line_10;
-        multi_bet_animation(5,currentbutton,761,307,12,12,true);
+        multi_bet_animation(10,5,currentbutton,761,307,12,12,true);
     }
 }
 
@@ -2161,12 +2190,12 @@ void MainWindow::on_pushButton_line_11_clicked()
     if(ui->pushButton_line_11->isFlat())
     {
         currentbutton = ui->pushButton_line_11;
-        multi_bet_animation(5,currentbutton,828,307,12,12,false);
+        multi_bet_animation(11,5,currentbutton,828,307,12,12,false);
     }
     else
     {
         currentbutton = ui->pushButton_line_11;
-        multi_bet_animation(5,currentbutton,828,307,12,12,true);
+        multi_bet_animation(11,5,currentbutton,828,307,12,12,true);
     }
 }
 
@@ -2175,25 +2204,12 @@ void MainWindow::on_pushButton_1st_row_clicked()
     if(ui->pushButton_1st_row->isFlat())
     {
         currentbutton = ui->pushButton_1st_row;
-        multi_bet_animation(11,currentbutton,950,250,8,61,false);
+        multi_bet_animation(1,11,currentbutton,950,250,8,61,false);
     }
     else
     {
-
-        this->rl.createBet(1, this->current_button_value, 2, true );
-        this->rl.createBet(4, this->current_button_value, 2, false );
-        this->rl.createBet(7, this->current_button_value, 2, false );
-        this->rl.createBet(10, this->current_button_value, 2, false );
-        this->rl.createBet(13, this->current_button_value, 2, false );
-        this->rl.createBet(16, this->current_button_value, 2, false );
-        this->rl.createBet(19, this->current_button_value, 2, false );
-        this->rl.createBet(22, this->current_button_value, 2, false );
-        this->rl.createBet(25, this->current_button_value, 2, false );
-        this->rl.createBet(28, this->current_button_value, 2, false );
-        this->rl.createBet(31, this->current_button_value, 2, false );
-        this->rl.createBet(34, this->current_button_value, 2, false );
         currentbutton = ui->pushButton_1st_row;
-        multi_bet_animation(11,currentbutton,950,250,8,61,true);
+        multi_bet_animation(1,11,currentbutton,950,250,8,61,true);
     }
 }
 
@@ -2202,24 +2218,12 @@ void MainWindow::on_pushButton_2nd_row_clicked()
     if(ui->pushButton_2nd_row->isFlat())
     {
         currentbutton = ui->pushButton_2nd_row;
-        multi_bet_animation(11,currentbutton,950,180,8,61,false);
+        multi_bet_animation(2,11,currentbutton,950,180,8,61,false);
     }
     else
     {
-        this->rl.createBet(2, this->current_button_value, 2, true );
-        this->rl.createBet(5, this->current_button_value, 2, false );
-        this->rl.createBet(8, this->current_button_value, 2, false );
-        this->rl.createBet(11, this->current_button_value, 2, false );
-        this->rl.createBet(14, this->current_button_value, 2, false );
-        this->rl.createBet(17, this->current_button_value, 2, false );
-        this->rl.createBet(20, this->current_button_value, 2, false );
-        this->rl.createBet(23, this->current_button_value, 2, false );
-        this->rl.createBet(26, this->current_button_value, 2, false );
-        this->rl.createBet(29, this->current_button_value, 2, false );
-        this->rl.createBet(32, this->current_button_value, 2, false );
-        this->rl.createBet(35, this->current_button_value, 2, false );
         currentbutton = ui->pushButton_2nd_row;
-        multi_bet_animation(11,currentbutton,950,180,8,61,true);
+        multi_bet_animation(2,11,currentbutton,950,180,8,61,true);
     }
 }
 
@@ -2228,24 +2232,12 @@ void MainWindow::on_pushButton_3rd_row_clicked()
     if(ui->pushButton_3rd_row->isFlat())
     {
         currentbutton = ui->pushButton_3rd_row;
-        multi_bet_animation(11,currentbutton,950,110,8,61,false);
+        multi_bet_animation(3,11,currentbutton,950,110,8,61,false);
     }
     else
     {
-        this->rl.createBet(3, this->current_button_value, 2, true );
-        this->rl.createBet(6, this->current_button_value, 2, false );
-        this->rl.createBet(9, this->current_button_value, 2, false );
-        this->rl.createBet(12, this->current_button_value, 2, false );
-        this->rl.createBet(15, this->current_button_value, 2, false );
-        this->rl.createBet(18, this->current_button_value, 2, false );
-        this->rl.createBet(21, this->current_button_value, 2, false );
-        this->rl.createBet(24, this->current_button_value, 2, false );
-        this->rl.createBet(27, this->current_button_value, 2, false );
-        this->rl.createBet(30, this->current_button_value, 2, false );
-        this->rl.createBet(33, this->current_button_value, 2, false );
-        this->rl.createBet(36, this->current_button_value, 2, false );
         currentbutton = ui->pushButton_3rd_row;
-        multi_bet_animation(11,currentbutton,950,110,8,61,true);
+        multi_bet_animation(3,11,currentbutton,950,110,8,61,true);
     }
 }
 
@@ -2285,215 +2277,215 @@ void MainWindow::clear_bets_gui()
             ui->pushButton_black->setIcon(QIcon());
             ui->pushButton_black->setFlat(false);
             currentbutton = ui->pushButton_1_plus_2;
-            multi_bet_animation(1,currentbutton,100,243,61,8,false);
+            multi_bet_animation(1,1,currentbutton,100,243,61,8,false);
             currentbutton = ui->pushButton_2_plus_3;
-            multi_bet_animation(1,currentbutton,100,176,61,8,false);
+            multi_bet_animation(2,1,currentbutton,100,176,61,8,false);
             currentbutton =  ui->pushButton_4_plus_5;
-            multi_bet_animation(1,currentbutton,167,243,61,8,false);
+            multi_bet_animation(4,1,currentbutton,167,243,61,8,false);
             currentbutton = ui->pushButton_5_plus_6;
-            multi_bet_animation(1,currentbutton,167,176,61,8,false);
+            multi_bet_animation(5,1,currentbutton,167,176,61,8,false);
             currentbutton = ui->pushButton_7_plus_8;
-            multi_bet_animation(1,currentbutton,234,242,61,8,false);
+            multi_bet_animation(7,1,currentbutton,234,242,61,8,false);
             currentbutton =  ui->pushButton_8_plus_9;
-            multi_bet_animation(1,currentbutton,234,175,61,8,false);
+            multi_bet_animation(8,1,currentbutton,234,175,61,8,false);
             currentbutton = ui->pushButton_10_plus_11;
-            multi_bet_animation(1,currentbutton,301,242,61,8,false);
+            multi_bet_animation(10,1,currentbutton,301,242,61,8,false);
             currentbutton = ui->pushButton_11_plus_12;
-            multi_bet_animation(1,currentbutton,301,175,61,8,false);
+            multi_bet_animation(11,1,currentbutton,301,175,61,8,false);
             currentbutton = ui->pushButton_13_plus_14;
-            multi_bet_animation(1,currentbutton,368,241,61,8,false);
+            multi_bet_animation(13,1,currentbutton,368,241,61,8,false);
             currentbutton = ui->pushButton_14_plus_15;
-            multi_bet_animation(1,currentbutton,368,174,61,8,false);
+            multi_bet_animation(14,1,currentbutton,368,174,61,8,false);
             currentbutton = ui->pushButton_16_plus_17;
-            multi_bet_animation(1,currentbutton,435,241,61,8,false);
+            multi_bet_animation(16,1,currentbutton,435,241,61,8,false);
             currentbutton = ui->pushButton_17_plus_18;
-            multi_bet_animation(1,currentbutton,435,174,61,8,false);
+            multi_bet_animation(17,1,currentbutton,435,174,61,8,false);
             currentbutton = ui->pushButton_19_plus_20;
-            multi_bet_animation(1,currentbutton,503,241,61,8,false);
+            multi_bet_animation(19,1,currentbutton,503,241,61,8,false);
             currentbutton = ui->pushButton_20_plus_21;
-            multi_bet_animation(1,currentbutton,503,174,61,8,false);
+            multi_bet_animation(20,1,currentbutton,503,174,61,8,false);
             currentbutton = ui->pushButton_22_plus_23;
-            multi_bet_animation(1,currentbutton,570,241,61,8,false);
+            multi_bet_animation(22,1,currentbutton,570,241,61,8,false);
              currentbutton = ui->pushButton_23_plus_24;
-            multi_bet_animation(1,currentbutton,570,174,61,8,false);
+            multi_bet_animation(23,1,currentbutton,570,174,61,8,false);
             currentbutton = ui->pushButton_25_plus_26;
-            multi_bet_animation(1,currentbutton,637,241,61,8,false);
+            multi_bet_animation(25,1,currentbutton,637,241,61,8,false);
             currentbutton = ui->pushButton_26_plus_27;
-            multi_bet_animation(1,currentbutton,637,174,61,8,false);
+            multi_bet_animation(26,1,currentbutton,637,174,61,8,false);
             currentbutton = ui->pushButton_28_plus_29;
-            multi_bet_animation(1,currentbutton,704,241,61,8,false);
+            multi_bet_animation(28,1,currentbutton,704,241,61,8,false);
             currentbutton = ui->pushButton_29_plus_30;
-            multi_bet_animation(1,currentbutton,704,174,61,8,false);
+            multi_bet_animation(29,1,currentbutton,704,174,61,8,false);
             currentbutton = ui->pushButton_31_plus_32;
-            multi_bet_animation(1,currentbutton,771,241,61,8,false);
+            multi_bet_animation(31,1,currentbutton,771,241,61,8,false);
             currentbutton = ui->pushButton_32_plus_33;
-            multi_bet_animation(1,currentbutton,771,174,61,8,false);
+            multi_bet_animation(32,1,currentbutton,771,174,61,8,false);
             currentbutton = ui->pushButton_34_plus_35;
-            multi_bet_animation(1,currentbutton,838,241,61,8,false);
+            multi_bet_animation(34,1,currentbutton,838,241,61,8,false);
             currentbutton = ui->pushButton_35_plus_36;
-            multi_bet_animation(1,currentbutton,838,174,61,8,false);
+            multi_bet_animation(35,1,currentbutton,838,174,61,8,false);
             currentbutton = ui->pushButton_1_plus_4;
-            multi_bet_animation(3,currentbutton,160,250,8,61,false);
+            multi_bet_animation(1,3,currentbutton,160,250,8,61,false);
             currentbutton = ui->pushButton_4_plus_7;
-            multi_bet_animation(3,currentbutton,227,250,8,61,false);
+            multi_bet_animation(4,3,currentbutton,227,250,8,61,false);
             currentbutton = ui->pushButton_7_plus_10;
-            multi_bet_animation(3,currentbutton,294,250,8,61,false);
+            multi_bet_animation(7,3,currentbutton,294,250,8,61,false);
             currentbutton = ui->pushButton_10_plus_13;
-            multi_bet_animation(3,currentbutton,362,250,8,61,false);
+            multi_bet_animation(10,3,currentbutton,362,250,8,61,false);
             currentbutton = ui->pushButton_13_plus_16;
-            multi_bet_animation(3,currentbutton,429,250,8,61,false);
+            multi_bet_animation(13,3,currentbutton,429,250,8,61,false);
             currentbutton = ui->pushButton_16_plus_19;
-            multi_bet_animation(3,currentbutton,496,250,8,61,false);
+            multi_bet_animation(16,3,currentbutton,496,250,8,61,false);
             currentbutton = ui->pushButton_19_plus_22;
-            multi_bet_animation(3,currentbutton,563,250,8,61,false);
+            multi_bet_animation(19,3,currentbutton,563,250,8,61,false);
             currentbutton = ui->pushButton_22_plus_25;
-            multi_bet_animation(3,currentbutton,630,250,8,61,false);
+            multi_bet_animation(22,3,currentbutton,630,250,8,61,false);
             currentbutton = ui->pushButton_25_plus_28;
-            multi_bet_animation(3,currentbutton,697,250,8,61,false);
+            multi_bet_animation(25,3,currentbutton,697,250,8,61,false);
             currentbutton = ui->pushButton_28_plus_31;
-            multi_bet_animation(3,currentbutton,764,250,8,61,false);
+            multi_bet_animation(28,3,currentbutton,764,250,8,61,false);
             currentbutton = ui->pushButton_31_plus_34;
-            multi_bet_animation(3,currentbutton,831,250,8,61,false);
+            multi_bet_animation(31,3,currentbutton,831,250,8,61,false);
             currentbutton = ui->pushButton_2_plus_5;
-            multi_bet_animation(3,currentbutton,160,181,8,61,false);
+            multi_bet_animation(2,3,currentbutton,160,181,8,61,false);
             currentbutton = ui->pushButton_5_plus_8;
-            multi_bet_animation(3,currentbutton,227,181,8,61,false);
+            multi_bet_animation(5,3,currentbutton,227,181,8,61,false);
             currentbutton = ui->pushButton_8_plus_11;
-            multi_bet_animation(3,currentbutton,294,181,8,61,false);
+            multi_bet_animation(8,3,currentbutton,294,181,8,61,false);
             currentbutton = ui->pushButton_11_plus_14;
-            multi_bet_animation(3,currentbutton,362,181,8,61,false);
+            multi_bet_animation(11,3,currentbutton,362,181,8,61,false);
             currentbutton = ui->pushButton_14_plus_17;
-            multi_bet_animation(3,currentbutton,429,181,8,61,false);
+            multi_bet_animation(14,3,currentbutton,429,181,8,61,false);
             currentbutton = ui->pushButton_17_plus_20;
-            multi_bet_animation(3,currentbutton,496,181,8,61,false);
+            multi_bet_animation(17,3,currentbutton,496,181,8,61,false);
             currentbutton =  ui->pushButton_20_plus_23;
-            multi_bet_animation(3,currentbutton,563,181,8,61,false);
+            multi_bet_animation(20,3,currentbutton,563,181,8,61,false);
             currentbutton =  ui->pushButton_23_plus_26;
-            multi_bet_animation(3,currentbutton,630,181,8,61,false);
+            multi_bet_animation(23,3,currentbutton,630,181,8,61,false);
             currentbutton =  ui->pushButton_26_plus_29;
-            multi_bet_animation(3,currentbutton,697,181,8,61,false);
+            multi_bet_animation(26,3,currentbutton,697,181,8,61,false);
             currentbutton =  ui->pushButton_29_plus_32;
-            multi_bet_animation(3,currentbutton,764,181,8,61,false);
+            multi_bet_animation(29,3,currentbutton,764,181,8,61,false);
             currentbutton =  ui->pushButton_32_plus_35;
-            multi_bet_animation(3,currentbutton,831,181,8,61,false);
+            multi_bet_animation(32,3,currentbutton,831,181,8,61,false);
             currentbutton =  ui->pushButton_3_plus_6;
-            multi_bet_animation(3,currentbutton,160,113,8,61,false);
+            multi_bet_animation(3,3,currentbutton,160,113,8,61,false);
             currentbutton =  ui->pushButton_6_plus_9;
-            multi_bet_animation(3,currentbutton,227,113,8,61,false);
+            multi_bet_animation(6,3,currentbutton,227,113,8,61,false);
             currentbutton =  ui->pushButton_9_plus_12;
-            multi_bet_animation(3,currentbutton,294,113,8,61,false);
+            multi_bet_animation(9,3,currentbutton,294,113,8,61,false);
             currentbutton =  ui->pushButton_12_plus_15;
-            multi_bet_animation(3,currentbutton,362,113,8,61,false);
+            multi_bet_animation(12,3,currentbutton,362,113,8,61,false);
             currentbutton =  ui->pushButton_15_plus_18;
-            multi_bet_animation(3,currentbutton,429,113,8,61,false);
+            multi_bet_animation(15,3,currentbutton,429,113,8,61,false);
             currentbutton =  ui->pushButton_18_plus_21;
-            multi_bet_animation(3,currentbutton,496,113,8,61,false);
+            multi_bet_animation(18,3,currentbutton,496,113,8,61,false);
             currentbutton =  ui->pushButton_21_plus_24;
-            multi_bet_animation(3,currentbutton,563,113,8,61,false);
+            multi_bet_animation(21,3,currentbutton,563,113,8,61,false);
             currentbutton =  ui->pushButton_24_plus_27;
-            multi_bet_animation(3,currentbutton,630,113,8,61,false);
+            multi_bet_animation(24,3,currentbutton,630,113,8,61,false);
             currentbutton =  ui->pushButton_27_plus_30;
-            multi_bet_animation(3,currentbutton,697,113,8,61,false);
+            multi_bet_animation(27,3,currentbutton,697,113,8,61,false);
             currentbutton =  ui->pushButton_30_plus_33;
-            multi_bet_animation(3,currentbutton,764,113,8,61,false);
+            multi_bet_animation(30,3,currentbutton,764,113,8,61,false);
             currentbutton =  ui->pushButton_33_plus_36;
-            multi_bet_animation(3,currentbutton,831,113,8,61,false);
+            multi_bet_animation(33,3,currentbutton,831,113,8,61,false);
             currentbutton = ui->pushButton_1_plus_4_2_5;
-            multi_bet_animation(4,currentbutton,158,240,12,12,false);
+            multi_bet_animation(1,4,currentbutton,158,240,12,12,false);
             currentbutton = ui->pushButton_2_plus_5_3_6;
-            multi_bet_animation(4,currentbutton,158,173,12,12,false);
+            multi_bet_animation(2,4,currentbutton,158,173,12,12,false);
             currentbutton = ui->pushButton_5_plus_8_6_9;
-            multi_bet_animation(4,currentbutton,225,173,12,12,false);
+            multi_bet_animation(5,4,currentbutton,225,173,12,12,false);
             currentbutton = ui->pushButton_4_plus_7_5_8;
-            multi_bet_animation(4,currentbutton,225,240,12,12,false);
+            multi_bet_animation(4,4,currentbutton,225,240,12,12,false);
             currentbutton = ui->pushButton_7_plus_10_8_11;
-            multi_bet_animation(4,currentbutton,292,240,12,12,false);
+            multi_bet_animation(7,4,currentbutton,292,240,12,12,false);
             currentbutton = ui->pushButton_8_plus_11_9_12;
-            multi_bet_animation(4,currentbutton,292,173,12,12,false);
+            multi_bet_animation(8,4,currentbutton,292,173,12,12,false);
             currentbutton = ui->pushButton_11_plus_14_12_15;
-            multi_bet_animation(4,currentbutton,360,173,12,12,false);
+            multi_bet_animation(11,4,currentbutton,360,173,12,12,false);
             currentbutton = ui->pushButton_10_plus_13_11_14;
-            multi_bet_animation(4,currentbutton,360,240,12,12,false);
+            multi_bet_animation(10,4,currentbutton,360,240,12,12,false);
             currentbutton = ui->pushButton_13_plus_16_14_17;
-            multi_bet_animation(4,currentbutton,426,240,12,12,false);
+            multi_bet_animation(13,4,currentbutton,426,240,12,12,false);
             currentbutton = ui->pushButton_14_plus_17_15_18;
-            multi_bet_animation(4,currentbutton,426,173,12,12,false);
+            multi_bet_animation(14,4,currentbutton,426,173,12,12,false);
             currentbutton = ui->pushButton_17_plus_20_18_21;
-            multi_bet_animation(4,currentbutton,493,173,12,12,false);
+            multi_bet_animation(17,4,currentbutton,493,173,12,12,false);
             currentbutton = ui->pushButton_16_plus_19_17_20;
-            multi_bet_animation(4,currentbutton,493,240,12,12,false);
+            multi_bet_animation(16,4,currentbutton,493,240,12,12,false);
             currentbutton = ui->pushButton_19_plus_22_20_23;
-            multi_bet_animation(4,currentbutton,561,240,12,12,false);
+            multi_bet_animation(19,4,currentbutton,561,240,12,12,false);
             currentbutton = ui->pushButton_20_plus_23_21_24;
-            multi_bet_animation(4,currentbutton,561,173,12,12,false);
+            multi_bet_animation(20,4,currentbutton,561,173,12,12,false);
             currentbutton = ui->pushButton_22_plus_25_23_26;
-            multi_bet_animation(4,currentbutton,628,173,12,12,false);
+            multi_bet_animation(22,4,currentbutton,628,173,12,12,false);
             currentbutton = ui->pushButton_23_plus_26_24_27;
-            multi_bet_animation(4,currentbutton,628,240,12,12,false);
+            multi_bet_animation(23,4,currentbutton,628,240,12,12,false);
             currentbutton = ui->pushButton_25_plus_28_26_29;
-            multi_bet_animation(4,currentbutton,695,240,12,12,false);
+            multi_bet_animation(25,4,currentbutton,695,240,12,12,false);
             currentbutton = ui->pushButton_26_plus_29_27_30;
-            multi_bet_animation(4,currentbutton,695,173,12,12,false);
+            multi_bet_animation(26,4,currentbutton,695,173,12,12,false);
             currentbutton = ui->pushButton_29_plus_32_30_33;
-            multi_bet_animation(4,currentbutton,762,173,12,12,false);
+            multi_bet_animation(29,4,currentbutton,762,173,12,12,false);
             currentbutton = ui->pushButton_28_plus_31_29_32;
-            multi_bet_animation(4,currentbutton,762,240,12,12,false);
+            multi_bet_animation(28,4,currentbutton,762,240,12,12,false);
             currentbutton = ui->pushButton_31_plus_34_32_35;
-            multi_bet_animation(4,currentbutton,829,240,12,12,false);
+            multi_bet_animation(31,4,currentbutton,829,240,12,12,false);
             currentbutton = ui->pushButton_32_plus_35_33_36;
-            multi_bet_animation(4,currentbutton,829,173,12,12,false);
+            multi_bet_animation(32,4,currentbutton,829,173,12,12,false);
             currentbutton = ui->pushButton_street_1;
-            multi_bet_animation(2,currentbutton,99,311,61,8,false);
+            multi_bet_animation(1,2,currentbutton,99,311,61,8,false);
             currentbutton = ui->pushButton_street_2;
-            multi_bet_animation(2,currentbutton,166,311,61,8,false);
+            multi_bet_animation(2,2,currentbutton,166,311,61,8,false);
             currentbutton = ui->pushButton_street_3;
-            multi_bet_animation(2,currentbutton,233,310,61,8,false);
+            multi_bet_animation(3,2,currentbutton,233,310,61,8,false);
             currentbutton = ui->pushButton_street_4;
-            multi_bet_animation(2,currentbutton,300,310,61,8,false);
+            multi_bet_animation(4,2,currentbutton,300,310,61,8,false);
             currentbutton = ui->pushButton_street_5;
-            multi_bet_animation(2,currentbutton,367,309,61,8,false);
+            multi_bet_animation(5,2,currentbutton,367,309,61,8,false);
             currentbutton = ui->pushButton_street_6;
-            multi_bet_animation(2,currentbutton,434,309,61,8,false);
+            multi_bet_animation(6,2,currentbutton,434,309,61,8,false);
             currentbutton = ui->pushButton_street_7;
-            multi_bet_animation(2,currentbutton,502,309,61,8,false);
+            multi_bet_animation(7,2,currentbutton,502,309,61,8,false);
             currentbutton = ui->pushButton_street_8;
-            multi_bet_animation(2,currentbutton,569,309 ,61,8,false);
+            multi_bet_animation(8,2,currentbutton,569,309 ,61,8,false);
             currentbutton = ui->pushButton_street_9;
-            multi_bet_animation(2,currentbutton,636,309,61,8,false);
+            multi_bet_animation(9,2,currentbutton,636,309,61,8,false);
             currentbutton = ui->pushButton_street_10;
-            multi_bet_animation(2,currentbutton,703,309,61,8,false);
+            multi_bet_animation(10,2,currentbutton,703,309,61,8,false);
             currentbutton = ui->pushButton_street_11;
-            multi_bet_animation(2,currentbutton,770,309,61,8,false);
+            multi_bet_animation(11,2,currentbutton,770,309,61,8,false);
             currentbutton = ui->pushButton_street_12;
-            multi_bet_animation(2,currentbutton,837,309,61,8,false);
+            multi_bet_animation(12,2,currentbutton,837,309,61,8,false);
             currentbutton = ui->pushButton_line_1;
-            multi_bet_animation(5,currentbutton,157,308,12,12,false);
+            multi_bet_animation(1,5,currentbutton,157,308,12,12,false);
             currentbutton = ui->pushButton_line_2;
-            multi_bet_animation(5,currentbutton,224,308,12,12,false);
+            multi_bet_animation(2,5,currentbutton,224,308,12,12,false);
             currentbutton = ui->pushButton_line_3;
-            multi_bet_animation(5,currentbutton,291,308,12,12,false);
+            multi_bet_animation(3,5,currentbutton,291,308,12,12,false);
             currentbutton = ui->pushButton_line_4;
-            multi_bet_animation(5,currentbutton,358,308,12,12,false);
+            multi_bet_animation(4,5,currentbutton,358,308,12,12,false);
             currentbutton = ui->pushButton_line_5;
-            multi_bet_animation(5,currentbutton,425,307,12,12,false);
+            multi_bet_animation(5,5,currentbutton,425,307,12,12,false);
             currentbutton = ui->pushButton_line_6;
-            multi_bet_animation(5,currentbutton,492,307,12,12,false);
+            multi_bet_animation(6,5,currentbutton,492,307,12,12,false);
             currentbutton = ui->pushButton_line_7;
-            multi_bet_animation(5,currentbutton,560,307,12,12,false);
+            multi_bet_animation(7,5,currentbutton,560,307,12,12,false);
             currentbutton = ui->pushButton_line_8;
-            multi_bet_animation(5,currentbutton,627,307,12,12,false);
+            multi_bet_animation(8,5,currentbutton,627,307,12,12,false);
             currentbutton = ui->pushButton_line_9;
-            multi_bet_animation(5,currentbutton,694,307,12,12,false);
+            multi_bet_animation(9,5,currentbutton,694,307,12,12,false);
             currentbutton = ui->pushButton_line_10;
-            multi_bet_animation(5,currentbutton,761,307,12,12,false);
+            multi_bet_animation(10,5,currentbutton,761,307,12,12,false);
             currentbutton = ui->pushButton_line_11;
-            multi_bet_animation(5,currentbutton,828,307,12,12,false);
+            multi_bet_animation(11,5,currentbutton,828,307,12,12,false);
             currentbutton = ui->pushButton_1st_row;
-            multi_bet_animation(11,currentbutton,950,250,8,61,false);
+            multi_bet_animation(1,11,currentbutton,950,250,8,61,false);
             currentbutton = ui->pushButton_2nd_row;
-            multi_bet_animation(11,currentbutton,950,180,8,61,false);
+            multi_bet_animation(2,11,currentbutton,950,180,8,61,false);
             currentbutton = ui->pushButton_3rd_row;
-            multi_bet_animation(11,currentbutton,950,110,8,61,false);
+            multi_bet_animation(3,11,currentbutton,950,110,8,61,false);
 }
 
 void MainWindow::on_Clear_Button_pressed()

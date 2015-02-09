@@ -951,7 +951,7 @@ public:
         Bet_button4->setAutoDefault(true);
         Clear_Button = new QPushButton(centralWidget);
         Clear_Button->setObjectName(QStringLiteral("Clear_Button"));
-        Clear_Button->setGeometry(QRect(710, 460, 75, 23));
+        Clear_Button->setGeometry(QRect(690, 450, 181, 41));
         Clear_Button->setAutoDefault(true);
         label_gif = new QLabel(centralWidget);
         label_gif->setObjectName(QStringLiteral("label_gif"));
@@ -1286,7 +1286,7 @@ public:
         pushButton_line_1->raise();
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 1108, 21));
+        menuBar->setGeometry(QRect(0, 0, 1108, 27));
         menuRoullet = new QMenu(menuBar);
         menuRoullet->setObjectName(QStringLiteral("menuRoullet"));
         MainWindow->setMenuBar(menuBar);
@@ -1440,7 +1440,7 @@ public:
         Bet_button2->setText(QString());
         Bet_button3->setText(QString());
         Bet_button4->setText(QString());
-        Clear_Button->setText(QApplication::translate("MainWindow", "Clear", 0));
+        Clear_Button->setText(QApplication::translate("MainWindow", "Clear Bets", 0));
         label_gif->setText(QString());
         Bet_button5->setText(QString());
         Bet_button6->setText(QString());

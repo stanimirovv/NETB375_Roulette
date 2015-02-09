@@ -250,6 +250,11 @@ debug/moc_mainwindow.cpp: ../../../../QT/5.3/mingw482_32/include/QtWidgets/QMain
 		../../../../QT/5.3/mingw482_32/include/QtCore/QRegExp \
 		../netb375_roulette/roulette_logic.h \
 		../../../../QT/5.3/mingw482_32/include/QtCore/QVector \
+		../../../../QT/5.3/mingw482_32/include/QtCore/QTime \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qdatetime.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/QTimer \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qtimer.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qbasictimer.h \
 		../netb375_roulette/mainwindow.h
 	J:\QT\5.3\mingw482_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IJ:/QT/5.3/mingw482_32/mkspecs/win32-g++ -IJ:/NETB375_Roulette-master/git/NETB375_Roulette/netb375_roulette -IJ:/QT/5.3/mingw482_32/include -IJ:/QT/5.3/mingw482_32/include/QtWidgets -IJ:/QT/5.3/mingw482_32/include/QtGui -IJ:/QT/5.3/mingw482_32/include/QtCore -I. ..\netb375_roulette\mainwindow.h -o debug\moc_mainwindow.cpp
 
@@ -370,6 +375,11 @@ debug/moc_startwindow.cpp: ../../../../QT/5.3/mingw482_32/include/QtWidgets/QWid
 		../../../../QT/5.3/mingw482_32/include/QtCore/QRegExp \
 		../netb375_roulette/roulette_logic.h \
 		../../../../QT/5.3/mingw482_32/include/QtCore/QVector \
+		../../../../QT/5.3/mingw482_32/include/QtCore/QTime \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qdatetime.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/QTimer \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qtimer.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qbasictimer.h \
 		../netb375_roulette/loadgame.h \
 		../netb375_roulette/startwindow.h
 	J:\QT\5.3\mingw482_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IJ:/QT/5.3/mingw482_32/mkspecs/win32-g++ -IJ:/NETB375_Roulette-master/git/NETB375_Roulette/netb375_roulette -IJ:/QT/5.3/mingw482_32/include -IJ:/QT/5.3/mingw482_32/include/QtWidgets -IJ:/QT/5.3/mingw482_32/include/QtGui -IJ:/QT/5.3/mingw482_32/include/QtCore -I. ..\netb375_roulette\startwindow.h -o debug\moc_startwindow.cpp
@@ -490,6 +500,11 @@ debug/moc_setprofile.cpp: ../../../../QT/5.3/mingw482_32/include/QtWidgets/QWidg
 		../../../../QT/5.3/mingw482_32/include/QtCore/QRegExp \
 		../netb375_roulette/roulette_logic.h \
 		../../../../QT/5.3/mingw482_32/include/QtCore/QVector \
+		../../../../QT/5.3/mingw482_32/include/QtCore/QTime \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qdatetime.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/QTimer \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qtimer.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qbasictimer.h \
 		../netb375_roulette/setprofile.h
 	J:\QT\5.3\mingw482_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IJ:/QT/5.3/mingw482_32/mkspecs/win32-g++ -IJ:/NETB375_Roulette-master/git/NETB375_Roulette/netb375_roulette -IJ:/QT/5.3/mingw482_32/include -IJ:/QT/5.3/mingw482_32/include/QtWidgets -IJ:/QT/5.3/mingw482_32/include/QtGui -IJ:/QT/5.3/mingw482_32/include/QtCore -I. ..\netb375_roulette\setprofile.h -o debug\moc_setprofile.cpp
 
@@ -593,6 +608,27 @@ debug/moc_loadgame.cpp: ../../../../QT/5.3/mingw482_32/include/QtWidgets/QWidget
 		../../../../QT/5.3/mingw482_32/include/QtCore/qfiledevice.h \
 		../../../../QT/5.3/mingw482_32/include/QtGui/qvector2d.h \
 		../../../../QT/5.3/mingw482_32/include/QtGui/qtouchdevice.h \
+		../netb375_roulette/mainwindow.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/QMainWindow \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qmainwindow.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qtabwidget.h \
+		../../../../QT/5.3/mingw482_32/include/QtGui/qicon.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/QPushButton \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qpushbutton.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qabstractbutton.h \
+		../netb375_roulette/game_loader.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/QFile \
+		../../../../QT/5.3/mingw482_32/include/QtCore/QString \
+		../../../../QT/5.3/mingw482_32/include/QtCore/QTextStream \
+		../../../../QT/5.3/mingw482_32/include/QtCore/QDebug \
+		../../../../QT/5.3/mingw482_32/include/QtCore/QRegExp \
+		../netb375_roulette/roulette_logic.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/QVector \
+		../../../../QT/5.3/mingw482_32/include/QtCore/QTime \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qdatetime.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/QTimer \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qtimer.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qbasictimer.h \
 		../netb375_roulette/loadgame.h
 	J:\QT\5.3\mingw482_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IJ:/QT/5.3/mingw482_32/mkspecs/win32-g++ -IJ:/NETB375_Roulette-master/git/NETB375_Roulette/netb375_roulette -IJ:/QT/5.3/mingw482_32/include -IJ:/QT/5.3/mingw482_32/include/QtWidgets -IJ:/QT/5.3/mingw482_32/include/QtGui -IJ:/QT/5.3/mingw482_32/include/QtCore -I. ..\netb375_roulette\loadgame.h -o debug\moc_loadgame.cpp
 
@@ -740,6 +776,11 @@ debug/main.o: ../netb375_roulette/main.cpp ../netb375_roulette/mainwindow.h \
 		../../../../QT/5.3/mingw482_32/include/QtCore/QRegExp \
 		../netb375_roulette/roulette_logic.h \
 		../../../../QT/5.3/mingw482_32/include/QtCore/QVector \
+		../../../../QT/5.3/mingw482_32/include/QtCore/QTime \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qdatetime.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/QTimer \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qtimer.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qbasictimer.h \
 		../netb375_roulette/startwindow.h \
 		../../../../QT/5.3/mingw482_32/include/QtWidgets/QWidget \
 		../netb375_roulette/setprofile.h \
@@ -868,7 +909,53 @@ debug/mainwindow.o: ../netb375_roulette/mainwindow.cpp ../netb375_roulette/mainw
 		../../../../QT/5.3/mingw482_32/include/QtCore/QRegExp \
 		../netb375_roulette/roulette_logic.h \
 		../../../../QT/5.3/mingw482_32/include/QtCore/QVector \
+		../../../../QT/5.3/mingw482_32/include/QtCore/QTime \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qdatetime.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/QTimer \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qtimer.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qbasictimer.h \
 		ui_mainwindow.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/QVariant \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/QAction \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qaction.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qactiongroup.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/QApplication \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qapplication.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qcoreapplication.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qeventloop.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qdesktopwidget.h \
+		../../../../QT/5.3/mingw482_32/include/QtGui/qguiapplication.h \
+		../../../../QT/5.3/mingw482_32/include/QtGui/qinputmethod.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/QButtonGroup \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qbuttongroup.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/QHeaderView \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qheaderview.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qabstractitemview.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qabstractscrollarea.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qframe.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qabstractitemmodel.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qitemselectionmodel.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qstyleoption.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../QT/5.3/mingw482_32/include/QtGui/qvalidator.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qregularexpression.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qslider.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qabstractslider.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qstyle.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qtabbar.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qrubberband.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/QLabel \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qlabel.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/QMenu \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qmenu.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/QMenuBar \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qmenubar.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/QStatusBar \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qstatusbar.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/QToolBar \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qtoolbar.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/QWidget \
 		../../../../QT/5.3/mingw482_32/include/QtWidgets/QMessageBox \
 		../../../../QT/5.3/mingw482_32/include/QtWidgets/qmessagebox.h \
 		../../../../QT/5.3/mingw482_32/include/QtWidgets/qdialog.h \
@@ -880,7 +967,9 @@ debug/mainwindow.o: ../netb375_roulette/mainwindow.cpp ../netb375_roulette/mainw
 		../../../../QT/5.3/mingw482_32/include/QtCore/qpointer.h \
 		../../../../QT/5.3/mingw482_32/include/QtCore/qjsonobject.h \
 		../../../../QT/5.3/mingw482_32/include/QtCore/qjsonvalue.h \
-		../../../../QT/5.3/mingw482_32/include/QtCore/qfactoryinterface.h
+		../../../../QT/5.3/mingw482_32/include/QtCore/qfactoryinterface.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/QThread \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qthread.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mainwindow.o ..\netb375_roulette\mainwindow.cpp
 
 debug/roulette_logic.o: ../netb375_roulette/roulette_logic.cpp ../netb375_roulette/roulette_logic.h \
@@ -1153,8 +1242,43 @@ debug/startwindow.o: ../netb375_roulette/startwindow.cpp ../netb375_roulette/sta
 		../../../../QT/5.3/mingw482_32/include/QtCore/QRegExp \
 		../netb375_roulette/roulette_logic.h \
 		../../../../QT/5.3/mingw482_32/include/QtCore/QVector \
+		../../../../QT/5.3/mingw482_32/include/QtCore/QTime \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qdatetime.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/QTimer \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qtimer.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qbasictimer.h \
 		../netb375_roulette/loadgame.h \
-		ui_startwindow.h
+		ui_startwindow.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/QVariant \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/QAction \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qaction.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qactiongroup.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/QApplication \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qapplication.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qcoreapplication.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qeventloop.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qdesktopwidget.h \
+		../../../../QT/5.3/mingw482_32/include/QtGui/qguiapplication.h \
+		../../../../QT/5.3/mingw482_32/include/QtGui/qinputmethod.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/QButtonGroup \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qbuttongroup.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/QHeaderView \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qheaderview.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qabstractitemview.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qabstractscrollarea.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qframe.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qabstractitemmodel.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qitemselectionmodel.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qstyleoption.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../QT/5.3/mingw482_32/include/QtGui/qvalidator.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qregularexpression.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qslider.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qabstractslider.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qstyle.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qtabbar.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qrubberband.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\startwindow.o ..\netb375_roulette\startwindow.cpp
 
 debug/setprofile.o: ../netb375_roulette/setprofile.cpp ../netb375_roulette/setprofile.h \
@@ -1274,7 +1398,50 @@ debug/setprofile.o: ../netb375_roulette/setprofile.cpp ../netb375_roulette/setpr
 		../../../../QT/5.3/mingw482_32/include/QtCore/QRegExp \
 		../netb375_roulette/roulette_logic.h \
 		../../../../QT/5.3/mingw482_32/include/QtCore/QVector \
+		../../../../QT/5.3/mingw482_32/include/QtCore/QTime \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qdatetime.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/QTimer \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qtimer.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qbasictimer.h \
 		ui_setprofile.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/QVariant \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/QAction \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qaction.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qactiongroup.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/QApplication \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qapplication.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qcoreapplication.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qeventloop.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qdesktopwidget.h \
+		../../../../QT/5.3/mingw482_32/include/QtGui/qguiapplication.h \
+		../../../../QT/5.3/mingw482_32/include/QtGui/qinputmethod.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/QButtonGroup \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qbuttongroup.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/QHeaderView \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qheaderview.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qabstractitemview.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qabstractscrollarea.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qframe.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qabstractitemmodel.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qitemselectionmodel.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qstyleoption.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../QT/5.3/mingw482_32/include/QtGui/qvalidator.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qregularexpression.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qslider.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qabstractslider.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qstyle.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qtabbar.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qrubberband.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/QLabel \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qlabel.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/QLineEdit \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qlineedit.h \
+		../../../../QT/5.3/mingw482_32/include/QtGui/qtextcursor.h \
+		../../../../QT/5.3/mingw482_32/include/QtGui/qtextformat.h \
+		../../../../QT/5.3/mingw482_32/include/QtGui/qpen.h \
+		../../../../QT/5.3/mingw482_32/include/QtGui/qtextoption.h \
 		../netb375_roulette/startwindow.h \
 		../netb375_roulette/loadgame.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\setprofile.o ..\netb375_roulette\setprofile.cpp
@@ -1380,7 +1547,64 @@ debug/loadgame.o: ../netb375_roulette/loadgame.cpp ../netb375_roulette/loadgame.
 		../../../../QT/5.3/mingw482_32/include/QtCore/qfiledevice.h \
 		../../../../QT/5.3/mingw482_32/include/QtGui/qvector2d.h \
 		../../../../QT/5.3/mingw482_32/include/QtGui/qtouchdevice.h \
-		ui_loadgame.h
+		../netb375_roulette/mainwindow.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/QMainWindow \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qmainwindow.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qtabwidget.h \
+		../../../../QT/5.3/mingw482_32/include/QtGui/qicon.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/QPushButton \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qpushbutton.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qabstractbutton.h \
+		../netb375_roulette/game_loader.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/QFile \
+		../../../../QT/5.3/mingw482_32/include/QtCore/QString \
+		../../../../QT/5.3/mingw482_32/include/QtCore/QTextStream \
+		../../../../QT/5.3/mingw482_32/include/QtCore/QDebug \
+		../../../../QT/5.3/mingw482_32/include/QtCore/QRegExp \
+		../netb375_roulette/roulette_logic.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/QVector \
+		../../../../QT/5.3/mingw482_32/include/QtCore/QTime \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qdatetime.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/QTimer \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qtimer.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qbasictimer.h \
+		ui_loadgame.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/QVariant \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/QAction \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qaction.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qactiongroup.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/QApplication \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qapplication.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qcoreapplication.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qeventloop.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qdesktopwidget.h \
+		../../../../QT/5.3/mingw482_32/include/QtGui/qguiapplication.h \
+		../../../../QT/5.3/mingw482_32/include/QtGui/qinputmethod.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/QButtonGroup \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qbuttongroup.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/QHeaderView \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qheaderview.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qabstractitemview.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qabstractscrollarea.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qframe.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qabstractitemmodel.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qitemselectionmodel.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qstyleoption.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../QT/5.3/mingw482_32/include/QtGui/qvalidator.h \
+		../../../../QT/5.3/mingw482_32/include/QtCore/qregularexpression.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qslider.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qabstractslider.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qstyle.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qtabbar.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qrubberband.h \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/QLineEdit \
+		../../../../QT/5.3/mingw482_32/include/QtWidgets/qlineedit.h \
+		../../../../QT/5.3/mingw482_32/include/QtGui/qtextcursor.h \
+		../../../../QT/5.3/mingw482_32/include/QtGui/qtextformat.h \
+		../../../../QT/5.3/mingw482_32/include/QtGui/qpen.h \
+		../../../../QT/5.3/mingw482_32/include/QtGui/qtextoption.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\loadgame.o ..\netb375_roulette\loadgame.cpp
 
 debug/qrc_res.o: debug/qrc_res.cpp 
