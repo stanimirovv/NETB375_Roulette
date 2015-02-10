@@ -9,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
-    this->rl.SetSaveLoadPath("/home/bc/projects/qt_parser.txt");
+    this->rl.SetSaveLoadPath("/home/bloodcount/saves.txt");
     QTimer *timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(refreshShowcase()));
     timer->start(1000);
