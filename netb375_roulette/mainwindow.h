@@ -7,6 +7,7 @@
 #include <roulette_logic.h>
 #include <QTime>
 #include <QTimer>
+#include "rules.h"
 
 namespace Ui {
 class MainWindow;
@@ -352,8 +353,11 @@ private slots:
 
     void on_Clear_Button_pressed();
 
+    void on_rules_button_clicked();
+
 private:
     Ui::MainWindow *ui;
+    Rules *rulespointer;
     QPushButton *array_to_buttons[37];
 };
 

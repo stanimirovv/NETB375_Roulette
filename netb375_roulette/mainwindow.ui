@@ -3304,6 +3304,52 @@ border-radius: 5px;</string>
      <string/>
     </property>
    </widget>
+   <widget class="QLabel" name="background_label">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>110</y>
+      <width>801</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(216, 216, 216);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BackButton">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>540</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Back</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="rules_button">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>540</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Rules</string>
+    </property>
+   </widget>
+   <zorder>background_label</zorder>
    <zorder>pushButton_1</zorder>
    <zorder>pushButton_2</zorder>
    <zorder>pushButton_3</zorder>
@@ -3471,6 +3517,8 @@ border-radius: 5px;</string>
    <zorder>pushButton_line_3</zorder>
    <zorder>pushButton_line_2</zorder>
    <zorder>pushButton_line_1</zorder>
+   <zorder>BackButton</zorder>
+   <zorder>rules_button</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -3478,7 +3526,7 @@ border-radius: 5px;</string>
      <x>0</x>
      <y>0</y>
      <width>1108</width>
-     <height>27</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuRoullet">
@@ -3502,5 +3550,22 @@ border-radius: 5px;</string>
  <resources>
   <include location="res.qrc"/>
  </resources>
- <connections/>
+ <connections>
+  <connection>
+   <sender>BackButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>996</x>
+     <y>587</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1045</x>
+     <y>586</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

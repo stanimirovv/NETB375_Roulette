@@ -18,7 +18,8 @@ SOURCES += main.cpp\
     game_loader.cpp \
     startwindow.cpp \
     setprofile.cpp \
-    loadgame.cpp
+    loadgame.cpp \
+    rules.cpp
 
 
 HEADERS  += mainwindow.h \
@@ -26,12 +27,14 @@ HEADERS  += mainwindow.h \
     game_loader.h \
     startwindow.h \
     setprofile.h \
-    loadgame.h
+    loadgame.h \
+    rules.h
 
 FORMS    += mainwindow.ui \
     startwindow.ui \
     setprofile.ui \
-    loadgame.ui
+    loadgame.ui \
+    rules.ui
 
 RESOURCES += \
     res.qrc

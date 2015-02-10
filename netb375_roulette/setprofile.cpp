@@ -37,3 +37,8 @@ void SetProfile::on_pushButton_play_clicked()
     qDebug() << "Account money:  "  << ui->accountMoney->text() << "  Account name: " << ui->accountName->text() << endl;
     mwindow->show();
 }
+
+void SetProfile::on_BackButton_clicked()
+{
+
+}

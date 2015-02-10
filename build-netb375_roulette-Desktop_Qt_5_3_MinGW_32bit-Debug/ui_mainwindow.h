@@ -196,6 +196,9 @@ public:
     QLabel *label_2;
     QLabel *nameShowcase;
     QLabel *creditsShowcase;
+    QLabel *background_label;
+    QPushButton *BackButton;
+    QPushButton *rules_button;
     QMenuBar *menuBar;
     QMenu *menuRoullet;
     QToolBar *mainToolBar;
@@ -1116,7 +1119,19 @@ public:
         creditsShowcase = new QLabel(centralWidget);
         creditsShowcase->setObjectName(QStringLiteral("creditsShowcase"));
         creditsShowcase->setGeometry(QRect(100, 550, 91, 21));
+        background_label = new QLabel(centralWidget);
+        background_label->setObjectName(QStringLiteral("background_label"));
+        background_label->setGeometry(QRect(100, 110, 801, 211));
+        background_label->setContextMenuPolicy(Qt::NoContextMenu);
+        background_label->setStyleSheet(QStringLiteral("background-color: rgb(216, 216, 216);"));
+        BackButton = new QPushButton(centralWidget);
+        BackButton->setObjectName(QStringLiteral("BackButton"));
+        BackButton->setGeometry(QRect(950, 540, 75, 23));
+        rules_button = new QPushButton(centralWidget);
+        rules_button->setObjectName(QStringLiteral("rules_button"));
+        rules_button->setGeometry(QRect(860, 540, 75, 23));
         MainWindow->setCentralWidget(centralWidget);
+        background_label->raise();
         pushButton_1->raise();
         pushButton_2->raise();
         pushButton_3->raise();
@@ -1284,9 +1299,11 @@ public:
         pushButton_line_3->raise();
         pushButton_line_2->raise();
         pushButton_line_1->raise();
+        BackButton->raise();
+        rules_button->raise();
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 1108, 27));
+        menuBar->setGeometry(QRect(0, 0, 1108, 21));
         menuRoullet = new QMenu(menuBar);
         menuRoullet->setObjectName(QStringLiteral("menuRoullet"));
         MainWindow->setMenuBar(menuBar);
@@ -1300,6 +1317,7 @@ public:
         menuBar->addAction(menuRoullet->menuAction());
 
         retranslateUi(MainWindow);
+        QObject::connect(BackButton, SIGNAL(clicked()), MainWindow, SLOT(close()));
 
         QMetaObject::connectSlotsByName(MainWindow);
     } // setupUi
@@ -1474,6 +1492,9 @@ public:
         label_2->setText(QApplication::translate("MainWindow", "Credits:", 0));
         nameShowcase->setText(QString());
         creditsShowcase->setText(QString());
+        background_label->setText(QString());
+        BackButton->setText(QApplication::translate("MainWindow", "Back", 0));
+        rules_button->setText(QApplication::translate("MainWindow", "Rules", 0));
         menuRoullet->setTitle(QApplication::translate("MainWindow", "Roullet", 0));
     } // retranslateUi
 

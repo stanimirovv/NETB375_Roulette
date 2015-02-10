@@ -18,6 +18,8 @@ public:
 private slots:
     void on_pushButton_play_clicked();
 
+    void on_BackButton_clicked();
+
 private:
 
     Ui::SetProfile *ui;

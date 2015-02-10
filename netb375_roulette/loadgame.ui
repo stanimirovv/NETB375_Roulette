@@ -36,7 +36,37 @@
     </rect>
    </property>
   </widget>
+  <widget class="QPushButton" name="BackButton">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>210</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>BackButton</sender>
+   <signal>clicked()</signal>
+   <receiver>LoadGame</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>189</x>
+     <y>230</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>64</x>
+     <y>224</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
