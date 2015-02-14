@@ -9,7 +9,4 @@
         <file>roulette3.gif</file>
         <file>roulette-table-layout.jpg</file>
     </qresource>
-    <qresource prefix="/save_load">
-        <file>saves.txt</file>
-    </qresource>
 </RCC>
