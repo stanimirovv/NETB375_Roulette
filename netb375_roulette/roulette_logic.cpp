@@ -45,8 +45,8 @@ RouletteLogic::RouletteLogic(QString person_name, int person_money_cents, QStrin
  */
 int RouletteLogic::getRandomNumber()
 {
-    NumberGenerator ng = NumberGenerator(0, 36);
-    ng.set_seed(5);
+    //NumberGenerator ng = NumberGenerator(0, 36);
+    //ng.set_seed(5);
     //return ng.rand();
     return rand() % 36 + 1;
 }
