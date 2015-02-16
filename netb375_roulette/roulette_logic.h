@@ -4,6 +4,7 @@
 #include <QVector>
 #include <game_loader.h>
 #include <stdlib.h>
+#include "NumberGenerator.h"
 
 struct bet {
   int multiplyer;

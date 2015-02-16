@@ -15,7 +15,7 @@ public:
 	NumberGenerator(const int& start, const int& end);
 	//other
 	int rand() const;
-	void set_seed(unsigned int& seed) const;
+    void set_seed(unsigned int seed) const;
 	void set_seed(QTime seed) const;
 	//get set
 	int get_start() const;

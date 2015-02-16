@@ -19,7 +19,7 @@ int NumberGenerator::rand() const {
 	return (qrand() % (end + 1 - start) + start);
 }
 
-void NumberGenerator::set_seed(unsigned int& seed) const {
+void NumberGenerator::set_seed(unsigned int seed) const {
 	qsrand(seed);
 }
 
